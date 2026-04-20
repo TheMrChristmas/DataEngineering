@@ -1,0 +1,620 @@
+{"timestamp":"2026-04-09T18:22:20.321594Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-09T18:22:20.322644Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/yellow_taxi_pipeline.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-09T18:22:20.377971Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.378373Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.378934Z","level":"info","event":"Current task name:transform","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.379931Z","level":"info","event":"Dag name:yellow_taxi_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.396091Z","level":"info","event":"[Transformer] Reading /opt/airflow/data/raw/yellow_tripdata_2026-01.parquet","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.458322Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.466700Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.477387Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.483422Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.489160Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.495370Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.497452Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.502248Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.893726Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.896325Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.901006Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.904423Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.908168Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.910267Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.912684Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:20.916681Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.145637Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.147936Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.151939Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.154943Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.157978Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.160950Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.161914Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.164927Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.389141Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.390974Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.394388Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.397412Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.400612Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.402913Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.404759Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.407397Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.636767Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.638927Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.641057Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.644904Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.646290Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.648274Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.650343Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.653428Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.899232Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.902713Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.907140Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.910302Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.914828Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.919985Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.921219Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:21.925020Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.225016Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.227944Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.231931Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.233743Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.239175Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.242967Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.244222Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.247895Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.528142Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.530936Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.535042Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.539377Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.543981Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.545057Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.547901Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.549898Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.814933Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.816333Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.820916Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.825922Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.828425Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.830749Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.833988Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:22.836752Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.113630Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.117571Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.123610Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.129016Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.135072Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.137754Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.141112Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.147023Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.307930Z","level":"info","event":"[Transformer] Processed 500000 rows so far","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.520812Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.524009Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.530061Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.533905Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.540596Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.543260Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.545944Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.549978Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.824855Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.826108Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.831979Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.836966Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.843015Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.845325Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.847801Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:23.852697Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.134973Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.136715Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.140010Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.142961Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.145894Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.147714Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.149896Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.153123Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.375015Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.376072Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.378744Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.381968Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.385411Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.386593Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.388372Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.391907Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.616679Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.619495Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.622999Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.625990Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.628265Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.632904Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.633164Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.635666Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.851112Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.853397Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.856266Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.858736Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.861353Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.863261Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.865068Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:24.869008Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.127016Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.128955Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.133975Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.134724Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.137996Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.140239Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.142454Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.145188Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.378974Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.392563Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.392953Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.393191Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.393343Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.394744Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.396768Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.400071Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.636772Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.639949Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.642947Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.645953Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.649072Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.650885Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.653113Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.656454Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.882137Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.883927Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.887499Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.890908Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.893316Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.895393Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.897990Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.901085Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:25.963935Z","level":"info","event":"[Transformer] Processed 1000000 rows so far","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.135959Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.137701Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.141957Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.143132Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.145963Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.147915Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.149954Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.152581Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.374014Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.378436Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.392065Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.402510Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.419587Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.425059Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.429475Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.433738Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.698930Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.700344Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.705287Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.708774Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.712988Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.714201Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.718944Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.719731Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.964541Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.967471Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.972005Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.975456Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.978664Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.981169Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.984504Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:26.987921Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.288058Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.291088Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.296054Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.297993Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.301580Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.305168Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.307569Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.310543Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.612984Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.616520Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.620042Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.623968Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.627999Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.629997Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.631959Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.637957Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.909615Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.912318Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.916651Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.922071Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.924984Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.928948Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.930781Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:27.936208Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.195930Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.196713Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.201229Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.205161Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.210055Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.210468Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.212922Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.215084Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.492721Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.495462Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.501716Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.508322Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.511989Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.516079Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.519508Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.524951Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.925885Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.929144Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.934932Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.941295Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.945852Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.950098Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.952739Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:28.958652Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.098381Z","level":"info","event":"[Transformer] Processed 1500000 rows so far","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.354384Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.358480Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.364876Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.372022Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.378731Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.383252Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.387239Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.394998Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.839274Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.844084Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.848739Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.854757Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.861511Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.865566Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.868774Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:29.874046Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.251648Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.255637Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.261005Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.263520Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.269043Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.273072Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.277029Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.279939Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.571051Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.589155Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.589884Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.590570Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.590898Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.592228Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.592958Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.596991Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.907630Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.911008Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.916102Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.921186Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.924718Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.929991Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.931607Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:30.936480Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.251555Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.257119Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.260148Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.265955Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.270445Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.273933Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.277677Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.281253Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.593168Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.601360Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.602109Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.607497Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.615022Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.618607Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.621860Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.626345Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.917958Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.919719Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.924844Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.928192Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.931426Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.934952Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.938924Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:31.941120Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.227489Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.230130Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.235042Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.237964Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.241907Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.243545Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.245850Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.250000Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.503294Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.505682Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.509948Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.511962Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.515933Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.517328Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.520295Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.524301Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.599973Z","level":"info","event":"[Transformer] Processed 2000000 rows so far","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.775471Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.778471Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.784070Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.786269Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.791935Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.792179Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.794012Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:32.796995Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.051157Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.053794Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.057212Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.060472Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.064194Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.065998Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.068818Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.072993Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.363946Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.365070Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.371145Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.374555Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.378430Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.381728Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.384993Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.388981Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.654936Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.656906Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.660974Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.662892Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.666281Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.669642Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.672141Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.675770Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.935954Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.937947Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.943002Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.945949Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.949050Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.952947Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.954665Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:33.958354Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.223426Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.227934Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.230574Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.235664Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.239810Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.242287Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.244904Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.247984Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.508924Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.510138Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.513609Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.519972Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.521262Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.524146Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.526946Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.530038Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.773621Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.775989Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.782975Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.784368Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.787993Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.790160Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.792196Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:34.794826Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.069636Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.073936Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.079989Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.085153Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.090024Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.092815Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.095940Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.100002Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.359937Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.361700Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.365680Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.369992Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.374042Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.376945Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.378905Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.383329Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.459317Z","level":"info","event":"[Transformer] Processed 2500000 rows so far","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.638845Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.654606Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.654917Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.655170Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.655382Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.655567Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.655859Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.658672Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.916949Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.919095Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.923982Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.927657Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.930430Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.932996Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.937020Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:35.940917Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.218810Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.222164Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.230026Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.230975Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.236006Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.240924Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.241241Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.243599Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.506804Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.509200Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.512666Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.516534Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.520847Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.523976Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.527906Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.530027Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.804739Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.807113Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.810988Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.814004Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.816823Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.820006Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.823115Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:36.825994Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.096018Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.098937Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.103228Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.106584Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.110490Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.112973Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.115941Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.119992Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.392940Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.394983Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.398892Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.402993Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.406043Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.408028Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.410949Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.413955Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.688715Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.691637Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.698789Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.701037Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.708430Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.711651Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.714445Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.719304Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:37.999872Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.001987Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.006588Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.010966Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.013326Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.016931Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.019083Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.023940Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.296914Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.299922Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.305108Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.308743Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.311975Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.314967Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.318772Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.321975Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.420982Z","level":"info","event":"[Transformer] Processed 3000000 rows so far","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.596413Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.599245Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.603178Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.606375Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.609693Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.612144Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.614384Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.618148Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.886516Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.887692Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.892298Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.896158Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.900963Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.903216Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.906533Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:38.913939Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.198018Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.201564Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.205924Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.208786Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.212901Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.214577Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.217991Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.223048Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.492528Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.495700Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.498729Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.502929Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.507982Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.509979Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.512961Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.516353Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.787454Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.789102Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.792766Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.795549Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.799324Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.802475Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.805710Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:39.810031Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.067988Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.068870Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.073991Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.076700Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.080086Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.083366Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.086790Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.090904Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.335467Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.338045Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.341963Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.344399Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.347935Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.350801Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.354911Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.356656Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.594951Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.597460Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.603043Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.605984Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.607964Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.610921Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.611926Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.614931Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.855224Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.872006Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.872647Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.873163Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.873623Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.873921Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.874753Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:40.878301Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.114958Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.116202Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.119785Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.123027Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.126466Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.128959Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.132949Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.133965Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.205954Z","level":"info","event":"[Transformer] Processed 3500000 rows so far","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.370326Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.373778Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.376827Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.379610Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.384007Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.385194Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.387955Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.389413Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.613379Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.615757Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.619303Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.622724Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.626149Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.629915Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.630132Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.633280Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.867415Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.869873Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.874173Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.877015Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.880918Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.883001Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.885467Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:41.889488Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.106729Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.108937Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.111788Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.114535Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.117999Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.120939Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.122592Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.125403Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.341522Z","level":"info","event":"[Transformer] Dropped columns: ['VendorID', 'store_and_fwd_flag', 'RatecodeID']","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.343416Z","level":"info","event":"[Transformer] Added column: trip_duration_minutes","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.345793Z","level":"info","event":"[Transformer] Added column: average_speed_mph","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.348023Z","level":"info","event":"[Transformer] Added columns: pickup_year, pickup_month","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.351965Z","level":"info","event":"[Transformer] Added column: revenue_per_mile","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.352694Z","level":"info","event":"[Transformer] Added column: trip_distance_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.353286Z","level":"info","event":"[Transformer] Added column: fare_category","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.355400Z","level":"info","event":"[Transformer] Added column: trip_time_of_day","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.620986Z","level":"info","event":"[Transformer] Written 3724889 rows to /opt/airflow/data/processed/yellow_tripdata_2026-01.parquet","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.623407Z","level":"info","event":"Done. Returned value was: /opt/airflow/data/processed/yellow_tripdata_2026-01.parquet","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-04-09T18:22:42.623853Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019d737b-051e-75da-afc8-d2212b453b47'), task_id='transform', dag_id='yellow_taxi_pipeline', run_id='manual__2026-04-09T18:22:14.678579+00:00', try_number=1, dag_version_id=UUID('019d734a-1b48-7030-a76a-5cbdfa5f18f2'), map_index=-1, hostname='5baabdac2b62', context_carrier={}, task=<Task(PythonOperator): transform>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2026, 4, 9, 18, 22, 19, 748203, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1522}
+{"timestamp":"2026-04-09T18:22:42.656997Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.658487Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:22:42.685170Z","level":"info","event":"Task operator:<Task(PythonOperator): transform>","logger":"task.stdout"}

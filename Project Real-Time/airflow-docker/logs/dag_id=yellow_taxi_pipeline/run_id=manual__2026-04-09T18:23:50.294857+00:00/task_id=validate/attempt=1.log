@@ -1,0 +1,27 @@
+{"timestamp":"2026-04-09T18:23:52.216867Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-09T18:23:52.218188Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/yellow_taxi_pipeline.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-09T18:23:52.274443Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:52.278333Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:52.279034Z","level":"info","event":"Current task name:validate","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:52.279376Z","level":"info","event":"Dag name:yellow_taxi_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:52.293781Z","level":"info","event":"[Validator] Reading /opt/airflow/data/raw/yellow_tripdata_2026-01.parquet","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.831037Z","level":"info","event":"[Validator] Loaded 3724889 rows","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.831408Z","level":"info","event":"[Validator] Warning summary:","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.831823Z","level":"info","event":"[Validator] WARNING: dropoff is not after pickup (affected rows: 45070)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.832248Z","level":"info","event":"[Validator] WARNING: pickup year outside 2026 (affected rows: 6)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.833164Z","level":"info","event":"[Validator] WARNING: total_amount < fare_amount (affected rows: 42691)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.833380Z","level":"info","event":"[Validator] WARNING: negative values in 'tip_amount' (affected rows: 67)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.833568Z","level":"info","event":"[Validator] WARNING: negative values in 'tolls_amount' (affected rows: 3391)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.833743Z","level":"info","event":"[Validator] WARNING: negative values in 'extra' (affected rows: 20035)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.833890Z","level":"info","event":"[Validator] WARNING: negative values in 'Airport_fee' (affected rows: 9225)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.834035Z","level":"info","event":"[Validator] WARNING: negative values in 'congestion_surcharge' (affected rows: 30448)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.834221Z","level":"info","event":"[Validator] WARNING: negative values in 'cbd_congestion_fee' (affected rows: 25197)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.834338Z","level":"info","event":"[Validator] WARNING: RatecodeID outside valid range {1, 2, 3, 4, 5, 6} (affected rows: 110864)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.834469Z","level":"info","event":"[Validator] WARNING: payment_type outside valid set {1, 2, 3, 4, 5, 6} (affected rows: 1088058)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.834908Z","level":"info","event":"[Validator] WARNING: 'Airport_fee' has nulls (non-mandatory) (affected rows: 1088058)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.835090Z","level":"info","event":"[Validator] WARNING: 'congestion_surcharge' has nulls (non-mandatory) (affected rows: 1088058)","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.835308Z","level":"info","event":"[Validator] All validation checks passed.","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.832945Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-04-09T18:23:53.852954Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.853586Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-04-09T18:23:53.854322Z","level":"info","event":"Task operator:<Task(PythonOperator): validate>","logger":"task.stdout"}

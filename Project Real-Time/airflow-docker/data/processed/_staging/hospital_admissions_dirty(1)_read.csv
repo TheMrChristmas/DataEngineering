@@ -1,0 +1,1001 @@
+patient_id,name,age,gender,admission_date,discharge_date,diagnosis,ward,doctor_id,cost_eur,insurance,readmission
+P0779,Willem Decoster,,F,2024-12-02,2024-12-04,COVID-19,Cardiology,DR004,4960.23,Mutualiteit,False
+P0335,Hugo Dockx,7.0,MALE,2026-02-16,2026-03-09,COVID-19,Pediatrics,DR002,9872.8,AXA,True
+P0272,Sabine De Clercq,-5.0,f,2025-04-16,2025-04-15,Appendicitis,Oncology,DR010,5044.05,AG Insurance,False
+P0803,Elke Verhelst,28.0,F,2025-09-19,2025-09-21,Pneumonia,Emergency,DR001,11348.14,DKV,True
+P0217,Alfons Vanderlinden,-5.0,X,2026-04-03,2026-04-10,Diabetes type 2,Cardiology,DR002,5880.92,Allianz,False
+P0409,Mohammad Van den Eynde,,X,2024-10-02,2024-10-01,Hypertension,Oncology,DR012,-500.0,Allianz,False
+P0813,Petra Thomas,150.0,m,2025-10-30,2025-11-01,COVID-19,Emergency,DR003,1640.33,AXA,False
+P0095,Joke Hanssens,150.0,F,2025-07-11,2025-07-12,Pneumonia,Cardiology,DR005,-500.0,AXA,True
+P0488,Iris Ramaekers,150.0,MALE,2025-08-06,2025-08-05,Sepsis,Pediatrics,DR001,14632.83,DKV,True
+P0171,Magda Bracke Swennen,,M,2024-09-30,2024-10-05,Diabetes type 2,Oncology,DR011,,Mutualiteit,False
+P0025,Ilse Roels,-5.0,Female,2025-04-10,2025-05-01,Hip fracture,Pediatrics,DR003,-500.0,,True
+P0243,Roger Verboven,150.0,Male,2026-01-14,2026-01-24,Stroke,Orthopedics,DR001,,DKV,True
+P0543,Stephanie Cornelis,23.0,Male,2024-07-07,2024-07-10,COVID-19,Cardiology,DR003,,AXA,False
+P0931,Marleen Temmerman,,,2026-03-24,2026-03-23,Pneumonia,Emergency,DR013,14204.81,Allianz,True
+P0887,Martine Deman,78.0,F,2024-09-12,2024-09-17,Appendicitis,Orthopedics,DR001,3745.04,AG Insurance,False
+P0427,Marie Van Belle,22.0,X,2024-06-07,2024-06-09,Heart failure,Cardiology,DR013,,Allianz,False
+P0126,Maarten Devriendt,65.0,F,2025-12-02,2025-12-12,Sepsis,Emergency,DR003,-500.0,Mutualiteit,False
+P0454,Mia Cornelis,150.0,X,2025-01-27,2025-02-01,Pneumonia,Orthopedics,DR006,2668.78,,False
+P0651,Annie De Winter,17.0,f,2024-06-05,2024-06-10,COVID-19,Neurology,DR002,,AG Insurance,False
+P0914,Norbert Hermans,4.0,f,2024-12-30,2024-12-28,Lung cancer,Orthopedics,DR007,-500.0,DKV,False
+P0169,Albert De Clercq,,M,2025-12-03,2025-12-08,Lung cancer,Emergency,DR006,7735.01,Allianz,False
+P0777,Elif Vervaet,,Male,2024-11-06,2024-11-04,Hip fracture,Oncology,DR011,-500.0,Mutualiteit,False
+P0573,Gerda Schepens,43.0,M,2025-08-03,2025-08-24,Stroke,Pediatrics,DR006,-500.0,Allianz,False
+P0849,Frederik Rombaut,19.0,MALE,2025-09-19,2025-09-21,Pneumonia,Orthopedics,DR005,9323.72,,False
+P0876,Bilal Callens,42.0,FEMALE,2025-10-11,2025-10-12,Pneumonia,Pediatrics,DR012,-500.0,Allianz,False
+P0591,Marc Vermeire,-5.0,Female,2025-04-02,2025-04-01,Lung cancer,ICU,DR007,8426.04,AG Insurance,False
+P0026,Jan Renders,41.0,F,2024-09-15,2024-09-25,Sepsis,Neurology,DR009,6982.63,AG Insurance,False
+P0485,Natascha Boonen,-5.0,FEMALE,2024-10-10,2024-10-20,COVID-19,Cardiology,DR012,1007.29,AXA,True
+P0706,Cas Segers,19.0,MALE,2025-03-26,2025-03-27,Lung cancer,Cardiology,DR010,-500.0,AG Insurance,False
+P0890,Lutgardis Depuydt Theys,,M,2025-02-01,2025-02-06,Hypertension,ICU,DR007,12150.92,Allianz,False
+P0682,Stefan Verheyen,,Female,2024-08-14,2024-09-04,Diabetes type 2,Neurology,DR012,821.15,AG Insurance,False
+P0014,Raphaël De Vos,150.0,Male,2025-06-08,2025-06-07,COVID-19,Orthopedics,DR003,14674.17,AG Insurance,False
+P0880,Raoul Vercruysse,27.0,MALE,2024-05-24,2024-05-31,Heart failure,Emergency,DR007,2239.46,AG Insurance,True
+P0278,Marc Van Loo,41.0,FEMALE,2025-03-23,2025-04-02,Hip fracture,Pediatrics,DR005,14476.59,Mutualiteit,True
+P0317,Ivan Segers,45.0,m,2025-11-05,2025-11-19,Heart failure,Pediatrics,DR001,12597.28,DKV,False
+P0300,Ivo Hendrickx Parmentier,79.0,Male,2024-10-12,2024-11-02,Heart failure,Cardiology,DR006,,DKV,False
+P0114,Anna Van Camp,150.0,f,2025-01-08,2025-01-22,Hypertension,Orthopedics,DR002,-500.0,Mutualiteit,False
+P0192,Koen Jans,1.0,F,2024-10-17,2024-10-24,Sepsis,Cardiology,DR015,-500.0,Mutualiteit,False
+P0570,Dirk Bracke,-5.0,M,2026-02-20,2026-02-27,COVID-19,Emergency,DR005,4577.7,DKV,False
+P0061,Axel Callens,52.0,X,2026-02-04,2026-02-07,Sepsis,Oncology,DR007,,,False
+P0714,Helga Beeckman,-5.0,Female,2024-08-07,2024-08-12,Diabetes type 2,Oncology,DR004,-500.0,Allianz,False
+P0908,Joseph Colman,-5.0,FEMALE,2024-08-14,2024-08-19,COVID-19,Pediatrics,DR007,13470.49,AG Insurance,True
+P0716,Gert Maes,51.0,X,2024-09-01,2024-09-11,Heart failure,ICU,DR014,11852.12,,False
+P0726,Johan Declercq,67.0,F,2024-08-08,2024-08-06,COVID-19,Orthopedics,DR002,,Mutualiteit,True
+P0708,Aline Janssen,,F,2025-01-09,2025-01-11,Hip fracture,Cardiology,DR006,,Allianz,False
+P0759,Isabelle Vanderstraeten,150.0,FEMALE,2025-07-03,2025-07-05,Stroke,ICU,DR007,310.16,AXA,False
+P0340,Chantal Swennen,83.0,FEMALE,2026-03-09,2026-03-08,Heart failure,Cardiology,DR014,-500.0,DKV,True
+P0734,Kristof Vandecasteele,150.0,,2025-11-22,2025-11-21,Hypertension,Oncology,DR010,-500.0,AG Insurance,False
+P0655,Kim Wouters,,F,2025-12-24,2026-01-03,Diabetes type 2,Cardiology,DR004,7496.23,AG Insurance,False
+P0100,Silke De Schryver,-5.0,M,2025-11-17,2025-11-22,Pneumonia,Oncology,DR004,-500.0,Mutualiteit,False
+P0601,Ronny Van den Broeck,,M,2026-04-02,2026-04-03,Stroke,Neurology,DR003,-500.0,,False
+P0290,Joanna Schepens,73.0,X,2024-05-12,2024-06-02,Hip fracture,Neurology,DR008,,Mutualiteit,True
+P0456,Monique Verhoeven,,f,2025-06-24,2025-07-15,COVID-19,Pediatrics,DR007,-500.0,Mutualiteit,True
+P0035,Sharon Merckx,-5.0,M,2024-07-17,2024-07-22,Stroke,Oncology,DR003,-500.0,AXA,True
+P0054,Diana Vaes,,MALE,2025-05-29,2025-05-30,Appendicitis,Cardiology,DR010,,,False
+P0320,Marie-Thérèse D'hondt,150.0,,2024-12-02,2024-12-09,Stroke,Cardiology,DR009,,,True
+P0867,Mario Van Impe,,,2025-06-12,2025-06-19,Stroke,Pediatrics,DR007,2231.91,Mutualiteit,True
+P0907,Bjorn De Coninck,,f,2024-10-16,2024-10-18,Appendicitis,Neurology,DR011,9093.96,AXA,True
+P0787,Marina De Schrijver,150.0,MALE,2025-07-29,2025-08-03,Pneumonia,Emergency,DR004,9597.7,DKV,False
+P0942,Angèle Jans,150.0,Male,2024-10-03,2024-10-08,Appendicitis,Oncology,DR007,9898.28,Allianz,False
+P0702,Philippe Maes,95.0,X,2025-05-30,2025-06-09,Stroke,Emergency,DR009,-500.0,Mutualiteit,False
+P0455,Flore Lambert,-5.0,f,2025-10-29,2025-11-12,Pneumonia,ICU,DR011,-500.0,Allianz,True
+P0363,Jean De Schrijver,-5.0,Female,2026-03-25,2026-04-15,Hip fracture,Pediatrics,DR003,8289.9,,True
+P0703,Maria De Moor,70.0,X,2025-09-09,2025-09-30,Heart failure,Cardiology,DR011,,AXA,False
+P0165,Peggy Eeckhout,150.0,MALE,2025-08-22,2025-09-01,Sepsis,Pediatrics,DR004,13210.32,DKV,False
+P0474,Arthur Maris,65.0,X,2025-10-08,2025-10-10,Hip fracture,Neurology,DR003,9461.73,AG Insurance,False
+P0378,Fien Smet,,F,2025-12-03,2025-12-17,Appendicitis,Emergency,DR010,-500.0,Allianz,True
+P0373,Mireille Lenaerts,150.0,,2025-04-18,2025-04-25,Heart failure,Emergency,DR014,10164.82,Mutualiteit,True
+P0309,Sylvie Torfs,67.0,F,2025-07-31,2025-08-03,Pneumonia,Neurology,DR003,,AXA,False
+P0846,Jozef Bogaert,150.0,FEMALE,2026-04-02,2026-03-31,Hip fracture,Oncology,DR008,,Mutualiteit,False
+P0588,Jack Broeckx,78.0,MALE,2025-10-29,2025-11-19,Diabetes type 2,Pediatrics,DR006,5543.76,Mutualiteit,True
+P0906,Juan Liekens,150.0,Male,2026-03-03,2026-03-13,COVID-19,Emergency,DR010,,Mutualiteit,True
+P0348,Lotte De Neve,43.0,MALE,2024-09-22,2024-09-24,Appendicitis,Cardiology,DR008,,Allianz,False
+P0690,Tijl Aerts,-5.0,X,2025-02-11,2025-02-25,Hypertension,Oncology,DR004,11404.29,AG Insurance,False
+P0109,Olivier De Vos,-5.0,F,2024-11-15,2024-11-22,Stroke,ICU,DR002,,Mutualiteit,False
+P0694,Dirk Op de Beeck Pauwels,11.0,FEMALE,2025-04-18,2025-04-25,Stroke,Oncology,DR011,2124.94,AXA,False
+P0257,Bob Mertens,-5.0,Male,2026-01-02,2026-01-01,Stroke,Orthopedics,DR010,11647.22,Mutualiteit,False
+P0719,José Bracke,64.0,M,2024-05-02,2024-05-04,Appendicitis,ICU,DR011,13586.71,Allianz,True
+P0791,Alfons Baert,-5.0,MALE,2025-12-31,2025-12-30,Hip fracture,Cardiology,DR003,4181.52,Allianz,True
+P0473,Suzanna Van Daele,-5.0,M,2025-09-22,2025-09-20,Diabetes type 2,Emergency,DR006,6022.32,AG Insurance,True
+P0603,Robby Horemans,,M,2025-04-16,2025-04-18,Stroke,Oncology,DR011,-500.0,Mutualiteit,True
+P0811,Virginie Herman,90.0,MALE,2024-06-14,2024-06-16,Hip fracture,ICU,DR011,,DKV,True
+P0930,Fernand Wellens,,MALE,2025-07-01,2025-07-06,Hip fracture,Orthopedics,DR004,11969.54,AXA,False
+P0352,Olivier Kerkhofs De Schutter,-5.0,M,2025-10-18,2025-10-16,Lung cancer,Pediatrics,DR003,8305.82,,False
+P0542,Ferdinand Dierick,-5.0,M,2025-08-04,2025-08-14,Pneumonia,Pediatrics,DR006,-500.0,Mutualiteit,True
+P0229,Annemie Vaes,85.0,FEMALE,2025-09-19,2025-09-21,Hypertension,Pediatrics,DR010,10785.5,Allianz,False
+P0205,Magda Verlinden Meersman,-5.0,FEMALE,2024-06-15,2024-06-29,Stroke,ICU,DR012,,Allianz,True
+P0625,Josephine De Coninck,,,2025-09-15,2025-10-06,Diabetes type 2,Oncology,DR002,11194.74,AXA,False
+P0783,Herman Smits,150.0,,2026-01-26,2026-02-05,Sepsis,Neurology,DR009,-500.0,,False
+P0102,Hilde Beernaert,76.0,,2025-04-04,2025-04-18,Heart failure,Oncology,DR014,3648.38,DKV,False
+P0154,Jean-Pierre Coppens,,Male,2025-11-09,2025-11-14,Diabetes type 2,Orthopedics,DR004,13391.71,Mutualiteit,False
+P0677,Lynn Vervoort,150.0,MALE,2025-02-18,2025-03-11,Diabetes type 2,ICU,DR008,,DKV,False
+P0027,Johan Dierickx,-5.0,,2025-01-06,2025-01-11,Sepsis,Cardiology,DR011,-500.0,AXA,True
+P0058,Lewis Vervaet,-5.0,,2024-07-06,2024-07-11,Hypertension,Emergency,DR007,,AG Insurance,True
+P0047,Niels Peeters,60.0,,2024-06-26,2024-07-10,Pneumonia,Pediatrics,DR001,3261.15,AG Insurance,True
+P0099,Emmanuel Meeus,150.0,M,2026-02-07,2026-02-14,Diabetes type 2,Neurology,DR008,-500.0,Allianz,False
+P0387,Anja De Meyer,,,2026-02-26,2026-03-03,Sepsis,Orthopedics,DR003,-500.0,Allianz,False
+P0740,Gunther Tack Janssens,,F,2024-07-20,2024-07-25,Stroke,Neurology,DR015,,DKV,False
+P0298,Jordy De Weerdt,150.0,Male,2025-08-26,2025-09-09,COVID-19,Cardiology,DR013,8755.22,Mutualiteit,True
+P0545,Kamiel De Graeve,64.0,MALE,2025-06-13,2025-06-23,Hip fracture,Neurology,DR012,9862.41,AG Insurance,False
+P0494,Maarten Eeckhout,,,2025-05-26,2025-06-16,Diabetes type 2,Cardiology,DR002,,AG Insurance,True
+P0141,Linda De Smedt,-5.0,,2024-08-14,2024-08-16,Pneumonia,Neurology,DR011,9299.18,,True
+P0654,Virginie Deceuninck,25.0,Male,2025-09-18,2025-09-16,COVID-19,Pediatrics,DR002,-500.0,Allianz,True
+P0644,Bruno Van den Berghe,29.0,F,2024-04-16,2024-05-07,COVID-19,Neurology,DR005,9777.18,,False
+P0423,Marcel Maes,,f,2025-07-04,2025-07-06,Sepsis,Pediatrics,DR013,-500.0,,False
+P0260,Wout Bruggeman,,m,2024-08-31,2024-09-21,Appendicitis,Orthopedics,DR010,4416.83,AXA,False
+P0889,Leonie Goethals,-5.0,MALE,2025-01-27,2025-01-30,Diabetes type 2,Neurology,DR012,-500.0,,True
+P0064,Christina Yilmaz,,X,2024-09-04,2024-09-07,Hip fracture,Emergency,DR003,2073.43,,False
+P0886,Dylan Van Roy De Clercq,150.0,MALE,2024-10-06,2024-10-16,Appendicitis,Oncology,DR002,-500.0,Mutualiteit,True
+P0544,Johan De Smet,79.0,M,2025-11-23,2025-11-25,Stroke,Cardiology,DR010,13706.62,,True
+P0730,Peter De Mey,14.0,,2025-02-24,2025-02-26,Lung cancer,Emergency,DR009,1199.66,AG Insurance,True
+P0510,Carine Jacobs,,m,2025-12-04,2025-12-02,Lung cancer,Emergency,DR013,-500.0,AG Insurance,False
+P0269,Stijn Claes,48.0,Female,2024-11-04,2024-11-25,Sepsis,Cardiology,DR001,3975.72,Mutualiteit,False
+P0686,Gregory Van Looy,-5.0,M,2025-02-22,2025-02-21,Pneumonia,ICU,DR001,,,False
+P0782,Marijke De Pauw,-5.0,MALE,2026-02-03,2026-02-06,Sepsis,Orthopedics,DR012,,Allianz,False
+P0147,Roel Maes,44.0,F,2024-11-27,2024-12-07,Pneumonia,Cardiology,DR007,-500.0,AXA,False
+P0466,Bart Celis,150.0,f,2026-03-04,2026-03-03,Hypertension,Emergency,DR001,-500.0,AG Insurance,False
+P0918,Gabriella Demeyer,74.0,f,2025-06-04,2025-06-03,Lung cancer,Neurology,DR011,,DKV,True
+P0783,Herman Smits,150.0,,2026-01-26,2026-02-05,Sepsis,Neurology,DR009,-500.0,,False
+P0271,Véronique Stroobants,,Male,2025-04-11,2025-04-16,Appendicitis,ICU,DR009,5717.56,Mutualiteit,False
+P0545,Kamiel De Graeve,64.0,MALE,2025-06-13,2025-06-23,Hip fracture,Neurology,DR012,9862.41,AG Insurance,False
+P0404,Lies Van Damme,34.0,MALE,2024-11-13,2024-11-12,Hypertension,Emergency,DR009,,AG Insurance,False
+P0111,Ida Vercauteren,-5.0,Male,2026-04-09,2026-04-07,COVID-19,Neurology,DR014,8753.19,Mutualiteit,True
+P0172,Tom Wouters,40.0,M,2026-03-20,2026-04-10,Hypertension,Pediatrics,DR003,4129.85,AXA,False
+P0844,Karin Stevens,5.0,F,2025-07-31,2025-08-07,Pneumonia,Pediatrics,DR009,-500.0,Allianz,False
+P0802,Beatrice Neyens,17.0,Male,2025-05-08,2025-05-06,COVID-19,Cardiology,DR008,,,False
+P0899,Jozef Michiels,,Male,2024-11-04,2024-11-09,Stroke,Pediatrics,DR013,13521.87,Allianz,False
+P0010,Romain Bosmans,12.0,,2025-09-07,2025-09-17,Stroke,Pediatrics,DR007,,AXA,False
+P0768,Jozef Jonckheere,57.0,MALE,2026-03-12,2026-03-14,Hip fracture,Pediatrics,DR001,12580.22,AXA,True
+P0206,Martine Van den Broeck,150.0,M,2024-06-22,2024-06-24,Hip fracture,Orthopedics,DR015,12988.46,AXA,False
+P0512,Emiel Wouters,50.0,,2025-05-27,2025-05-26,Diabetes type 2,Oncology,DR006,,DKV,False
+P0744,Jennifer Swinnen,150.0,Female,2025-08-19,2025-09-02,Appendicitis,Neurology,DR008,7211.62,DKV,False
+P0331,Eddy Goyvaerts,68.0,Female,2024-11-02,2024-10-31,Diabetes type 2,Oncology,DR003,261.03,Mutualiteit,False
+P0933,Wendy De Bock,50.0,FEMALE,2024-08-19,2024-08-24,Hip fracture,Neurology,DR014,8730.92,Allianz,True
+P0358,Sofie Laenen,-5.0,Male,2024-12-17,2024-12-19,Sepsis,Orthopedics,DR012,13833.64,,True
+P0062,Jeannine Andries,150.0,Female,2026-03-30,2026-04-04,Diabetes type 2,Cardiology,DR012,4209.56,AXA,False
+P0707,Sven Van de Velde,-5.0,f,2025-06-25,2025-06-23,Hip fracture,Pediatrics,DR014,,Mutualiteit,True
+P0238,Martine Hendrickx,150.0,X,2024-05-27,2024-06-01,Diabetes type 2,Orthopedics,DR007,,AXA,False
+P0780,Isabelle Maes,12.0,Female,2024-12-06,2024-12-08,Sepsis,Cardiology,DR007,12502.07,,False
+P0018,Elena Bosmans,150.0,f,2026-02-26,2026-03-08,Pneumonia,Pediatrics,DR008,,,True
+P0809,Guido De Winter,-5.0,,2024-04-21,2024-05-01,Diabetes type 2,Oncology,DR009,2358.89,,True
+P0362,Emilie Buelens,150.0,X,2026-02-26,2026-02-24,Heart failure,Cardiology,DR012,-500.0,AG Insurance,False
+P0587,Martijn Mariën Verdonck,-5.0,F,2026-03-31,2026-04-21,Sepsis,Pediatrics,DR004,,Allianz,True
+P0532,Ronny Mertens,-5.0,M,2025-05-25,2025-06-08,Stroke,Orthopedics,DR003,-500.0,AXA,False
+P0531,Brigitte De Bruyne,150.0,,2024-11-22,2024-12-13,Heart failure,Oncology,DR008,-500.0,Mutualiteit,False
+P0110,Eric Ceuppens,48.0,F,2024-07-14,2024-07-13,Pneumonia,Oncology,DR014,-500.0,,False
+P0858,Kurt Van Herck Verhelst,,,2024-06-18,2024-06-17,Hip fracture,Neurology,DR003,,Mutualiteit,False
+P0306,Jeannine Yilmaz,,MALE,2025-11-17,2025-12-01,Heart failure,Orthopedics,DR010,13248.48,AXA,False
+P0468,Chantal De Clerck,7.0,M,2024-10-27,2024-10-26,Diabetes type 2,Emergency,DR013,-500.0,Mutualiteit,True
+P0737,Pieter Tack,10.0,Female,2024-09-26,2024-09-24,Hypertension,ICU,DR006,,Mutualiteit,True
+P0149,Kurt Smeets,-5.0,F,2025-06-11,2025-06-16,Pneumonia,Oncology,DR009,9299.8,,False
+P0939,Brecht Van Praet,,m,2025-07-30,2025-08-09,Diabetes type 2,ICU,DR012,,Allianz,False
+P0658,Gert Torfs,150.0,m,2025-10-30,2025-10-31,Hypertension,Emergency,DR001,,AG Insurance,True
+P0837,Brent Thijs,150.0,Male,2025-05-01,2025-05-22,Stroke,Oncology,DR014,10182.93,DKV,False
+P0308,Catharina De Mey,,F,2026-03-26,2026-03-28,Pneumonia,Orthopedics,DR007,4016.72,AXA,True
+P0486,Peter Hermans Tielemans,,M,2024-08-14,2024-08-15,Lung cancer,Pediatrics,DR010,,,False
+P0660,Lina Schoofs,-5.0,F,2025-05-13,2025-05-20,Heart failure,ICU,DR004,,DKV,False
+P0129,Alexander Callewaert,,MALE,2025-02-18,2025-02-19,Lung cancer,Orthopedics,DR012,-500.0,Mutualiteit,True
+P0592,Johan Slegers,,Female,2025-12-20,2025-12-30,Heart failure,ICU,DR001,,DKV,True
+P0559,Melissa Leys,72.0,,2024-11-02,2024-11-09,Diabetes type 2,ICU,DR013,3040.16,AXA,False
+P0598,Angèle Verhulst,-5.0,M,2024-12-07,2024-12-10,Lung cancer,Orthopedics,DR005,8784.69,AG Insurance,False
+P0500,Cedric Van Laer,,f,2025-09-01,2025-09-04,Pneumonia,Emergency,DR010,-500.0,AXA,True
+P0795,Dina Aerts,75.0,M,2025-05-08,2025-05-13,Heart failure,Oncology,DR013,7272.88,Mutualiteit,False
+P0322,Joost De Schutter,-5.0,M,2025-01-06,2025-01-09,Hypertension,Pediatrics,DR011,7855.95,AG Insurance,False
+P0472,Hannelore Verhulst,49.0,Male,2025-07-18,2025-07-20,Appendicitis,Orthopedics,DR008,13577.31,AXA,True
+P0595,Louis Buyse,,Male,2024-04-24,2024-04-23,Diabetes type 2,Pediatrics,DR015,459.67,,False
+P0776,Irena Moens,55.0,FEMALE,2025-12-06,2025-12-08,Hip fracture,Neurology,DR003,-500.0,Allianz,False
+P0483,Dirk Vanbrabant,,X,2024-12-13,2025-01-03,Stroke,Pediatrics,DR008,9692.63,Mutualiteit,False
+P0710,Evelyn Vanderheyden,-5.0,Male,2025-09-08,2025-09-22,Diabetes type 2,Orthopedics,DR003,6800.54,DKV,False
+P0467,Silke De Witte,,Female,2025-01-28,2025-02-02,Diabetes type 2,Neurology,DR013,864.19,,True
+P0135,Christel Leemans,54.0,m,2024-09-07,2024-09-21,Heart failure,Emergency,DR008,12058.64,AG Insurance,False
+P0233,Wim Praet,38.0,f,2024-09-26,2024-09-25,Hip fracture,Oncology,DR008,14122.01,DKV,False
+P0160,Patrick Van den Brande,44.0,,2026-01-24,2026-02-14,Hip fracture,Emergency,DR004,12413.5,AXA,False
+P0356,Michel Vermeulen,,MALE,2025-07-24,2025-07-31,Hypertension,Emergency,DR013,,DKV,True
+P0327,Marina Matthijs,61.0,X,2026-01-07,2026-01-28,Hip fracture,Pediatrics,DR001,,DKV,False
+P0397,Urbain Bollen,54.0,MALE,2025-10-13,2025-10-27,Diabetes type 2,Orthopedics,DR013,,,False
+P0049,Lydie Verhaeghe,150.0,,2025-07-09,2025-07-14,Sepsis,Cardiology,DR015,12639.48,Allianz,False
+P0075,Johan Vranckx,-5.0,FEMALE,2025-02-05,2025-02-12,Stroke,Oncology,DR005,10006.24,AG Insurance,True
+P0750,Sarah De Smet,,MALE,2024-06-19,2024-06-24,Appendicitis,Neurology,DR012,375.98,,False
+P0800,Griet De Leeuw,-5.0,MALE,2025-05-15,2025-05-20,Hypertension,ICU,DR002,,AG Insurance,False
+P0839,Michelle De Pauw,-5.0,Female,2025-09-20,2025-09-23,Hip fracture,Emergency,DR009,,Mutualiteit,False
+P0726,Johan Declercq,67.0,F,2024-08-08,2024-08-06,COVID-19,Orthopedics,DR002,,Mutualiteit,True
+P0492,Jozef Vercammen,,Male,2026-02-18,2026-03-04,Heart failure,Emergency,DR006,3273.04,Mutualiteit,False
+P0345,Maria Vervaet,150.0,M,2025-11-08,2025-11-18,Sepsis,ICU,DR012,-500.0,AXA,False
+P0633,Gaëlle Verfaillie,86.0,Female,2024-06-24,2024-06-29,Stroke,Orthopedics,DR012,12629.2,AXA,True
+P0615,Anja Boeckx,80.0,FEMALE,2024-08-22,2024-09-12,Appendicitis,Oncology,DR011,,Allianz,False
+P0490,Lucienne Wouters,17.0,FEMALE,2024-09-23,2024-09-24,COVID-19,ICU,DR008,252.29,AXA,True
+P0894,Linde Van Damme,40.0,m,2024-09-24,2024-09-25,Lung cancer,Cardiology,DR005,6931.16,AXA,True
+P0596,Nico Vanhove,-5.0,M,2025-06-01,2025-06-06,Hip fracture,Oncology,DR009,-500.0,,True
+P0519,Joyce Fransen,150.0,,2024-07-04,2024-07-09,Stroke,Emergency,DR014,2807.38,AXA,False
+P0098,Ludwig Engels,13.0,f,2026-01-27,2026-02-06,Sepsis,Pediatrics,DR010,,,False
+P0284,Matteo De Cock,-5.0,,2026-03-25,2026-03-30,Hypertension,Orthopedics,DR004,4341.85,,True
+P0681,,,FEMALE,2025-03-15,2025-03-29,COVID-19,ICU,DR013,9143.48,Mutualiteit,True
+P0286,René Vandeputte,-5.0,,2024-04-21,2024-05-05,Sepsis,Oncology,DR007,-500.0,AG Insurance,False
+P0128,Monique Roosen,-5.0,m,2024-11-13,2024-11-11,Hip fracture,Emergency,DR014,,,False
+P0372,Wim Mertens,-5.0,m,2025-02-12,2025-02-11,Pneumonia,Pediatrics,DR008,8709.44,,False
+P0412,Lucas Maes,-5.0,f,2024-06-21,2024-06-24,Diabetes type 2,Neurology,DR015,,AXA,True
+P0645,Christiana Vermeulen Goethals,150.0,Male,2025-10-23,2025-10-21,Hypertension,Cardiology,DR001,-500.0,,False
+P0239,Julien Thijs,-5.0,,2024-09-11,2024-10-02,Hypertension,Cardiology,DR011,-500.0,DKV,True
+P0366,Francis Poelmans,-5.0,X,2024-11-08,2024-11-13,Lung cancer,Pediatrics,DR009,7975.85,AXA,False
+P0601,Ronny Van den Broeck,,M,2077-11-01,2026-04-03,Stroke,Neurology,DR003,free,,False
+P0081,Lucas Segers,150.0,f,2024-09-14,2024-09-17,Diabetes type 2,Orthopedics,DR013,,AXA,False
+P0159,Yvan De Clercq,-5.0,,2025-04-23,2025-05-07,Hypertension,Neurology,DR003,1582.74,,False
+P0424,Jelle Vermeulen Van de Velde,-5.0,f,2026-01-23,2026-01-22,Pneumonia,Emergency,DR010,14357.6,AXA,False
+P0748,Nathan Van den Eynde,-5.0,f,2024-12-12,2024-12-26,Heart failure,Orthopedics,DR004,13913.77,AG Insurance,False
+P0325,Bart Bossuyt,,F,2025-05-17,2025-05-18,Appendicitis,Oncology,DR004,-500.0,,True
+P0866,Eva Heylen De Mulder,21.0,F,2025-08-23,2025-08-21,Lung cancer,Cardiology,DR007,10373.03,DKV,False
+P0781,Willy Jacobs Verstraeten,93.0,m,2025-12-19,2025-12-22,Hip fracture,Orthopedics,DR008,2811.25,,False
+P0676,Alexander Mariën,-5.0,Female,2025-02-23,2025-03-02,Sepsis,Neurology,DR010,,,True
+P0643,Roger Van Loock,,F,2024-04-18,2024-04-19,Pneumonia,Oncology,DR003,12033.02,Allianz,False
+P0627,Louis Vermeersch,-5.0,M,2024-11-06,2024-11-08,Sepsis,ICU,DR003,6907.78,AXA,False
+P0732,Alexander De Baere,,,2025-04-02,2025-04-07,Diabetes type 2,Oncology,DR006,-500.0,Mutualiteit,False
+P0285,Ines Vermeylen Lauwers,150.0,MALE,2026-02-12,2026-02-22,Appendicitis,Emergency,DR015,4340.68,AXA,False
+P0438,Martine Maes,-5.0,Male,2026-03-24,2026-03-23,Appendicitis,ICU,DR005,,Allianz,True
+P0180,Marcel Andries,150.0,M,2024-07-19,2024-07-21,Sepsis,Neurology,DR007,7191.58,,False
+P0871,Rosalia Goossens,1.0,m,2025-08-12,2025-08-13,Appendicitis,Emergency,DR007,-500.0,,True
+P0840,Sonja Van den Brande,-5.0,f,2024-06-15,2024-07-06,Stroke,Cardiology,DR006,-500.0,,False
+P0223,Kris Lauwers,67.0,m,2025-08-15,2025-08-17,Hip fracture,Pediatrics,DR003,-500.0,Mutualiteit,False
+P0123,Ahmed Sanders,,f,2025-07-24,2025-08-14,Lung cancer,Pediatrics,DR002,-500.0,Allianz,False
+P0762,Karine Tielemans,51.0,X,2024-04-23,2024-04-22,Hip fracture,Emergency,DR015,-500.0,Mutualiteit,False
+P0208,Marthe Simons Depuydt,150.0,Male,2024-07-19,2024-07-29,Lung cancer,Emergency,DR009,-500.0,Allianz,False
+P0751,Anna De Smet,,f,2025-01-19,2025-01-29,Stroke,Oncology,DR014,TBD,DKV,False
+P0874,Geert Colpaert,-5.0,F,2024-09-30,2024-10-03,Heart failure,ICU,DR015,-500.0,DKV,False
+P0870,Ruben Van Hecke,-5.0,F,2024-08-29,2024-08-27,Sepsis,Oncology,DR002,9486.79,AXA,False
+P0448,Nick Adams,150.0,f,2026-03-31,2026-04-07,Pneumonia,Emergency,DR006,-500.0,Mutualiteit,True
+P0390,Chris Hendrickx,,MALE,2024-06-25,2024-06-26,Diabetes type 2,Emergency,DR002,1951.29,Allianz,False
+P0432,René Huybrechts Mahieu,61.0,m,2026-04-02,2026-04-05,Heart failure,ICU,DR007,,AG Insurance,False
+P0245,Mario Van den Broeck,47.0,MALE,2026-02-12,2026-02-26,Stroke,Emergency,DR014,6732.23,,False
+P0385,Melissa Leroy,,FEMALE,2025-11-25,2025-12-16,Diabetes type 2,Cardiology,DR004,2556.49,Allianz,False
+P0680,Lina Hanssens,44.0,FEMALE,2025-11-17,2025-11-16,Hip fracture,Oncology,DR013,1986.18,AG Insurance,True
+P0221,Robby Wouters,47.0,X,2025-01-12,2025-01-22,Sepsis,Orthopedics,DR007,,Mutualiteit,True
+P0450,Danny Smets,150.0,M,2025-04-01,2025-04-22,Diabetes type 2,Neurology,DR010,-500.0,,True
+P0016,Monique Demuynck,32.0,,2025-06-13,2025-06-12,Appendicitis,Cardiology,DR002,8906.97,,True
+P0553,Nadine Vandewalle,79.0,F,2025-09-30,2025-09-29,COVID-19,Orthopedics,DR013,12563.21,AXA,False
+P0524,Anita Van Hove,150.0,MALE,2026-03-18,2026-03-20,Lung cancer,Oncology,DR014,-500.0,,False
+P0398,François Wauters,-5.0,m,2024-12-22,2024-12-21,Hypertension,Orthopedics,DR007,7261.69,AG Insurance,False
+P0396,Herman Van den Eynde,,,2026-01-20,2026-02-10,Sepsis,ICU,DR001,1579.21,,False
+P0254,Anny Vandenbroucke,21.0,Male,2024-06-11,2024-06-14,Heart failure,Pediatrics,DR011,-500.0,AG Insurance,False
+P0935,Richard Peeters,150.0,FEMALE,2024-04-25,2024-04-24,Stroke,ICU,DR006,,AXA,True
+P0794,Pascal Ceulemans,,m,2025-11-25,2025-11-28,Stroke,Pediatrics,DR002,1816.09,AG Insurance,True
+P0847,Katrien Moens,,m,2024-09-27,2024-09-29,Appendicitis,Emergency,DR014,2965.53,Allianz,False
+P0361,Lisa Janssens,27.0,X,2025-02-16,2025-02-19,Pneumonia,Neurology,DR009,6898.4,,True
+P0927,Sabrina Vercauteren,-5.0,Female,2024-12-24,2024-12-31,Hypertension,Oncology,DR006,,,True
+P0767,Patrick Vermeiren,22.0,Male,2024-11-23,2024-11-30,Appendicitis,Emergency,DR001,-500.0,,False
+P0173,Siebe De Waele Verlinden,88.0,Female,2026-03-30,2026-04-06,Heart failure,Pediatrics,DR006,667.24,Allianz,False
+P0687,Paul De Ryck Vandaele,,f,2026-02-26,2026-03-19,Diabetes type 2,Cardiology,DR014,-500.0,AG Insurance,False
+P0148,Michel Heremans,38.0,FEMALE,2026-03-25,2026-04-08,Hypertension,Emergency,DR007,-500.0,DKV,False
+P0187,Sara Vandenberghe,8.0,F,2025-03-17,2025-03-19,Hip fracture,Oncology,DR010,-500.0,DKV,False
+P0044,Christophe Dupont,150.0,X,2025-10-22,2025-11-05,COVID-19,Neurology,DR012,,Allianz,False
+P0617,Johanna Stevens,57.0,Male,2025-08-04,2025-08-11,COVID-19,Pediatrics,DR003,-500.0,AG Insurance,False
+P0529,Helena Dekeyser Colman,61.0,,2025-02-28,2025-03-02,Heart failure,Oncology,DR009,-500.0,Mutualiteit,False
+P0926,Jonas Janssens,-5.0,Male,2025-09-08,2025-09-11,Appendicitis,Emergency,DR008,-500.0,Allianz,False
+P0297,Nicole De Cock,33.0,Male,2025-04-07,2025-04-12,Pneumonia,Pediatrics,DR015,,Allianz,True
+P0604,Pieter Tanghe,,M,2024-07-19,2024-07-18,Stroke,Neurology,DR014,-500.0,,True
+P0139,Rosa Smet,1.0,F,2025-08-01,2025-08-22,Hip fracture,Neurology,DR005,,Mutualiteit,True
+P0055,André Verlinden,,f,2025-08-02,2025-08-01,Sepsis,Pediatrics,DR011,12121.81,AG Insurance,True
+P0670,Jan Gevaert,17.0,Female,2025-03-19,2025-03-22,Heart failure,Neurology,DR008,405.36,,False
+P0052,Britt Van Praet,45.0,Female,2026-01-30,2026-01-28,Appendicitis,ICU,DR001,11762.25,AXA,False
+P0820,Linda Janssens,,Female,2025-01-02,2025-01-12,Stroke,Neurology,DR014,8176.93,AXA,False
+P0319,Carolina Vandewalle D'Hondt,83.0,,2025-01-18,2025-01-28,Hip fracture,Emergency,DR012,-500.0,,True
+P0023,Marina Van Landeghem Bouckaert,41.0,M,2025-01-17,2025-01-15,Sepsis,Cardiology,DR014,7642.19,DKV,True
+P0501,Jozef Vermeersch,-5.0,M,2025-06-21,2025-06-22,Lung cancer,Pediatrics,DR003,,,False
+P0801,,85.0,Male,2025-07-12,2025-07-22,Sepsis,Orthopedics,DR013,4549.17,,False
+P0295,Erik Lambert,5.0,,2025-08-24,2025-08-31,Stroke,Pediatrics,DR003,13831.37,AG Insurance,True
+P0210,Yassin Vandewalle,91.0,,2024-10-25,2024-10-24,Hypertension,Pediatrics,DR011,3437.05,Allianz,True
+P0713,Fabienne Kerkhofs,9.0,X,2025-07-23,2025-08-13,Hip fracture,Pediatrics,DR004,2020.06,AXA,False
+P0143,Hubert Swennen,3.0,,2026-01-25,2026-01-28,Diabetes type 2,Neurology,DR001,5303.08,AG Insurance,False
+P0051,Valerie Bracke,150.0,m,2025-10-11,2025-10-21,Stroke,Pediatrics,DR001,,,False
+P0167,Claudia Huys,-5.0,M,2024-10-16,2024-10-17,Hypertension,Orthopedics,DR004,,AG Insurance,False
+P0622,David Wauters,150.0,m,2025-03-07,2025-03-21,Heart failure,Emergency,DR008,,AXA,True
+P0656,Karel Govaerts,,X,2026-03-12,2026-03-13,Hypertension,Neurology,DR007,13385.24,Mutualiteit,False
+P0082,Johny Vandewalle,25.0,M,2025-11-26,2025-12-06,Diabetes type 2,Emergency,DR008,,,False
+P0667,Lea Somers,24.0,f,2025-11-01,2025-11-02,Hypertension,Emergency,DR008,-500.0,,False
+P0746,Ida Pauwels De Muynck,46.0,MALE,2024-12-07,2024-12-17,COVID-19,Pediatrics,DR007,-500.0,Allianz,True
+P0901,,19.0,M,2024-06-18,2024-06-19,Diabetes type 2,ICU,DR007,,Allianz,False
+P0067,,,FEMALE,2024-08-03,2024-08-10,Hip fracture,ICU,DR010,,Allianz,True
+P0733,Christiaan Ali,87.0,MALE,2025-10-20,2025-11-10,Diabetes type 2,Neurology,DR004,1048.3,,False
+P0657,Cas Van den Bossche,-5.0,MALE,2024-08-02,2024-08-12,Diabetes type 2,Orthopedics,DR015,584.24,Mutualiteit,True
+P0936,Marina De Boeck Peeters,29.0,Female,2025-04-13,2025-04-11,Lung cancer,Cardiology,DR004,,,True
+P0234,Claudia Pauwels,45.0,F,2026-02-06,2026-02-16,Hip fracture,Cardiology,DR013,-500.0,,True
+P0511,,-5.0,M,2024-10-02,2024-10-04,Lung cancer,Cardiology,DR008,,,True
+P0514,Sofie Peeters,29.0,MALE,2024-05-25,2024-06-04,Lung cancer,Emergency,DR015,-500.0,,True
+P0065,Alain Van Roy,-5.0,M,2026-01-04,2026-01-03,Hip fracture,ICU,DR008,6718.94,Mutualiteit,True
+P0735,Tom Baeten,150.0,Female,2025-09-01,2025-09-06,Heart failure,Emergency,DR004,,,False
+P0265,Joseph Broeckx,150.0,m,2024-10-10,2024-10-11,Pneumonia,Emergency,DR014,8879.27,DKV,True
+P0865,Marleen Van Hecke,19.0,Female,2025-08-03,2025-08-08,Hypertension,Pediatrics,DR012,6998.97,DKV,True
+P0464,Johan Claus,150.0,Male,2024-05-28,2024-06-04,COVID-19,Orthopedics,DR004,11652.61,Allianz,False
+P0499,Dorien Verhulst,54.0,M,2026-01-03,2026-01-24,Appendicitis,Emergency,DR005,8494.15,AG Insurance,True
+P0021,Leon Timmermans,150.0,Male,2099-01-15,2026-02-14,Pneumonia,Cardiology,DR007,3363.46,AG Insurance,False
+P0368,Gunter Blomme,150.0,M,2026-02-15,2026-02-14,Diabetes type 2,Pediatrics,DR015,9705.51,Mutualiteit,False
+P0769,David Matthys,26.0,M,2025-04-18,2025-04-16,Pneumonia,Cardiology,DR001,5744.74,AG Insurance,False
+P0697,Christophe Janssen,,,2024-05-09,2024-05-23,Hip fracture,Cardiology,DR009,-500.0,DKV,True
+P0720,Leon Polfliet,150.0,F,2025-03-02,2025-03-05,Hypertension,Neurology,DR012,3067.8,Mutualiteit,False
+P0579,Yassin Buysse,38.0,MALE,2025-05-17,2025-05-15,Hypertension,Oncology,DR011,-500.0,,True
+P0262,Jacob Mertens,-5.0,f,2024-10-14,2024-10-13,Sepsis,Emergency,DR003,,Allianz,True
+P0653,Marie Vandenberghe,150.0,Male,2025-05-30,2025-06-02,Sepsis,ICU,DR015,,,False
+P0721,Cecile Rogiers,,X,2024-12-30,2025-01-02,Hypertension,Oncology,DR011,10987.7,AXA,False
+P0807,Céline Mahieu,-5.0,MALE,2024-05-27,2024-06-17,Diabetes type 2,ICU,DR006,,,False
+P0571,Michel Deconinck,150.0,Male,2025-07-22,2025-08-12,Diabetes type 2,Emergency,DR008,,,True
+P0460,Christiana Verlinden,,M,2025-09-05,2025-09-15,Hypertension,Pediatrics,DR002,-500.0,Mutualiteit,True
+P0823,Leon De Ridder,150.0,,2025-03-03,2025-03-13,Sepsis,Orthopedics,DR004,-500.0,,True
+P0189,Jan Helsen,88.0,F,2025-06-09,2025-06-11,Hypertension,Cardiology,DR001,-500.0,AXA,False
+P0252,Sandra Derycke,150.0,X,2026-01-29,2026-01-31,Hypertension,Neurology,DR010,-500.0,Allianz,True
+P0072,Emmanuel Driesen,150.0,f,2024-07-14,2024-07-17,Hypertension,Oncology,DR001,,Mutualiteit,False
+P0665,Evelyn Claes,,X,2025-04-17,2025-05-01,Stroke,Orthopedics,DR007,906.38,Allianz,True
+P0419,Diane Berghmans,-5.0,F,2026-01-05,2026-01-10,Hip fracture,ICU,DR004,8656.86,AXA,False
+P0337,Erik Luyckx,150.0,m,2026-02-10,2026-03-03,Stroke,ICU,DR002,12493.66,Allianz,False
+P0329,Jan De Wolf,41.0,,2024-08-30,2024-08-31,Lung cancer,Pediatrics,DR013,4248.21,Mutualiteit,False
+P0351,Nele Van Driessche,,FEMALE,2025-12-05,2025-12-15,Stroke,Cardiology,DR013,-500.0,,False
+P0910,Jens Marien Roelandt,150.0,F,2024-12-05,2024-12-12,Stroke,Cardiology,DR011,9584.79,Mutualiteit,False
+P0929,Maria Rombouts,46.0,f,2024-10-15,2024-10-16,Stroke,Cardiology,DR006,5700.57,,True
+P0305,Frans Huysmans Devriendt,,X,2024-10-05,2024-10-04,Heart failure,ICU,DR007,11395.56,AXA,False
+P0376,Wouter Goethals,72.0,X,2024-12-04,2024-12-02,Sepsis,Cardiology,DR005,,DKV,True
+P0558,Klaas Thys,31.0,FEMALE,2025-03-25,2025-04-04,Hypertension,Cardiology,DR011,756.79,AG Insurance,True
+P0685,Godelieve Op de Beeck,150.0,M,2024-08-19,2024-08-21,COVID-19,Neurology,DR013,-500.0,Mutualiteit,False
+P0452,Gilberte Van Goethem,,F,2026-01-13,2026-01-11,Appendicitis,Orthopedics,DR002,-500.0,Mutualiteit,False
+P0810,Maria Janssens,150.0,MALE,2024-10-12,2024-10-15,Heart failure,ICU,DR006,-500.0,DKV,False
+P0506,Lina Laureys,,X,2024-07-04,2024-07-18,Hip fracture,ICU,DR006,,DKV,True
+P0678,Jan Van Dyck,37.0,Male,2025-12-24,2025-12-26,Hypertension,Pediatrics,DR002,2110.63,Allianz,False
+P0834,Nathalie Goethals,41.0,Male,2025-01-18,2025-01-25,Hypertension,Cardiology,DR002,1335.06,,True
+P0527,Ann Vercruysse,64.0,M,2025-09-29,2025-09-27,Heart failure,Orthopedics,DR008,-500.0,,True
+P0481,Ahmet De Laet,-5.0,Female,2026-01-21,2026-01-19,Stroke,Neurology,DR015,TBD,Allianz,False
+P0447,Dominique Boone,94.0,,2025-05-10,2025-05-24,Appendicitis,Oncology,DR012,-500.0,Mutualiteit,False
+P0219,Finn Mertens,150.0,F,2024-12-15,2024-12-20,Hypertension,Oncology,DR013,,DKV,True
+P0240,Deborah Kaya,31.0,MALE,2026-01-27,2026-01-26,Hypertension,Neurology,DR010,,Allianz,False
+P0753,Patrick Tack,150.0,f,2025-03-02,2025-03-07,Hypertension,Cardiology,DR010,-500.0,Mutualiteit,False
+P0526,Lewis Sterckx,80.0,MALE,2025-07-07,2025-07-28,Diabetes type 2,Neurology,DR003,,Allianz,False
+P0193,Victor Christiaens Van Laer,53.0,f,2025-03-29,2025-03-27,Pneumonia,Pediatrics,DR014,,Allianz,False
+P0796,Rudi Galle,,FEMALE,2025-08-04,2025-08-02,COVID-19,ICU,DR006,-500.0,AXA,False
+P0192,Koen Jans,1.0,F,2024-10-17,2024-10-24,Sepsis,Cardiology,DR015,-500.0,Mutualiteit,False
+P0509,Eric Callebaut,-5.0,F,2024-07-11,2024-07-16,Hip fracture,Neurology,DR003,,AG Insurance,True
+P0436,Joyce Janssens,7.0,Male,2025-11-11,2025-11-12,COVID-19,Emergency,DR001,-500.0,DKV,True
+P0133,Laura De Coster,93.0,FEMALE,2025-01-06,2025-01-07,Hypertension,Oncology,DR013,10210.17,,False
+P0557,Ignace De Maeyer,,Male,2025-12-09,2025-12-10,Appendicitis,Neurology,DR011,,AG Insurance,False
+P0253,Manon Peeters Van den Eynde,150.0,FEMALE,2024-04-18,2024-04-16,COVID-19,Cardiology,DR007,13955.61,DKV,False
+P0672,Yves Dobbelaere Carlier,150.0,,2025-03-04,2025-03-05,Appendicitis,Neurology,DR005,,AXA,False
+P0902,Alexander Knockaert,150.0,Male,2025-02-01,2025-01-30,Stroke,Oncology,DR007,4193.75,Mutualiteit,True
+P0264,Stephanie Cools Devos,150.0,m,2025-06-13,2025-06-20,Stroke,Oncology,DR002,8141.16,AXA,False
+P0071,Sylvie Coene Van Hecke,19.0,FEMALE,2024-07-15,2024-07-18,Stroke,Pediatrics,DR012,-500.0,AG Insurance,False
+P0273,Arthur Verstraete,,X,2025-09-04,2025-09-06,Appendicitis,Neurology,DR001,14967.25,Allianz,True
+P0508,Esther De Pauw,60.0,M,2024-07-03,2024-07-08,Hypertension,ICU,DR005,-500.0,,False
+P0328,Elke Leysen,,f,2025-09-22,2025-09-24,Lung cancer,ICU,DR002,14802.41,Allianz,True
+P0116,Annick Hanssens,45.0,X,2024-05-15,2024-05-14,Hip fracture,Cardiology,DR004,,Allianz,False
+P0324,Annick Desmet,150.0,Male,2025-07-12,2025-07-14,Sepsis,Neurology,DR005,-500.0,Mutualiteit,False
+P0851,Charles Herman,32.0,Female,2024-12-23,2024-12-30,Hip fracture,Pediatrics,DR005,-500.0,AXA,True
+P0664,Filip Jansen,150.0,Male,2026-02-22,2026-02-21,Lung cancer,Emergency,DR015,-500.0,AG Insurance,False
+P0867,Mario Van Impe,,,2025-06-12,2025-06-19,Stroke,Pediatrics,DR007,2231.91,Mutualiteit,True
+P0505,Lucas Nuyts,-5.0,f,2025-08-15,2025-08-17,Heart failure,ICU,DR004,3398.87,Mutualiteit,False
+P0621,Martine Van Landeghem,85.0,F,2025-02-26,2025-03-03,Hip fracture,Cardiology,DR006,3864.69,DKV,True
+P0774,Ida Peeters,-5.0,f,2025-09-27,2025-09-28,Heart failure,Orthopedics,DR015,14674.72,AXA,False
+P0703,Maria De Moor,70.0,X,2025-09-09,2025-09-30,Heart failure,Cardiology,DR011,,AXA,False
+P0446,Delphine De Pauw,,m,2024-05-23,2024-06-02,Hip fracture,Orthopedics,DR006,,Allianz,True
+P0620,Kjell De Clercq,,MALE,2025-10-31,2025-11-01,Stroke,Pediatrics,DR006,-500.0,AG Insurance,False
+P0752,Laurens Van den Bossche,150.0,,2026-03-03,2026-03-10,Lung cancer,Oncology,DR012,645.54,Mutualiteit,False
+P0610,Guy Cuypers,-5.0,F,2026-01-08,2026-01-10,Pneumonia,Pediatrics,DR009,,,True
+P0279,Jean-Pierre Huysmans,,Male,2025-11-30,2025-12-01,Stroke,Emergency,DR004,-500.0,AG Insurance,False
+P0786,Aline Jacobs,,MALE,2024-06-27,2024-07-04,Hypertension,Neurology,DR004,1254.27,Allianz,True
+P0868,Sofie Staelens,6.0,,2025-02-06,2025-02-04,Heart failure,ICU,DR001,1437.21,Mutualiteit,False
+P0003,Carlos Callewaert,36.0,F,2025-12-16,2025-12-23,Pneumonia,Cardiology,DR006,3386.64,AG Insurance,False
+P0230,Anita Breugelmans,,F,2024-10-26,2024-11-09,Appendicitis,Emergency,DR011,744.12,AG Insurance,False
+P0420,Carine Luyten,19.0,FEMALE,2025-07-24,2025-07-31,Lung cancer,ICU,DR011,,AXA,False
+P0924,Georgette Willems,28.0,Female,2025-06-05,2025-06-06,Stroke,Emergency,DR012,636.56,DKV,True
+P0578,Davy Demeyere,,X,2026-01-05,2026-01-15,Lung cancer,Pediatrics,DR006,,Allianz,False
+P0854,Hannah Desmet,,Female,2025-04-29,2025-05-20,COVID-19,Cardiology,DR002,13283.81,AXA,False
+P0200,Alex Schoofs De Block,150.0,X,2025-06-19,2025-07-03,COVID-19,Neurology,DR014,4638.35,DKV,True
+P0242,Lotte Goethals,58.0,Male,2024-11-11,2024-11-16,Appendicitis,ICU,DR007,,AXA,False
+P0516,Nicole Vlaeminck,17.0,f,2025-05-30,2025-06-20,Sepsis,Emergency,DR002,6204.15,AG Insurance,False
+P0066,Bruno Ooms,,,2026-03-29,2026-04-05,Hip fracture,Cardiology,DR004,993.41,Mutualiteit,False
+P0310,Rik Belmans,,MALE,2024-12-20,2025-01-10,Hip fracture,Pediatrics,DR011,-500.0,Allianz,False
+P0041,Christiaan Smet,-5.0,M,2025-11-02,2025-11-07,Appendicitis,Pediatrics,DR010,3524.68,Mutualiteit,False
+P0743,Petrus Temmerman Van Laer,85.0,FEMALE,2024-12-08,2024-12-18,Sepsis,Pediatrics,DR003,-500.0,AG Insurance,True
+P0515,Danny Smolders,59.0,FEMALE,2025-10-24,2025-10-29,Lung cancer,Oncology,DR013,,AG Insurance,False
+,Myriam Bruneel,-5.0,F,2024-04-19,2024-04-24,Lung cancer,Cardiology,DR004,,AG Insurance,False
+P0493,Jasper De Cuyper,,F,2024-05-19,2024-05-17,Pneumonia,Neurology,DR003,4616.93,,True
+P0563,Pieter Van Hoof,42.0,MALE,2025-03-09,2025-03-11,Appendicitis,Cardiology,DR008,11118.67,AXA,False
+P0274,Kris Boonen,70.0,m,2025-11-24,2025-11-26,Stroke,Neurology,DR009,,DKV,False
+P0695,Annick Thijs Geerts,150.0,FEMALE,2024-09-07,2024-09-28,COVID-19,Emergency,DR007,,DKV,False
+P0628,Vanessa Hens,-5.0,,2025-12-20,2025-12-22,Heart failure,Orthopedics,DR004,,AG Insurance,False
+P0683,Robbe Theys,64.0,F,2025-04-14,2025-04-28,Appendicitis,Pediatrics,DR007,5583.31,Mutualiteit,False
+P0758,Marijke Vervaeke,50.0,FEMALE,2025-04-11,2025-04-21,Lung cancer,Orthopedics,DR010,,AG Insurance,False
+P0178,Greta Mees,37.0,FEMALE,2025-12-02,2025-11-30,Appendicitis,Neurology,DR014,-500.0,AXA,True
+P0301,Maria Claessens,,F,2045-03-22,2025-05-07,Heart failure,Pediatrics,DR010,4366.54,AXA,False
+P0038,Elza Horemans,-5.0,MALE,2024-09-29,2024-10-04,Hip fracture,Orthopedics,DR003,-500.0,DKV,False
+P0479,Bram Maes,,Female,2025-04-25,2025-05-16,Heart failure,Oncology,DR002,3617.49,,False
+P0203,Nadia Van den Broeck,,m,2024-12-05,2024-12-26,Heart failure,Neurology,DR015,-500.0,DKV,True
+P0237,Anny Michiels,55.0,,2025-10-08,2025-10-29,Stroke,ICU,DR014,10630.09,AXA,False
+P0150,Gino Sanders,150.0,f,2026-02-02,2026-01-31,Pneumonia,Orthopedics,DR001,-500.0,AXA,False
+P0218,Amelia Helsen Bekaert,,M,2025-02-19,2025-02-18,Hip fracture,ICU,DR008,-500.0,Allianz,False
+P0674,Jan De Coster,150.0,Female,2024-09-16,2024-09-14,Heart failure,Orthopedics,DR001,,Allianz,False
+P0565,Christine Baeyens,43.0,Male,2024-07-23,2024-07-26,Stroke,ICU,DR008,-500.0,Allianz,False
+P0912,Dennis Poelmans,150.0,F,2025-09-06,2025-09-13,Diabetes type 2,ICU,DR015,,Allianz,False
+P0797,Hugo Vanhove,-5.0,MALE,2026-03-18,2026-03-23,Pneumonia,Orthopedics,DR001,-500.0,AG Insurance,True
+P0400,Jeremy De Wilde Van den Broeck,-5.0,,2026-03-15,2026-03-22,Hip fracture,Emergency,DR007,-500.0,DKV,False
+P0303,Filip Daniels,-5.0,F,2024-06-06,2024-06-05,Sepsis,Pediatrics,DR003,-500.0,AG Insurance,False
+P0853,Norbert Vandeputte Baert,,Female,2024-11-10,2024-11-15,Hypertension,Pediatrics,DR002,-500.0,Mutualiteit,False
+P0913,Chantal De Waele Mariën,48.0,m,2024-08-10,2024-08-17,Pneumonia,Emergency,DR004,-500.0,Mutualiteit,False
+P0668,Imran De Smet,44.0,F,2024-12-26,2025-01-16,Pneumonia,Orthopedics,DR001,-500.0,Mutualiteit,False
+P0577,Sandra Janssens,59.0,F,2024-12-14,2024-12-16,Lung cancer,Oncology,DR002,5982.1,,False
+P0389,Josée Van Belle,,F,2024-08-25,2024-09-04,Sepsis,Emergency,DR005,6710.5,DKV,False
+P0410,Chantal Coenen Van den Bergh,-5.0,,2025-11-16,2025-12-07,Heart failure,Pediatrics,DR002,,AG Insurance,True
+P0388,Maria Wuyts,76.0,X,2025-07-27,2025-08-01,Pneumonia,Oncology,DR014,5769.67,AG Insurance,False
+P0535,Nicole De Moor Polfliet,7.0,X,2024-08-14,2024-08-17,Appendicitis,Pediatrics,DR011,,,False
+P0391,Marleen Rogiers,76.0,M,2025-12-02,2025-12-12,Lung cancer,Orthopedics,DR010,6281.31,DKV,False
+P0829,Joanna Van Daele,150.0,F,2026-03-28,2026-03-31,Lung cancer,Orthopedics,DR012,14696.38,AG Insurance,False
+P0353,Sonja Meert,79.0,Female,2025-11-02,2025-11-01,COVID-19,ICU,DR013,,DKV,True
+P0194,Philippe Coppens,,Male,2025-12-19,2025-12-18,Sepsis,Pediatrics,DR009,2168.25,DKV,False
+P0236,Ferre Dekeyser,150.0,MALE,2026-04-06,2026-04-13,Heart failure,Emergency,DR010,,DKV,False
+P0611,Maria Coppens,150.0,F,2025-08-29,2025-08-28,Diabetes type 2,Neurology,DR006,14668.05,DKV,False
+P0831,Maria Jacobs,,FEMALE,2024-07-19,2024-07-20,Hypertension,Neurology,DR005,,Mutualiteit,False
+P0056,Margot Coppens,83.0,MALE,2025-03-19,2025-04-02,Diabetes type 2,Emergency,DR015,UNKNOWN,Allianz,False
+P0669,Evelyn Cools,150.0,m,2024-11-07,2024-11-06,Hypertension,ICU,DR010,,AG Insurance,False
+P0097,Martine Smet,79.0,MALE,2025-07-01,2025-07-06,Stroke,Neurology,DR001,-500.0,Mutualiteit,True
+P0142,Patrick Jans,,MALE,2026-04-02,2026-04-16,COVID-19,Cardiology,DR011,8252.41,Allianz,True
+P0696,Renée Baetens,150.0,Female,2025-10-16,2025-10-30,COVID-19,Pediatrics,DR001,2114.9,,False
+P0857,Karolien Moens,36.0,Female,2025-08-25,2025-08-26,Pneumonia,Pediatrics,DR011,4486.91,AXA,False
+P0541,Nathan Desmedt Diallo,,Male,2025-10-26,2025-10-27,Hip fracture,Oncology,DR008,12087.36,,True
+P0568,Hugo De Meyer,,M,2026-04-09,2026-04-11,COVID-19,Emergency,DR013,13494.13,AXA,True
+P0121,Marc Pauwels,-5.0,X,2025-07-16,2025-07-19,Sepsis,Neurology,DR015,,AG Insurance,True
+P0597,Yvette Van Loo,81.0,X,2025-11-03,2025-11-17,Diabetes type 2,ICU,DR006,9061.68,,True
+P0504,Peter Janssens Decock,,f,2025-02-20,2025-03-13,Heart failure,Oncology,DR007,-500.0,Mutualiteit,False
+P0063,Maurice Pieters Verheyen,150.0,F,2025-11-07,2025-11-09,Appendicitis,Oncology,DR004,-500.0,AG Insurance,False
+P0757,Noëlla Van den Eynde,-5.0,MALE,2026-01-28,2026-01-27,Lung cancer,Cardiology,DR003,,AXA,False
+P0443,Cecile Hendrickx,,M,2025-05-03,2025-05-04,Diabetes type 2,Emergency,DR003,5208.65,,False
+P0415,William De Wolf,-5.0,FEMALE,2025-08-31,2025-09-10,Lung cancer,ICU,DR015,-500.0,AXA,True
+P0004,Katrien Bracke,150.0,F,2024-09-19,2024-09-22,Sepsis,Oncology,DR014,,,False
+P0059,Philippe Peeters,150.0,m,2024-12-13,2024-12-23,Hypertension,Emergency,DR015,-500.0,AG Insurance,False
+P0224,Lydia Van den Berghe,-5.0,Female,2025-05-23,2025-05-30,COVID-19,Orthopedics,DR010,-500.0,DKV,False
+P0614,Siebe Jacobs,95.0,MALE,2024-05-02,2024-05-01,Hypertension,Emergency,DR006,595.88,DKV,True
+P0102,Hilde Beernaert,76.0,,2025-04-04,2025-04-18,Heart failure,Oncology,DR014,3648.38,DKV,False
+P0718,Linda Faes,-5.0,F,2024-10-30,2024-10-28,Hypertension,Emergency,DR005,10696.13,,False
+P0222,Geert Desmet,46.0,M,2025-01-31,2025-01-30,Hip fracture,Pediatrics,DR007,,Mutualiteit,False
+P0456,Monique Verhoeven,,f,2025-06-24,2025-07-15,COVID-19,Pediatrics,DR007,-500.0,Mutualiteit,True
+P0005,Daisy De Smet,74.0,F,2025-02-25,2025-03-02,Appendicitis,ICU,DR002,-500.0,Allianz,True
+P0053,Anneke Peeters,17.0,f,2025-11-03,2025-11-05,Lung cancer,Orthopedics,DR010,-500.0,,True
+P0018,Elena Bosmans,150.0,f,2026-02-26,2026-03-08,Pneumonia,Pediatrics,DR008,,,True
+P0911,Sofie Van den Bergh Stroobants,,X,2024-05-04,2024-05-11,Hypertension,ICU,DR001,,,True
+P0042,Vincent De Boeck,74.0,Female,2024-07-03,2024-07-10,Lung cancer,Emergency,DR012,,Mutualiteit,True
+P0307,Bart Eeckhout,150.0,Female,2026-03-06,2026-03-27,Lung cancer,Cardiology,DR007,14768.65,Mutualiteit,False
+P0661,Johannes De Schutter,83.0,m,2025-04-08,2025-04-15,Hypertension,Neurology,DR006,,,True
+P0156,Deborah Heyvaert,150.0,Male,2024-12-18,2024-12-21,Diabetes type 2,Emergency,DR002,7980.3,Allianz,False
+P0819,Ronald De Cock,74.0,MALE,2024-11-01,2024-11-04,Heart failure,Pediatrics,DR009,10763.77,AXA,False
+P0675,Martine Dierickx,-5.0,F,2024-09-27,2024-10-02,COVID-19,Orthopedics,DR011,,AG Insurance,False
+P0249,Bernard Van de Walle Wouters,17.0,MALE,2025-04-03,2025-04-06,COVID-19,Neurology,DR010,10728.64,,True
+P0250,Dirk De Cock,49.0,MALE,2025-11-02,2025-11-09,Sepsis,Emergency,DR005,9577.69,,True
+P0359,Eric Van den Eynde,150.0,X,2025-07-04,2025-07-03,Hip fracture,ICU,DR007,,Mutualiteit,False
+P0772,Krista Baert,150.0,,2026-03-30,2026-03-28,Diabetes type 2,Cardiology,DR002,-500.0,DKV,False
+P0431,Jeannette Van den Bossche,150.0,m,2024-09-07,2024-09-21,Heart failure,Cardiology,DR009,6300.62,DKV,True
+P0442,Sven Janssens,51.0,,2025-05-09,2025-05-08,Lung cancer,Oncology,DR013,,Mutualiteit,False
+P0882,Nathalie Michiels,150.0,X,2025-05-16,2025-05-15,Hip fracture,Pediatrics,DR007,2899.88,,True
+P0843,Marie Beckers,150.0,F,2025-10-20,2025-10-21,Appendicitis,Oncology,DR001,13276.93,DKV,False
+P0031,Lucie Meersman,,m,2025-06-02,2025-06-16,Diabetes type 2,ICU,DR014,8377.37,Mutualiteit,True
+P0282,Stephanie Claes,76.0,Male,2025-07-18,2025-08-08,Stroke,ICU,DR014,,AG Insurance,True
+P0673,Marie Wuyts Bosmans,43.0,FEMALE,2024-05-20,2024-05-18,Hypertension,Orthopedics,DR012,,AXA,True
+P0079,Jolien De Leeuw,-5.0,Female,2025-05-22,2025-05-25,COVID-19,Orthopedics,DR003,,Allianz,False
+P0118,Gilbert Christiaens,,F,2024-08-19,2024-08-20,Pneumonia,ICU,DR012,-500.0,Mutualiteit,False
+P0898,Gerda Gevaert,-5.0,Female,2024-05-03,2024-05-01,Pneumonia,ICU,DR008,5762.16,,True
+P0117,Lies Verbist,-5.0,m,2025-11-30,2025-11-28,Diabetes type 2,Cardiology,DR001,-500.0,Allianz,False
+P0581,Erik Verbeke,-5.0,m,2025-10-18,2025-10-20,COVID-19,Neurology,DR010,-500.0,DKV,False
+P0663,Eva Van Laere,150.0,Female,2025-03-04,2025-03-25,Lung cancer,Pediatrics,DR009,,,False
+P0292,Rudi Boon Verhaeghe,3.0,X,2025-07-08,2025-07-13,Diabetes type 2,Cardiology,DR006,8881.82,,False
+P0028,Frieda Dewulf,18.0,m,2024-05-02,2024-05-01,Hip fracture,Orthopedics,DR004,11187.77,,True
+P0382,Kevin Kaya,,F,2024-06-02,2024-06-01,Heart failure,ICU,DR009,3107.19,,True
+P0308,Catharina De Mey,,F,2026-03-26,2026-03-28,Pneumonia,Orthopedics,DR007,4016.72,AXA,True
+P0626,Rosette Kerkhofs Timmermans,-5.0,X,2024-07-13,2024-07-23,Hip fracture,Pediatrics,DR011,-500.0,AXA,True
+P0593,Joyce Temmerman,150.0,MALE,2024-09-15,2024-09-18,Lung cancer,Pediatrics,DR015,-500.0,,False
+P0201,Carmen Lievens,,MALE,2024-07-13,2024-07-14,Appendicitis,Oncology,DR004,TBD,AG Insurance,True
+P0569,Dirk Vermeulen,150.0,FEMALE,2024-12-21,2024-12-28,COVID-19,Neurology,DR002,12183.8,AXA,True
+P0386,Jonas Goethals,48.0,MALE,2026-02-10,2026-02-09,COVID-19,Pediatrics,DR015,-500.0,Mutualiteit,True
+P0864,Godelieve Desmet,,Male,2024-06-13,2024-06-18,COVID-19,Neurology,DR012,,,False
+P0659,Lucie Bruggeman Van Damme,,f,2024-07-28,2024-08-18,Heart failure,Emergency,DR002,-500.0,AXA,False
+P0900,Hugo Meersman Jacobs,-5.0,FEMALE,2025-08-03,2025-08-10,Stroke,Oncology,DR008,9144.67,Mutualiteit,False
+P0793,Tom Bogaert,,Male,2025-09-15,2025-09-17,Appendicitis,Cardiology,DR012,6869.78,DKV,False
+P0724,Jozef Leysen,95.0,Female,2024-08-01,2024-08-22,Appendicitis,Neurology,DR006,14675.82,AG Insurance,True
+P0315,Evelien De Wit,25.0,M,2024-08-07,2024-08-05,Diabetes type 2,Emergency,DR004,,AG Insurance,True
+P0893,Jan Janssens,150.0,Male,2024-10-24,2024-10-31,Hypertension,Emergency,DR008,3738.84,Mutualiteit,True
+P0281,Maaike De Wit,14.0,Male,2024-12-25,2024-12-24,Appendicitis,ICU,DR007,1112.7,AG Insurance,True
+P0946,Lea Cornelis,55.0,X,2025-08-10,2025-08-17,Hypertension,Pediatrics,DR009,-500.0,Allianz,True
+P0755,Xavier Vissers,-5.0,F,2025-06-14,2025-06-16,Lung cancer,Cardiology,DR011,-500.0,AXA,False
+P0354,Magdalena Verbruggen,,,2024-12-21,2024-12-20,Sepsis,Neurology,DR008,,Mutualiteit,False
+P0642,Hannes Janssen,74.0,,2025-05-02,2025-05-07,Pneumonia,ICU,DR006,7842.22,Allianz,False
+P0208,Marthe Simons Depuydt,150.0,Male,2024-07-19,2024-07-29,Lung cancer,Emergency,DR009,-500.0,Allianz,False
+P0380,Anthony Ooms,,Male,2026-03-30,2026-04-20,Heart failure,Oncology,DR004,,DKV,False
+P0879,Sandra Vandeputte,61.0,f,2024-06-26,2024-07-01,Lung cancer,Oncology,DR008,-500.0,DKV,False
+P0413,Sophie Vrancken,150.0,m,2026-02-21,2026-02-22,Appendicitis,Neurology,DR004,3675.95,DKV,False
+P0790,Mathijs Vandamme,-5.0,,2025-12-09,2025-12-10,Hip fracture,Emergency,DR007,,,True
+P0024,Elisa Jacobs Matthijs,87.0,,2026-02-19,2026-03-12,Hypertension,Cardiology,DR010,14135.62,Mutualiteit,False
+P0341,Mohammad Lauwers,-5.0,M,2024-08-30,2024-09-02,Lung cancer,Emergency,DR011,UNKNOWN,DKV,True
+P0692,Michaël Neven,74.0,f,2024-07-29,2024-08-01,Hip fracture,Oncology,DR011,14747.67,,False
+P0636,Ben Van Camp,,X,2026-01-12,2026-02-02,Pneumonia,Pediatrics,DR011,-500.0,DKV,True
+P0155,Nicole Ali,31.0,X,2025-06-09,2025-06-10,Lung cancer,Orthopedics,DR015,,Mutualiteit,True
+P0855,Jolien Van Dyck,150.0,M,2024-12-21,2024-12-26,Lung cancer,Neurology,DR007,3189.59,AXA,True
+P0554,Frank De Winter,-5.0,f,2025-03-27,2025-03-26,Stroke,Emergency,DR010,,AXA,False
+P0725,Marie De Graeve,150.0,m,2025-03-01,2025-02-28,Appendicitis,Cardiology,DR008,-500.0,DKV,True
+P0729,Joppe Buysse Maertens,150.0,f,2024-12-04,2024-12-25,Heart failure,Pediatrics,DR009,7070.29,AG Insurance,False
+P0784,Ronny Engels,-5.0,F,2025-11-10,2025-11-13,Diabetes type 2,Neurology,DR012,,Allianz,False
+P0323,Maarten Stevens,-5.0,M,2024-09-09,2024-09-07,Hypertension,Emergency,DR010,,DKV,True
+P0771,Werner Desmedt,150.0,f,2025-07-01,2025-07-03,Lung cancer,Cardiology,DR007,-500.0,,True
+P0599,Peter Van de Walle,44.0,X,2024-05-04,2024-05-11,Hypertension,Emergency,DR014,7650.07,AXA,False
+P0583,Eveline Vandenberghe De Mey,72.0,f,2024-04-15,2024-04-17,COVID-19,Orthopedics,DR003,14674.73,AXA,True
+P0566,Eddy Peeters,-5.0,,2025-03-11,2025-03-12,Sepsis,ICU,DR004,11885.3,Mutualiteit,False
+P0263,Anja Claes,76.0,MALE,2024-11-24,2024-11-22,Sepsis,Oncology,DR011,4080.34,,False
+P0458,Wouter De Witte,,M,2025-02-17,2025-02-20,COVID-19,Oncology,DR003,8645.89,DKV,True
+P0083,Mohamed Adriaenssens,84.0,F,2025-11-19,2025-11-26,COVID-19,Cardiology,DR009,-500.0,Allianz,True
+P0564,Virginie Verwimp,19.0,f,2026-01-17,2026-01-15,Lung cancer,Pediatrics,DR012,,DKV,True
+P0408,Eric Vermeulen,36.0,,2025-04-27,2025-05-02,Heart failure,Oncology,DR003,,Allianz,False
+P0453,Lindsey Torfs,25.0,X,2024-06-08,2024-06-22,Sepsis,Pediatrics,DR012,3881.69,Mutualiteit,False
+P0465,Dorien Smets,,F,2024-09-13,2024-10-04,Hip fracture,ICU,DR007,7958.87,AG Insurance,False
+P0346,Ismail Declercq,,MALE,2026-01-10,2026-01-12,Appendicitis,Pediatrics,DR006,7941.93,,False
+P0548,Conny Viaene,83.0,Female,2024-12-30,2025-01-09,Hip fracture,Emergency,DR007,,Mutualiteit,True
+P0039,Charlotte Van Damme,,m,2024-09-27,2024-10-04,Hip fracture,Neurology,DR007,8622.76,AXA,False
+P0418,Daisy Buelens,,f,2025-06-05,2025-06-26,Lung cancer,Pediatrics,DR007,-500.0,DKV,False
+P0164,Dorine Hermans,150.0,f,2024-07-19,2024-07-18,Hypertension,Emergency,DR006,6388.39,DKV,False
+P0334,Jill Van Camp,65.0,MALE,2025-02-15,2025-02-13,Hip fracture,ICU,DR009,2022.8,AXA,True
+P0011,Niels De Wolf,33.0,f,2025-04-21,2025-05-05,Stroke,Oncology,DR007,free,DKV,False
+P0471,Francine Kaya,7.0,F,2025-09-08,2025-09-11,Heart failure,Oncology,DR014,-500.0,,False
+P0033,Wim Leysen,-5.0,m,2025-03-09,2025-03-16,Lung cancer,ICU,DR012,6293.35,Mutualiteit,False
+P0572,Wim Swinnen,-5.0,,2025-10-03,2025-10-02,Sepsis,Orthopedics,DR013,-500.0,DKV,True
+P0872,Jo Van Assche,15.0,F,2026-03-09,2026-03-19,Hypertension,Oncology,DR002,-500.0,AG Insurance,True
+P0383,Lies Pauwels,,X,2024-08-28,2024-09-18,Sepsis,Pediatrics,DR011,-500.0,DKV,True
+P0602,Julien Neyens,17.0,F,2025-07-24,2025-07-26,Heart failure,ICU,DR008,2127.23,Allianz,True
+P0552,Alain Moonen,150.0,Male,2024-12-04,2024-12-14,Heart failure,Neurology,DR011,9351.91,Mutualiteit,True
+P0909,Paul Simons,-5.0,f,2024-11-11,2024-11-25,Lung cancer,Orthopedics,DR010,,DKV,False
+P0904,Kathleen Van de Voorde,150.0,MALE,2025-06-29,2025-07-01,Diabetes type 2,Emergency,DR010,10394.69,Allianz,True
+P0379,Sandra De Block,86.0,f,2024-12-13,2024-12-18,COVID-19,Pediatrics,DR006,9368.83,AXA,True
+P0090,Ferdinand Roosen,150.0,,2026-01-17,2026-01-27,Diabetes type 2,Orthopedics,DR005,,,True
+P0214,Emma Bruggeman,8.0,f,2025-12-28,2026-01-07,Hypertension,ICU,DR002,,AXA,True
+P0947,Sebastian Bogaerts,83.0,,2025-06-27,2025-06-25,Hip fracture,Neurology,DR002,3449.78,AXA,True
+P0134,Lisa Bosmans,-5.0,f,2025-03-30,2025-04-01,Hypertension,Pediatrics,DR008,11808.68,AG Insurance,False
+P0347,Michaël Van Laere,72.0,FEMALE,2025-01-26,2025-01-27,Lung cancer,Cardiology,DR013,,Allianz,True
+P0008,Ingrid Lambrechts,9.0,Female,2024-07-06,2024-07-13,COVID-19,Pediatrics,DR015,-500.0,,False
+P0766,David Vanneste,-5.0,,2024-11-27,2024-12-07,Stroke,Neurology,DR005,12655.13,Mutualiteit,False
+P0321,Daisy Engelen,,F,2026-01-10,2026-01-24,Diabetes type 2,Oncology,DR011,,AG Insurance,True
+P0778,Xavier Debruyne,83.0,Female,2025-07-07,2025-07-14,Appendicitis,Orthopedics,DR001,-500.0,,False
+P0188,Kaat Wouters,150.0,X,2024-04-14,2024-04-15,COVID-19,ICU,DR009,,,False
+P0305,Frans Huysmans Devriendt,,X,2024-10-05,2024-10-04,Heart failure,ICU,DR007,11395.56,AXA,False
+P0032,Hannah Degroote,88.0,,2024-12-16,2024-12-18,Lung cancer,Neurology,DR014,,DKV,False
+P0715,Viviane Rutten,89.0,M,2024-10-01,2024-10-06,Heart failure,Emergency,DR003,,Allianz,False
+P0241,Herman Raes,,X,2025-03-23,2025-03-24,Lung cancer,Pediatrics,DR005,9749.85,DKV,False
+P0723,Lutgarde Adriaensen,6.0,f,2024-08-06,2024-08-11,Heart failure,Pediatrics,DR004,,AG Insurance,True
+P0175,Luka Bosmans,-5.0,X,2025-03-26,2025-04-05,Diabetes type 2,Emergency,DR013,-500.0,,True
+P0246,Jules Sabbe Sels,-5.0,F,2025-04-18,2025-04-21,Appendicitis,Neurology,DR013,,,False
+P0057,Diederik Van Loo,,FEMALE,2026-03-20,2026-03-27,Pneumonia,ICU,DR012,,AXA,True
+P0747,Annick Poppe,150.0,F,2025-11-09,2025-11-19,Diabetes type 2,Cardiology,DR005,-500.0,AXA,False
+P0146,Maria Vaes,-5.0,m,2026-03-31,2026-03-29,Stroke,ICU,DR006,-500.0,Allianz,False
+P0091,Geert Roosen,-5.0,,2025-05-09,2025-05-07,COVID-19,ICU,DR015,319.85,AG Insurance,False
+P0393,Alfons Pollet,150.0,Male,2024-10-07,2024-10-10,Appendicitis,ICU,DR007,,AXA,False
+,Linda Kaur,5.0,M,2026-02-13,2026-03-06,Pneumonia,Oncology,DR012,,DKV,True
+P0360,Viviane Wouters,49.0,Male,2026-01-19,2026-01-18,Hip fracture,Emergency,DR005,-500.0,DKV,True
+P0094,Anke De Smet,35.0,m,2025-10-29,2025-11-12,Diabetes type 2,ICU,DR002,,Allianz,True
+P0830,Ann Dillen,-5.0,,2025-01-01,2025-01-11,Stroke,Cardiology,DR003,-500.0,AG Insurance,False
+P0895,Justine Parmentier Vercammen,10.0,m,2024-10-16,2024-10-21,COVID-19,Emergency,DR015,,DKV,True
+P0377,Nicole Willems,,Female,2024-05-04,2024-05-06,Stroke,Neurology,DR011,-500.0,AXA,True
+P0244,Anne-Marie De Mey,,X,2024-09-02,2024-08-31,Sepsis,Cardiology,DR010,,Mutualiteit,True
+P0816,Frank Schepers,150.0,FEMALE,2025-06-27,2025-07-18,Hip fracture,Emergency,DR010,,DKV,False
+,Koenraad Devriendt,88.0,FEMALE,2024-10-25,2024-11-01,Hip fracture,Pediatrics,DR005,8830.73,,True
+P0215,Els Hendrickx,,m,2025-09-05,2025-09-07,Sepsis,Orthopedics,DR011,7237.4,Mutualiteit,False
+P0095,Joke Hanssens,150.0,F,2025-07-11,2025-07-12,Pneumonia,Cardiology,DR005,-500.0,AXA,True
+P0174,Natasja De Roeck,150.0,M,2025-09-29,2025-10-06,Lung cancer,Orthopedics,DR004,,AXA,True
+P0426,Sophie Lauwers,150.0,Male,2024-07-29,2024-08-03,Appendicitis,Emergency,DR005,6327.04,,True
+P0770,Elisa Martens,13.0,f,2025-11-08,2025-11-07,Diabetes type 2,Orthopedics,DR011,10915.37,DKV,False
+P0119,Mustafa Van Loo,-5.0,m,2025-04-29,2025-04-27,Stroke,Pediatrics,DR001,,AG Insurance,False
+P0120,Jozef Stroobants,-5.0,MALE,2025-01-26,2025-02-16,Hypertension,Pediatrics,DR009,12698.37,Mutualiteit,False
+P0903,Aicha Leroy,68.0,F,2024-07-02,2024-07-12,Pneumonia,Oncology,DR013,10110.74,AG Insurance,False
+P0001,Johan Casier,-5.0,X,2025-10-21,2025-10-20,Stroke,Orthopedics,DR007,3824.4,Mutualiteit,True
+P0395,Jean Vercauteren,17.0,Male,2025-04-15,2025-04-22,Hypertension,Cardiology,DR003,,Allianz,False
+P0402,Marc De Decker,16.0,F,2024-09-11,2024-09-12,Appendicitis,Orthopedics,DR007,10549.81,AG Insurance,False
+P0405,Helena Callens,150.0,Female,2024-04-14,2024-04-12,Heart failure,ICU,DR010,-500.0,AXA,False
+P0612,Caroline Hermans,150.0,MALE,2025-10-31,2025-11-07,Diabetes type 2,Pediatrics,DR011,-500.0,AXA,False
+P0619,Karine Vandevelde,,m,2026-02-07,2026-02-14,Diabetes type 2,Cardiology,DR001,-500.0,AXA,True
+P0163,Isabelle De Clercq,-5.0,FEMALE,2025-04-09,2025-04-14,Stroke,Oncology,DR008,1771.52,DKV,False
+P0115,Dirk Lauwers,80.0,,2025-05-09,2025-05-10,COVID-19,Pediatrics,DR005,,DKV,False
+,Wilfried Neyens,150.0,MALE,2025-04-16,2025-04-26,Diabetes type 2,Emergency,DR005,-500.0,DKV,True
+P0937,Alexander Claes,1.0,M,2024-08-07,2024-08-21,Hip fracture,Cardiology,DR005,4043.38,AG Insurance,False
+P0806,Bernadette Christiaens,38.0,F,2025-07-19,2025-07-18,Hypertension,Oncology,DR003,11160.6,AG Insurance,False
+P0860,Younes Hendrickx,16.0,M,2026-01-26,2026-01-29,Lung cancer,Oncology,DR015,-500.0,DKV,True
+P0369,Elisabeth Peters,-5.0,X,2025-10-11,2025-10-14,Sepsis,Pediatrics,DR008,-500.0,Mutualiteit,True
+P0544,Johan De Smet,79.0,M,2025-11-23,2025-11-25,Stroke,Cardiology,DR010,13706.62,,True
+P0478,Robbe Vranken,-5.0,Male,2025-11-17,2025-11-22,Appendicitis,Cardiology,DR003,-500.0,DKV,True
+P0533,Johan Peeters,-5.0,X,2025-08-04,2025-08-14,Heart failure,Oncology,DR002,3695.7,DKV,False
+P0676,Alexander Mariën,-5.0,Female,2025-02-23,2025-03-02,Sepsis,Neurology,DR010,,,True
+P0586,Ann Vereecken,15.0,f,2024-10-25,2024-11-08,Stroke,Oncology,DR001,,AXA,False
+P0948,Dirk De Clercq,150.0,FEMALE,2024-10-14,2024-10-17,Appendicitis,Neurology,DR013,-500.0,DKV,True
+P0259,Johan De Cock,150.0,Female,2024-07-30,2024-07-31,Hip fracture,Emergency,DR002,6554.95,DKV,False
+P0838,Yves Belmans Raeymaekers,150.0,f,2024-12-09,2024-12-14,Appendicitis,ICU,DR009,5810.6,Mutualiteit,True
+P0136,Nancy Verhulst,92.0,FEMALE,2025-05-20,2025-05-19,Sepsis,Neurology,DR014,-500.0,Allianz,True
+P0917,Anne Van Damme,42.0,,2026-01-21,2026-02-04,Lung cancer,Cardiology,DR010,1580.17,,False
+P0631,Noël Vandamme,150.0,m,2024-07-22,2024-08-01,Lung cancer,Cardiology,DR005,747.66,AG Insurance,False
+P0792,Katty Hendrickx,150.0,Male,2025-12-02,2025-12-01,Lung cancer,Oncology,DR003,,,False
+P0502,Annita De Ryck,150.0,,2026-04-01,2026-04-15,Diabetes type 2,Orthopedics,DR009,-500.0,Mutualiteit,False
+P0539,Samir Verbeke,2.0,X,2025-02-08,2025-02-22,Stroke,Emergency,DR008,12509.0,AG Insurance,False
+P0650,Marie Debruyne,,m,2024-10-28,2024-11-02,Sepsis,Orthopedics,DR007,10701.58,AG Insurance,False
+P0582,Carlo Segers,23.0,,2025-12-31,2026-01-03,Lung cancer,Pediatrics,DR005,-500.0,AG Insurance,False
+P0344,Guido Van Belle,150.0,,2025-07-24,2025-08-14,Heart failure,ICU,DR011,-500.0,,False
+P0884,Julie Coenen,,Female,2025-05-04,2025-05-11,Pneumonia,Neurology,DR005,-500.0,Mutualiteit,False
+P0832,Jarno De Weerdt,17.0,f,2024-07-08,2024-07-09,Appendicitis,Emergency,DR010,5806.25,Allianz,False
+P0294,Emma Cuypers,,Male,2024-06-21,2024-06-26,Lung cancer,Emergency,DR001,-500.0,,False
+P0365,Judith De Block,60.0,,2025-04-19,2025-04-17,Hip fracture,Pediatrics,DR013,791.12,AXA,False
+P0624,Elly Vercauteren Thys,-5.0,X,2024-08-18,2024-08-19,Appendicitis,Oncology,DR005,14547.53,Mutualiteit,True
+P0015,Kelly Hermans,,MALE,2025-08-07,2025-08-28,Diabetes type 2,Pediatrics,DR015,-500.0,AXA,False
+P0087,Saskia Vandenbroucke,-5.0,,2024-07-09,2024-07-14,Lung cancer,Neurology,DR003,,Mutualiteit,False
+P0371,,150.0,M,2025-07-31,2025-07-30,COVID-19,Emergency,DR006,14108.32,Mutualiteit,True
+P0166,Peter Vercauteren,-5.0,m,2025-12-11,2025-12-16,Sepsis,Cardiology,DR014,,Mutualiteit,False
+P0873,Nancy Peeters,20.0,MALE,2026-02-02,2026-01-31,Lung cancer,Emergency,DR011,5155.69,AG Insurance,False
+P0336,Maria Janssens,20.0,MALE,2024-09-18,2024-09-28,Stroke,Emergency,DR009,-500.0,AG Insurance,False
+P0060,Nathalie Mertens Schepens,67.0,FEMALE,2025-03-25,2025-03-23,COVID-19,Pediatrics,DR013,6215.14,Mutualiteit,True
+P0355,Georges Goris,,,2025-01-16,2025-01-14,Lung cancer,Emergency,DR014,7723.33,DKV,True
+P0425,Geert Kenis,-5.0,m,2025-05-22,2025-05-21,Hypertension,Emergency,DR007,-500.0,AG Insurance,False
+P0293,Roger Bracke,-5.0,FEMALE,2024-10-18,2024-11-08,Diabetes type 2,Neurology,DR012,,AXA,False
+P0042,Vincent De Boeck,74.0,Female,2024-07-03,2024-07-10,Lung cancer,Emergency,DR012,,Mutualiteit,True
+P0330,Ellen Liekens,150.0,M,2025-02-10,2025-03-03,Heart failure,Orthopedics,DR004,,,True
+P0430,Silke Vermeir,,X,2025-12-14,2025-12-24,Sepsis,Oncology,DR015,,AG Insurance,False
+P0080,Viviane Thomas,66.0,f,2025-03-05,2025-03-26,Sepsis,Oncology,DR014,,Mutualiteit,True
+P0029,Chantal Michiels,-5.0,F,2024-04-28,2024-04-30,Pneumonia,ICU,DR005,7680.05,Mutualiteit,True
+P0255,Roland Engels Lammens,84.0,,2025-02-19,2025-02-26,Appendicitis,Orthopedics,DR011,7256.74,Allianz,True
+P0745,Martijn Merckx,150.0,m,2025-09-12,2025-09-14,Sepsis,Cardiology,DR003,-500.0,Mutualiteit,True
+P0459,Nicolas Jacobs,32.0,,2024-09-18,2024-09-23,Appendicitis,Emergency,DR002,,,True
+P0384,Jean Coene,-5.0,MALE,2025-10-02,2025-10-09,Diabetes type 2,Orthopedics,DR001,2181.44,,False
+P0314,Michel Van Hoof,67.0,X,2025-08-29,2025-09-08,Pneumonia,Neurology,DR013,-500.0,AXA,False
+P0085,Daan Stevens,150.0,X,2026-02-25,2026-03-02,Heart failure,Orthopedics,DR002,,DKV,True
+P0575,Sven Baert,27.0,m,2024-05-05,2024-05-26,Heart failure,Cardiology,DR006,,AG Insurance,False
+P0137,Fatima Claes,58.0,Female,2026-02-19,2026-02-21,Pneumonia,Cardiology,DR006,-500.0,DKV,True
+P0112,Carine Swennen,-5.0,,2024-11-14,2024-11-28,Hip fracture,Cardiology,DR003,8696.68,AG Insurance,True
+P0195,Anne-Marie Dierickx,150.0,Female,2025-06-13,2025-06-11,Appendicitis,Pediatrics,DR006,,DKV,True
+P0179,Michaël Van Hove,35.0,Female,2025-11-13,2025-11-27,Heart failure,Emergency,DR015,11165.19,AXA,False
+P0877,Steve Maes,84.0,X,2025-06-05,2025-06-10,Sepsis,ICU,DR004,,Allianz,True
+P0497,Eliane Verbeeck,-5.0,Male,2024-12-10,2024-12-13,Hypertension,Orthopedics,DR008,-500.0,AXA,False
+P0130,Lotte Smeets,-5.0,MALE,2024-05-29,2024-06-12,Sepsis,Oncology,DR001,12235.13,AG Insurance,True
+P0338,Arthur Vermeulen,,m,2024-05-30,2024-06-20,Lung cancer,Cardiology,DR009,,Allianz,False
+P0609,Isabelle Claessens,150.0,FEMALE,2025-08-14,2025-08-19,Appendicitis,Orthopedics,DR007,-500.0,AG Insurance,False
+P0125,Joannes Wouters,,FEMALE,2025-03-12,2025-03-11,Hypertension,Emergency,DR004,5890.34,AG Insurance,False
+P0949,Stephanie Van Hecke,-5.0,m,2025-06-29,2025-07-02,Appendicitis,Neurology,DR006,,,True
+P0227,Juliana Van Dessel,150.0,F,2024-05-22,2024-06-12,Hypertension,Neurology,DR010,-500.0,AXA,False
+P0269,Stijn Claes,48.0,Female,2024-11-04,2024-11-25,Sepsis,Cardiology,DR001,3975.72,Mutualiteit,False
+P0705,Caroline Vanderlinden,-5.0,MALE,2026-02-27,2026-02-25,Hip fracture,Cardiology,DR002,-500.0,Mutualiteit,False
+P0724,Jozef Leysen,95.0,Female,2024-08-01,2024-08-22,Appendicitis,Neurology,DR006,14675.82,AG Insurance,True
+P0104,Lisette Pieters,150.0,FEMALE,2026-03-12,2026-03-15,Diabetes type 2,Orthopedics,DR010,,Mutualiteit,False
+P0594,Peggy Van Driessche,150.0,,2026-02-18,2026-02-16,COVID-19,Orthopedics,DR007,-500.0,AG Insurance,False
+P0844,Karin Stevens,5.0,F,2025-07-31,2025-08-07,Pneumonia,Pediatrics,DR009,-500.0,Allianz,False
+P0652,Danny Verbeeck,19.0,m,2024-12-13,2024-12-20,Diabetes type 2,Pediatrics,DR005,,AG Insurance,False
+P0228,Sabrina Heylen,150.0,F,2024-10-30,2024-11-13,Pneumonia,Emergency,DR008,-500.0,DKV,True
+P0875,Deborah De Vos,150.0,F,2025-09-12,2025-09-17,Stroke,Orthopedics,DR007,,,True
+P0302,Pascal Carlier,7.0,Female,2024-06-16,2024-06-17,Stroke,Cardiology,DR004,,DKV,True
+P0276,Rudy Geeraerts,150.0,Male,2024-04-27,2024-05-11,Appendicitis,Oncology,DR005,,AG Insurance,False
+P0127,Isabel Smeets,,MALE,2025-02-22,2025-03-04,Pneumonia,ICU,DR006,-500.0,,False
+P0406,Hanne Pauwels,79.0,F,2024-10-29,2024-10-31,Hip fracture,ICU,DR007,9894.28,AG Insurance,False
+P0881,Marcella Willems,85.0,M,2026-03-09,2026-03-08,Lung cancer,Oncology,DR003,8990.1,Mutualiteit,False
+P0037,Mohamed Engels Mariën,150.0,f,2025-11-21,2025-11-24,Pneumonia,Cardiology,DR011,13898.51,AG Insurance,False
+P0140,Youssef Van den Broeck,,,2025-04-09,2025-04-11,Sepsis,Cardiology,DR011,,AXA,False
+P0304,Ann Martens Leemans,24.0,m,2024-07-17,2024-07-22,Hypertension,Cardiology,DR003,7082.86,,True
+P0268,Christophe Van Acker,-5.0,FEMALE,2025-08-14,2025-08-12,COVID-19,Orthopedics,DR006,7953.04,Mutualiteit,False
+P0534,Mohamed Simons,150.0,Female,2024-05-27,2024-05-28,Hypertension,Emergency,DR014,6714.74,AG Insurance,True
+P0546,Marc Dekeyser,150.0,X,2024-11-16,2024-12-07,Appendicitis,Cardiology,DR007,7276.46,,False
+P0213,Dirk Van den Bossche,73.0,M,2025-08-18,2025-08-25,Stroke,Pediatrics,DR007,14855.45,Allianz,False
+P0469,Chantal Aerts,-5.0,X,2024-09-28,2024-10-08,Sepsis,ICU,DR005,8162.48,AXA,False
+P0199,Marc Raes Vanderheyden,39.0,MALE,2025-06-09,2025-06-16,Sepsis,Pediatrics,DR001,8956.67,AG Insurance,False
+P0528,Anthony De Decker,75.0,FEMALE,2024-07-22,2024-07-21,Sepsis,Cardiology,DR009,-500.0,AXA,True
+P0916,Veerle Smets,56.0,,2025-05-02,2025-05-16,Pneumonia,ICU,DR013,1673.75,,True
+P0242,Lotte Goethals,58.0,Male,2024-11-11,2024-11-16,Appendicitis,ICU,DR007,,AXA,False
+P0343,Lucien Hermans,150.0,Male,2025-12-02,2025-12-09,Heart failure,ICU,DR003,9802.93,Mutualiteit,False
+P0550,Antoine Verlinden,150.0,M,2025-03-12,2025-03-26,Heart failure,Oncology,DR001,,AG Insurance,True
+P0387,Anja De Meyer,,,2026-02-26,2026-03-03,Sepsis,Orthopedics,DR003,-500.0,Allianz,False
+P0850,Cedric Claeys,150.0,m,2024-07-23,2024-07-25,Stroke,Oncology,DR006,1107.98,AG Insurance,True
+P0207,Anne Beyens,20.0,FEMALE,2025-08-16,2025-08-23,Sepsis,Emergency,DR011,5821.63,AG Insurance,True
+P0296,Bart Martens,41.0,FEMALE,2025-11-18,2025-11-20,Heart failure,Oncology,DR004,-500.0,DKV,True
+P0851,Charles Herman,32.0,Female,2024-12-23,2024-12-30,Hip fracture,Pediatrics,DR005,-500.0,AXA,True
+P0074,Marc Brouwers,150.0,f,2025-10-11,2025-11-01,Diabetes type 2,Emergency,DR002,,DKV,True
+P0741,Hugo Coppens Vandevelde,-5.0,M,2025-04-01,2025-04-03,Hypertension,Orthopedics,DR004,6557.19,AXA,True
+P0105,August Smet,29.0,FEMALE,2024-11-25,2024-12-09,Heart failure,Cardiology,DR008,-500.0,Allianz,False
+P0684,Luc Roosen Heylen,,f,2025-06-01,2025-06-11,Appendicitis,Neurology,DR013,,AXA,False
+P0944,Nathalie Vinck,59.0,f,2025-03-30,2025-04-01,Hip fracture,Cardiology,DR015,,AXA,True
+P0415,William De Wolf,-5.0,FEMALE,2025-08-31,2025-09-10,Lung cancer,ICU,DR015,-500.0,AXA,True
+P0017,Tim Aerts,-5.0,Female,2025-10-20,2025-10-22,Sepsis,Neurology,DR012,,AXA,False
+P0440,Amber Nijs,-5.0,X,2026-03-19,2026-03-21,Sepsis,Cardiology,DR005,14055.99,Allianz,True
+P0092,Hendrik Declerck,29.0,F,2025-06-25,2025-07-16,Heart failure,Oncology,DR013,10230.91,Allianz,True
+P0089,Lucienne Vercammen,,,2025-01-16,2025-01-26,Hip fracture,Emergency,DR007,-500.0,,True
+P0451,Freddy Van Acker,150.0,M,2025-10-13,2025-10-11,Diabetes type 2,Orthopedics,DR012,,Allianz,True
+P0103,Joke De Wilde,33.0,f,2025-04-20,2025-05-04,Appendicitis,Orthopedics,DR006,9983.65,Mutualiteit,False
+P0239,Julien Thijs,-5.0,,2024-09-11,2024-10-02,Hypertension,Cardiology,DR011,-500.0,DKV,True
+P0717,Mariette Driesen,,F,2024-10-07,2024-10-06,COVID-19,Oncology,DR015,5497.89,DKV,False
+P0247,Ronald Raes,150.0,Female,2024-10-06,2024-10-11,Heart failure,Orthopedics,DR006,2260.68,AXA,True
+P0709,Sofie Vercammen,9.0,m,2025-05-29,2025-06-05,Sepsis,Orthopedics,DR011,6230.91,Mutualiteit,False
+P0158,Godelieve Beyens,22.0,X,2025-09-26,2025-09-27,Hip fracture,ICU,DR002,-500.0,AG Insurance,False
+P0480,Marco Janssens,150.0,FEMALE,2024-07-09,2024-07-10,COVID-19,Neurology,DR003,,DKV,False
+P0646,Erwin Geudens,150.0,m,2025-09-25,2025-10-02,Hip fracture,Emergency,DR008,10760.74,Allianz,False
+P0921,Robert Van Damme,13.0,Female,2024-08-26,2024-09-02,Pneumonia,Pediatrics,DR015,6323.43,AG Insurance,False
+P0815,Steven De Smet,55.0,Male,2025-11-24,2025-11-25,Heart failure,Cardiology,DR009,,,True
+P0019,Daniël Vandenberghe,-5.0,Female,2025-11-17,2025-11-16,Sepsis,Pediatrics,DR003,1817.18,Allianz,False
+,Maaike Vandenberghe,94.0,MALE,2025-11-02,2025-11-03,Appendicitis,Pediatrics,DR006,,AXA,True
+P0122,Ilse Joos Vermeulen,14.0,F,2025-02-17,2025-02-18,Lung cancer,ICU,DR011,2767.79,Allianz,False
+P0827,Inge Boonen,54.0,M,2024-04-21,2024-05-12,Hypertension,Neurology,DR002,,AG Insurance,True
+P0700,Daniel De Pauw,150.0,Male,2025-02-13,2025-02-23,Sepsis,Emergency,DR008,12538.52,Allianz,False
+P0275,Olivia Michiels,-5.0,f,2026-04-05,2026-04-15,COVID-19,Emergency,DR002,,AXA,True
+P0434,Johan Van Rompaey,29.0,m,2025-11-03,2025-11-10,Sepsis,ICU,DR005,-500.0,Allianz,False
+P0888,Emma Van Hove,26.0,,2026-01-20,2026-02-03,COVID-19,Cardiology,DR001,3756.96,AG Insurance,True
+P0312,Lina Boeckx,35.0,m,2026-02-03,2026-02-13,COVID-19,ICU,DR012,-500.0,,True
+P0761,Sofie Beckers,150.0,FEMALE,2024-08-04,2024-08-11,Pneumonia,Emergency,DR003,,,False
+P0826,Marc Van de Walle,,Female,2025-10-16,2025-10-23,Diabetes type 2,Orthopedics,DR011,-500.0,,False
+P0547,Miguel Jansen,-5.0,F,2024-09-11,2024-09-10,Diabetes type 2,Orthopedics,DR014,5134.91,AG Insurance,True
+P0182,Natalie Vandewalle,54.0,Male,2024-04-25,2024-04-26,Hip fracture,Cardiology,DR001,,AG Insurance,False
+P0185,Vanessa Lievens,150.0,Male,2025-12-19,2026-01-09,Lung cancer,Pediatrics,DR006,7826.15,DKV,True
+P0407,Luc Hoste,,X,2025-02-18,2025-02-25,Hip fracture,Emergency,DR014,427.42,AXA,False
+P0607,Kathleen Mertens,76.0,f,2025-04-16,2025-04-21,Pneumonia,Pediatrics,DR004,14374.67,AXA,False
+P0693,Yvonne De Groof Lambrecht,,f,2024-11-18,2024-11-19,COVID-19,Cardiology,DR003,1757.36,,False
+P0521,Sophie Adriaenssens,58.0,,2025-02-15,2025-03-08,Hip fracture,Pediatrics,DR012,-500.0,AG Insurance,True
+P0381,Elisa Hendrickx,-5.0,m,2024-04-12,2024-04-15,COVID-19,Orthopedics,DR002,-500.0,DKV,False
+P0411,Frans Jansen,29.0,X,2025-07-22,2025-07-29,Sepsis,Cardiology,DR012,-500.0,AG Insurance,False
+P0635,Maxim Mertens,50.0,Male,2024-05-06,2024-05-27,Appendicitis,Oncology,DR008,14045.4,Allianz,True
+P0370,Deborah Vanhove,42.0,F,2026-01-01,2026-01-03,Appendicitis,Emergency,DR011,14233.53,DKV,False
+P0805,Noor Cornelis,,X,2024-12-13,2024-12-18,Pneumonia,ICU,DR004,,DKV,True
+P0091,Geert Roosen,-5.0,,2025-05-09,2025-05-07,COVID-19,ICU,DR015,319.85,AG Insurance,False
+P0749,Dirk Laenen,-5.0,X,2024-10-26,2024-10-31,Hip fracture,Cardiology,DR013,9139.7,AG Insurance,True
+P0079,Jolien De Leeuw,-5.0,Female,2025-05-22,2025-05-25,COVID-19,Orthopedics,DR003,,Allianz,False
+P0574,Remi Jacobs,47.0,Male,2024-05-10,2024-05-08,Diabetes type 2,Neurology,DR009,10632.13,Mutualiteit,False
+P0638,Mark Boon,,M,2026-01-18,2026-01-23,Pneumonia,Oncology,DR005,,Mutualiteit,False
+P0608,Lucia Aerts,15.0,f,2025-07-09,2025-07-16,Hip fracture,Orthopedics,DR012,,Mutualiteit,True
+P0789,Anna Roels,85.0,MALE,2025-11-21,2025-12-12,Hypertension,Cardiology,DR009,,DKV,False
+P0365,Judith De Block,60.0,,2025-04-19,2025-04-17,Hip fracture,Pediatrics,DR013,791.12,AXA,False
+P0822,Hendrik Maes,-5.0,Female,2025-05-17,2025-05-16,Hip fracture,Cardiology,DR009,14500.89,AG Insurance,False
+P0915,Marcel Vandekerckhove,150.0,Male,2025-11-23,2025-11-30,Pneumonia,Emergency,DR003,,Allianz,True
+P0417,Jill Daems,,Female,2025-02-20,2025-03-02,Pneumonia,Orthopedics,DR002,7009.04,AG Insurance,True
+P0738,Manon Dobbelaere,37.0,f,2025-06-19,2025-06-21,Sepsis,Neurology,DR003,4077.58,DKV,True
+P0562,Amélie De Sutter,,,2025-07-07,2025-07-08,Hypertension,Oncology,DR007,,DKV,True
+P0068,Heidi Sanders,,Female,2024-04-19,2024-05-10,Hip fracture,Emergency,DR002,1668.66,DKV,False
+P0537,Cécile Verbeeck,150.0,f,2025-12-21,2026-01-04,Hip fracture,Oncology,DR013,-500.0,Mutualiteit,True
+P0078,Bernadette Nys Van Belle,,FEMALE,2025-08-21,2025-08-24,Stroke,Emergency,DR014,6238.26,DKV,False
+P0106,Georges De Keyser,150.0,F,2025-07-05,2025-07-04,Lung cancer,Oncology,DR010,1395.7,,False
+P0190,Angelo De Smet,69.0,F,2024-05-17,2024-05-19,Appendicitis,Emergency,DR010,,Allianz,True
+,Astrid Smits,-5.0,Male,2026-01-24,2026-01-22,Stroke,Orthopedics,DR005,2106.48,Mutualiteit,True
+P0639,Femke Hellemans,150.0,M,2024-09-25,2024-09-28,Hip fracture,ICU,DR002,,Allianz,False
+P0560,Dries Wuyts,81.0,FEMALE,2024-12-24,2024-12-26,COVID-19,Neurology,DR003,3067.04,,True
+P0756,Herman Willems Cools,150.0,m,2025-01-30,2025-01-28,Appendicitis,Neurology,DR005,,,False
+P0691,Hubert Moens,15.0,F,2024-10-31,2024-11-14,Heart failure,ICU,DR011,-500.0,Mutualiteit,False
+P0859,Ine Mertens,28.0,X,2024-07-20,2024-08-10,Sepsis,Oncology,DR005,,DKV,True
+P0249,Bernard Van de Walle Wouters,17.0,MALE,2025-04-03,2025-04-06,COVID-19,Neurology,DR010,10728.64,,True
+P0861,Hans Van Laere,32.0,,2025-10-08,2025-10-06,Diabetes type 2,Oncology,DR002,-500.0,,False
+P0736,Tim Verfaillie,28.0,MALE,2025-09-15,2025-09-25,Appendicitis,Pediatrics,DR003,-500.0,Mutualiteit,True
+P0734,Kristof Vandecasteele,150.0,,2025-11-22,2025-11-21,Hypertension,Oncology,DR010,-500.0,AG Insurance,False
+P0491,Cédric Willems,31.0,FEMALE,2024-05-26,2024-06-16,Stroke,Orthopedics,DR010,,Mutualiteit,False
+P0591,Marc Vermeire,-5.0,Female,2025-04-02,2025-04-01,Lung cancer,ICU,DR007,8426.04,AG Insurance,False
+P0835,Jill De Clercq,150.0,FEMALE,2025-02-14,2025-02-28,COVID-19,Orthopedics,DR011,14000.13,,False
+P0606,Véronique Casier,92.0,F,2025-05-11,2025-05-25,Appendicitis,Orthopedics,DR014,14471.1,,False
+P0364,Rita Driesen,,X,2025-05-16,2025-05-17,Hip fracture,Neurology,DR003,-500.0,AXA,True
+P0070,Elke De Smet,88.0,MALE,2025-01-10,2025-01-20,Stroke,Orthopedics,DR004,11859.85,,False
+P0549,Elza Verhoeven,150.0,M,2025-02-13,2025-02-23,Hypertension,Neurology,DR008,2271.16,Allianz,True
+P0161,Jozef Van Hulle,150.0,FEMALE,2026-03-22,2026-04-12,Appendicitis,ICU,DR013,-500.0,,False
+P0012,Ria Claes,-5.0,m,2024-07-30,2024-07-28,Sepsis,Orthopedics,DR004,14583.94,DKV,True
+P0145,Jens Vermeulen Lambrechts,6.0,X,2025-07-23,2025-07-26,Pneumonia,ICU,DR009,-500.0,Allianz,True
+P0518,Edward Temmerman,-5.0,,2025-02-16,2025-02-23,COVID-19,Cardiology,DR010,8259.0,AXA,False
+P0428,Céline De Meyer,,m,2025-10-29,2025-10-28,Appendicitis,Neurology,DR012,,AG Insurance,False
+P0640,Jean Bollen,150.0,m,2025-08-15,2025-08-22,Sepsis,Cardiology,DR006,12339.57,Allianz,False
+P0177,Stan De Groote,-5.0,MALE,2026-02-05,2026-02-15,Diabetes type 2,ICU,DR013,,DKV,True
+P0441,Josée Andries,7.0,f,2024-07-09,2024-07-11,Heart failure,Neurology,DR013,,AG Insurance,False
+P0522,Nadine Janssens,,M,2024-06-17,2024-07-08,Diabetes type 2,Orthopedics,DR001,-500.0,Mutualiteit,False
+P0862,Jean Smets,150.0,M,2025-06-10,2025-06-13,Diabetes type 2,Neurology,DR012,13495.37,AG Insurance,False
+P0932,Gerardus Sels,26.0,MALE,2024-05-30,2024-06-04,Stroke,Cardiology,DR008,-500.0,DKV,False
+P0689,Jeremy Segers,150.0,X,2024-05-13,2024-05-11,Sepsis,Oncology,DR004,11152.77,Mutualiteit,False
+P0232,Peggy Sels,,,2025-09-20,2025-10-04,Sepsis,Neurology,DR006,,Mutualiteit,False
+P0211,Lutgardis De Pauw,150.0,X,2024-08-16,2024-08-14,Hip fracture,Cardiology,DR009,-500.0,,False
+P0641,José Moons Mestdagh,150.0,FEMALE,2025-12-28,2026-01-11,Lung cancer,Cardiology,DR007,11477.24,DKV,True
+P0144,Margot Joris,150.0,Male,2025-06-19,2025-06-24,Stroke,Emergency,DR013,7282.26,Allianz,True
+P0754,Linde Peeters,,MALE,2025-11-20,2025-11-21,Appendicitis,Pediatrics,DR002,,AXA,False
+P0520,James Baert,64.0,Male,2024-04-21,2024-04-26,Lung cancer,Pediatrics,DR009,1539.89,AG Insurance,False
+P0369,Elisabeth Peters,-5.0,X,2025-10-11,2025-10-14,Sepsis,Pediatrics,DR008,-500.0,Mutualiteit,True
+P0299,Yvonne Vandendriessche,41.0,Male,2026-04-01,2026-03-30,Stroke,Orthopedics,DR015,,Mutualiteit,True
+P0429,Lutgart Hermans Timmermans,68.0,FEMALE,2025-12-09,2025-12-10,COVID-19,ICU,DR009,-500.0,AG Insurance,False
+P0613,Peter Stevens,36.0,FEMALE,2025-12-12,2025-12-22,COVID-19,Neurology,DR011,-500.0,DKV,True
+P0919,Hans De Witte,150.0,F,2025-07-21,2025-07-23,Lung cancer,Emergency,DR001,-500.0,,False
+P0927,Sabrina Vercauteren,-5.0,Female,2024-12-24,2024-12-31,Hypertension,Oncology,DR006,,,True
+P0009,Elien De Clercq,18.0,,2025-04-12,2025-04-13,Pneumonia,Oncology,DR004,,DKV,False
+P0157,Martine De Keyser,,MALE,2025-11-16,2025-11-30,Sepsis,ICU,DR001,2893.05,Mutualiteit,False
+P0540,Ludo Van Loon Claes,33.0,,2024-06-26,2024-06-29,Stroke,Emergency,DR002,1560.73,Mutualiteit,False
+P0507,Lisette De Backer,17.0,M,2025-01-13,2025-01-27,Hip fracture,Cardiology,DR011,10923.65,AXA,True
+P0437,André Declercq,64.0,f,2024-06-11,2024-06-12,COVID-19,Emergency,DR013,,Mutualiteit,True
+P0267,Gianni Raes,,Male,2024-06-12,2024-06-13,Diabetes type 2,Neurology,DR012,-500.0,AG Insurance,True
+P0462,Maryam De Smet,-5.0,MALE,2024-11-16,2024-11-30,COVID-19,ICU,DR010,7635.54,AXA,False
+P0577,Sandra Janssens,59.0,F,2024-12-14,2024-12-16,Lung cancer,Oncology,DR002,5982.1,,False
+P0339,Laurens De Greef,43.0,,2025-04-12,2025-04-22,COVID-19,Neurology,DR002,388.69,AXA,True
+P0256,Stéphanie Luyckx,90.0,FEMALE,2025-11-07,2025-11-05,Stroke,Neurology,DR007,6450.25,Mutualiteit,True
+P0799,Annie Goossens,,Female,2024-09-24,2024-09-26,Heart failure,Emergency,DR014,,AG Insurance,True
+P0841,Monique De Smet,46.0,MALE,2024-09-15,2024-09-22,Stroke,Pediatrics,DR001,3123.66,DKV,True
+P0666,Tristan Hendrickx,,X,2025-08-24,2025-09-03,Heart failure,Cardiology,DR012,12229.81,,False
+,Hilda Wuyts,-5.0,M,2025-01-02,2024-12-31,Stroke,Emergency,DR001,,AXA,False
+P0209,Mauro De Pauw,,M,2025-01-12,2025-01-26,Pneumonia,Neurology,DR014,700.59,,False
+P0288,Abdul Vandenberghe,32.0,Female,2025-10-17,2025-10-18,Hypertension,ICU,DR013,4144.6,Allianz,True
+P0002,Wilfried Declerck,,Female,2025-04-17,2025-04-16,COVID-19,Orthopedics,DR005,,Mutualiteit,False
+P0342,Jacqueline Vermeulen,-5.0,Male,2025-03-01,2025-03-06,Stroke,Pediatrics,DR007,-500.0,Allianz,True
+P0270,Gino Vanneste,150.0,X,2025-01-11,2025-01-09,Pneumonia,Neurology,DR006,13819.35,DKV,False
+P0266,Diederik Huys,12.0,Male,2025-07-10,2025-07-12,Stroke,Cardiology,DR012,-500.0,DKV,True
+P0808,Linda Verheyen,,f,2025-04-24,2025-05-08,Lung cancer,ICU,DR005,,DKV,False
+P0814,Alexandre Buelens,-5.0,M,2025-06-03,2025-06-13,Diabetes type 2,Emergency,DR014,3304.54,AXA,True
+P0096,Tina Gielen,-5.0,F,2024-05-02,2024-05-12,Appendicitis,Pediatrics,DR001,-500.0,AXA,False
+P0036,Sabrina Smits,150.0,,2025-04-29,2025-04-27,Sepsis,Cardiology,DR007,,AXA,False
+,Angelo De Neve,,FEMALE,2025-09-12,2025-09-19,Lung cancer,ICU,DR008,7075.34,,False
+P0869,Dirk Wellens,11.0,Male,2025-09-29,2025-10-04,Hip fracture,Oncology,DR008,,DKV,False
+P0675,Martine Dierickx,-5.0,F,2024-09-27,2024-10-02,COVID-19,Orthopedics,DR011,,AG Insurance,False
+P0684,Luc Roosen Heylen,,f,2025-06-01,2025-06-11,Appendicitis,Neurology,DR013,,AXA,False
+P0629,Guillaume Matthys,-5.0,Female,2024-09-18,2024-09-19,Pneumonia,Oncology,DR014,12693.01,AG Insurance,False
+P0046,Hanne Vermeir,,Male,2025-06-25,2025-06-28,Appendicitis,Cardiology,DR007,,Allianz,True
+P0162,Vince Beernaert,59.0,Female,2026-04-02,2026-04-05,Diabetes type 2,Orthopedics,DR003,,AG Insurance,True
+P0728,Joeri Jonckheere,,F,2025-05-15,2025-05-14,Hypertension,ICU,DR007,,DKV,False
+P0630,Nico Roelandt,77.0,M,2025-04-04,2025-04-07,Appendicitis,ICU,DR014,1880.67,AG Insurance,False
+P0289,Anne De Smet,,,2025-10-27,2025-10-28,Heart failure,Emergency,DR012,-500.0,AG Insurance,False
+P0590,Eddy Bouckaert,,X,2024-05-11,2024-05-18,Diabetes type 2,Cardiology,DR015,,AXA,False
+P0885,Jan Lenaerts,150.0,X,2024-08-29,2024-09-05,Hypertension,ICU,DR002,3439.81,,False
+P0943,François Peeters,52.0,,2024-08-04,2024-08-18,Stroke,Neurology,DR008,-500.0,Mutualiteit,True
+P0576,Mohamed Bossuyt,65.0,FEMALE,2025-06-24,2025-07-04,Hypertension,Oncology,DR013,-500.0,,True
+P0316,Davy Adams,65.0,,2025-02-15,2025-02-25,COVID-19,Neurology,DR014,,Allianz,False
+,Ingrid Neyens Yildirim,150.0,F,2026-03-28,2026-04-18,Heart failure,Cardiology,DR005,,DKV,False
+P0699,Robin De Rycke,150.0,M,2026-02-11,2026-02-13,Pneumonia,Pediatrics,DR010,230.87,AG Insurance,False
+P0818,Laura Boeckx,,F,2024-07-24,2024-08-07,Hypertension,Neurology,DR007,-500.0,Allianz,False
+P0712,Maria Peters,150.0,,2025-09-07,2025-09-28,Sepsis,Oncology,DR001,12668.09,DKV,False
+P0077,Daan Boeckx Roose,-5.0,M,2024-09-06,2024-09-09,Hypertension,ICU,DR004,6684.12,,False
+P0634,Juliette Blommaert,,,2025-05-23,2025-06-06,Stroke,ICU,DR013,13291.56,AG Insurance,True
+P0105,August Smet,29.0,FEMALE,2024-11-25,2024-12-09,Heart failure,Cardiology,DR008,-500.0,Allianz,False
+P0248,Eddy Vandamme,-5.0,X,2024-12-06,2024-12-27,Stroke,Neurology,DR013,-500.0,Allianz,True
+P0477,Marc Declercq,,Male,2025-03-22,2025-03-29,Diabetes type 2,ICU,DR015,13773.26,DKV,True
+P0671,Maria Vermeulen Geens,,Male,2024-06-24,2024-06-26,COVID-19,Pediatrics,DR001,,Mutualiteit,False
+P0086,Bart De Witte,12.0,FEMALE,2024-05-05,2024-05-07,Lung cancer,Emergency,DR005,11453.47,Mutualiteit,True
+P0470,Fleur Somers,94.0,m,2025-11-10,2025-12-01,Lung cancer,Cardiology,DR005,5773.78,DKV,False
+P0226,Roy Verbeke,,Male,2024-04-10,2024-04-11,Pneumonia,Oncology,DR005,-500.0,,False
+P0775,Thomas Adams,82.0,Female,2024-04-23,2024-04-30,Heart failure,Orthopedics,DR013,7650.62,Mutualiteit,True
+P0332,Kenneth Vanderstraeten,40.0,FEMALE,2024-06-25,2024-07-09,Sepsis,Orthopedics,DR009,-500.0,AG Insurance,False
+P0234,Claudia Pauwels,45.0,F,2026-02-06,2026-02-16,Hip fracture,Cardiology,DR013,-500.0,,True
+P0589,Lisa Brouwers,150.0,MALE,2025-09-03,2025-09-08,COVID-19,Oncology,DR003,,,False
+P0476,Yassine Janssens,,Male,2025-03-25,2025-04-15,Hip fracture,Emergency,DR012,9856.6,AXA,False
+P0883,Francine Deman Engelen,83.0,,2025-01-05,2025-01-15,Lung cancer,Orthopedics,DR003,4444.18,Mutualiteit,False
+P0863,Delphine Schepers,,m,2025-07-23,2025-07-26,Hypertension,Orthopedics,DR004,,Allianz,False
+P0600,Frans Decock,150.0,M,2025-06-23,2025-07-07,COVID-19,Oncology,DR005,1330.72,,True
+P0422,Patrick Vansteenkiste,-5.0,f,2025-11-20,2025-11-19,Heart failure,Pediatrics,DR002,-500.0,AG Insurance,False
+P0688,Valérie Peeters,150.0,f,2024-05-22,2024-06-12,Pneumonia,ICU,DR004,,AG Insurance,True
+P0183,Rita Debruyne,-5.0,Male,2024-11-28,2024-12-19,Sepsis,Pediatrics,DR005,,DKV,True
+P0618,Marc Pattyn,150.0,FEMALE,2025-11-05,2025-11-15,Sepsis,ICU,DR003,,AXA,True
+P0333,Nathalie Peeters,-5.0,M,2024-04-27,2024-04-28,Appendicitis,Neurology,DR012,,DKV,False
+P0439,René Pauwels,150.0,Female,2026-02-23,2026-02-22,COVID-19,Emergency,DR013,11614.13,Mutualiteit,False
+P0050,Kim Decoster,85.0,Male,2024-05-24,2024-06-14,Heart failure,Oncology,DR007,,AG Insurance,False
+,Ilias De Schrijver,47.0,F,2025-11-30,2025-12-10,Hypertension,Emergency,DR003,-500.0,AXA,False
+P0530,Jacqueline Van den Broeck,,m,2026-02-28,2026-03-10,Lung cancer,Cardiology,DR012,-500.0,AXA,True
+P0235,Germaine Willems,44.0,X,2024-12-21,2024-12-19,Lung cancer,Orthopedics,DR003,2632.44,AG Insurance,False
+P0487,Nadia Timmermans,-5.0,F,2025-05-01,2025-05-11,Stroke,Cardiology,DR012,13626.0,Allianz,True
+P0897,Sarah Vansteenkiste,150.0,,2026-01-04,2026-01-09,Heart failure,Emergency,DR013,7687.95,DKV,False
+P0498,Kobe Vermeiren,79.0,F,2025-12-04,2025-12-14,Heart failure,Pediatrics,DR011,10687.09,Mutualiteit,False
+P0891,Ann Wauters,21.0,Female,2026-03-12,2026-03-10,Appendicitis,ICU,DR011,10299.13,,False
+P0107,Robby Claes Dubois,150.0,X,2024-12-26,2025-01-09,Hypertension,Pediatrics,DR002,,,True
+P0444,Steven Stevens,63.0,FEMALE,2024-08-18,2024-08-17,Appendicitis,Cardiology,DR012,-500.0,Allianz,True
+P0489,Michael Coppens,20.0,MALE,2024-12-30,2025-01-20,Hip fracture,Oncology,DR012,13058.51,Allianz,True
+P0647,Magda Wuyts,77.0,MALE,2026-01-15,2026-01-22,Lung cancer,Pediatrics,DR013,4387.92,DKV,True
+P0013,Marleen Cornelis,70.0,f,2026-01-29,2026-01-30,Hip fracture,Neurology,DR001,9064.38,DKV,False
+P0739,Seppe Baert,34.0,f,2025-09-02,2025-09-03,Appendicitis,Oncology,DR008,12505.4,DKV,True
+P0727,Naomi Verstraete,49.0,M,2026-03-09,2026-03-07,Hip fracture,Orthopedics,DR011,,Allianz,True
+P0191,,150.0,X,2024-08-21,2024-09-04,COVID-19,Emergency,DR013,2152.78,AG Insurance,True
+P0938,Luna Vaes,90.0,Male,2025-09-21,2025-09-28,Diabetes type 2,ICU,DR003,13887.9,AXA,False
+P0833,Gianni Van Hecke,150.0,X,2025-10-14,2025-10-15,Appendicitis,Oncology,DR011,,Mutualiteit,True
+P0283,Constant Huysmans,7.0,FEMALE,2024-06-27,2024-06-25,Heart failure,Pediatrics,DR011,,Allianz,False
+P0030,Bruno Vermeulen,-5.0,X,2025-03-14,2025-03-19,Heart failure,Cardiology,DR002,,,False
+P0170,Judith Hermans Meeus,,Male,2025-12-24,2026-01-03,Pneumonia,Orthopedics,DR012,-500.0,AG Insurance,False
+P0181,Michel Stevens,-5.0,,2025-08-25,2025-09-04,Appendicitis,Orthopedics,DR012,4953.28,,True
+P0101,Malika Vandeputte,,Female,2025-08-08,2025-08-07,Lung cancer,ICU,DR010,-500.0,DKV,True
+P0198,Raymond Nuyts,,Female,2024-05-27,2024-06-10,Hip fracture,Neurology,DR011,-500.0,AXA,False
+P0496,Ilse Geerts,68.0,,2025-07-25,2025-08-08,Sepsis,Cardiology,DR008,10498.28,,False
+P0722,Annie Kerkhofs,55.0,m,2024-05-27,2024-05-25,Stroke,Emergency,DR009,,Allianz,False
+P0648,Jeroen Coppens,,F,2025-07-20,2025-07-23,Heart failure,Pediatrics,DR003,,AG Insurance,False
+P0836,Maria Yildirim,,MALE,2025-04-26,2025-04-25,Sepsis,Emergency,DR006,3014.72,DKV,False
+P0925,Noah De Smet,62.0,FEMALE,2025-12-05,2025-12-08,COVID-19,Pediatrics,DR009,-500.0,Allianz,False
+P0711,Sam Van Parys,72.0,Male,2026-02-28,2026-03-07,Heart failure,Cardiology,DR015,-500.0,Allianz,True
+P0374,Milan Bouckaert,-5.0,MALE,2025-05-04,2025-05-18,Pneumonia,ICU,DR011,,Mutualiteit,False
+P0679,Monique Fransen,,f,2025-07-24,2025-07-27,Lung cancer,Neurology,DR014,-500.0,AXA,True
+P0878,Christine Smets,,F,2025-09-24,2025-10-15,Appendicitis,Oncology,DR001,10463.78,DKV,True
+P0649,Thomas Jacobs,150.0,X,2025-04-23,2025-04-25,Heart failure,Cardiology,DR006,11094.34,DKV,False
+P0798,Lutgardis Van Praet,150.0,M,2026-03-04,2026-03-03,Hypertension,Cardiology,DR014,13341.96,AXA,True
+P0848,Stephanie Van Dooren,,Female,2025-12-18,2025-12-28,Stroke,Neurology,DR007,2992.3,Mutualiteit,True
+P0461,Odette Kerkhofs,56.0,MALE,2025-11-18,2025-11-23,Heart failure,Oncology,DR009,13072.84,Mutualiteit,True
+P0414,Benjamin Bogaerts,20.0,,2025-08-28,2025-09-02,Heart failure,ICU,DR014,,AXA,True
+P0132,Daniel Theunis,95.0,,2024-07-07,2024-07-21,Pneumonia,Neurology,DR003,13170.61,DKV,False
+P0040,Greta Put,150.0,F,2025-03-12,2025-03-17,Hip fracture,Orthopedics,DR011,7765.38,,False
+P0435,Ilse Vanhoutte,-5.0,m,2025-09-04,2025-09-03,Hypertension,Pediatrics,DR004,,AG Insurance,True
+P0216,Katrien Hoste,,F,2025-03-15,2025-03-20,Hip fracture,Neurology,DR010,,DKV,False
+P0556,Ryan Aerts,,Male,2024-09-18,2024-09-19,Heart failure,Pediatrics,DR002,,Mutualiteit,True
+P0567,Julie Lemmens,,MALE,2025-09-03,2025-09-17,Appendicitis,Neurology,DR006,7207.64,Allianz,False
+P0763,Hilda De Greef,53.0,X,2025-11-28,2025-12-08,Diabetes type 2,Pediatrics,DR008,14930.68,DKV,True
+P0475,Josephus Lemmens Braem,150.0,MALE,2026-03-06,2026-03-07,Appendicitis,Orthopedics,DR003,10234.32,Allianz,True
+P0457,Pascal De Clerck,,m,2025-08-06,2025-08-09,Appendicitis,Neurology,DR014,2199.27,AG Insurance,True
+P0812,Linda Nys,150.0,MALE,2024-06-02,2024-06-16,Stroke,Orthopedics,DR012,,AG Insurance,True
+P0261,Roger Willems,38.0,FEMALE,2024-08-18,2024-08-25,Pneumonia,Cardiology,DR004,11947.91,Allianz,False
+P0817,Hamza Martens Bouckaert,150.0,M,2025-09-02,2025-09-01,Stroke,Cardiology,DR002,-500.0,Mutualiteit,False
+P0036,Sabrina Smits,150.0,,2025-04-29,2025-04-27,Sepsis,Cardiology,DR007,,AXA,False
+P0828,Laura Stevens,,f,2024-06-24,2024-07-08,Diabetes type 2,ICU,DR005,6220.36,DKV,False
+P0310,Rik Belmans,,MALE,2024-12-20,2025-01-10,Hip fracture,Pediatrics,DR011,-500.0,Allianz,False
+P0277,Gerda Deprez,-5.0,,2025-10-25,2025-10-30,Stroke,Neurology,DR002,14164.61,DKV,False
+P0637,Roger Van Damme,-5.0,M,2025-06-05,2025-06-06,Appendicitis,Oncology,DR009,12356.21,Allianz,True
+P0655,Kim Wouters,,F,2025-12-24,2026-01-03,Diabetes type 2,Cardiology,DR004,7496.23,AG Insurance,False
+P0623,Hamza Simoens,150.0,F,2026-04-02,2026-04-07,Appendicitis,Oncology,DR008,,AXA,True
+P0836,Maria Yildirim,,MALE,2025-04-26,2025-04-25,Sepsis,Emergency,DR006,3014.72,DKV,False
+P0845,Alice De Decker,150.0,Male,2025-09-17,2025-09-22,Lung cancer,Oncology,DR009,2144.98,Mutualiteit,False
+P0394,Levi De Mey,,FEMALE,2026-02-28,2026-03-21,Hypertension,Orthopedics,DR002,-500.0,DKV,False
+P0934,Sonia Vercammen,-5.0,MALE,2025-07-16,2025-07-30,Hip fracture,Oncology,DR006,9742.68,AG Insurance,False
+P0108,Chantal Wouters Daems,150.0,FEMALE,2026-02-12,2026-02-26,Pneumonia,Pediatrics,DR012,-500.0,Mutualiteit,True
+P0940,Robbe Neyens Hendrickx,34.0,Female,2024-07-31,2024-07-30,Stroke,Cardiology,DR008,12566.02,Mutualiteit,False
+P0525,Willy Aerts Engels,2.0,Male,2024-10-30,2024-10-31,Stroke,Neurology,DR011,,Allianz,False
+P0785,Anna Martens,25.0,FEMALE,2024-09-21,2024-09-22,Pneumonia,Pediatrics,DR007,-500.0,,True
+P0048,Barbara Gevaert,,Female,2026-01-20,2026-01-27,Hip fracture,Pediatrics,DR008,,Mutualiteit,False
+P0204,Eline Dewitte Janssen,,X,2025-06-25,2025-07-05,Diabetes type 2,ICU,DR005,6070.15,Allianz,False
+P0922,Marthe Braem,24.0,F,2025-07-25,2025-07-26,Diabetes type 2,Oncology,DR008,13573.84,AXA,False
+P0632,Gilles Goossens,150.0,f,2024-10-20,2024-10-21,Hypertension,Oncology,DR014,11777.06,Mutualiteit,False
+P0022,Philip Hendrickx,,m,2087-06-30,2024-08-28,Appendicitis,Cardiology,DR010,7402.74,,False
+P0403,Gert De Meyer,90.0,F,2024-06-11,2024-07-02,Lung cancer,Pediatrics,DR015,2578.92,AXA,False
+P0084,Nore Bauwens Maes,84.0,f,2026-03-09,2026-03-10,Hypertension,Emergency,DR007,-500.0,,True
+P0131,Frederik Standaert,150.0,F,2025-12-17,2025-12-18,Hip fracture,ICU,DR013,14999.65,Mutualiteit,False
+P0416,Martine Jansen,74.0,X,2025-07-29,2025-08-05,Heart failure,Orthopedics,DR006,,Allianz,False
+P0035,Sharon Merckx,-5.0,M,2024-07-17,2024-07-22,Stroke,Oncology,DR003,-500.0,AXA,True
+P0842,Christiana Rogiers,-5.0,X,2026-03-25,2026-03-27,Hip fracture,Cardiology,DR008,6539.45,,False
+P0742,Annie Philips,42.0,X,2024-11-20,2024-11-21,Hypertension,Pediatrics,DR004,4345.08,,True
+P0698,Wendy Torfs,-5.0,Male,2025-11-07,2025-11-12,Hypertension,Pediatrics,DR001,614.07,AG Insurance,True
+P0287,Wim Janssens,77.0,M,2025-09-19,2025-09-17,COVID-19,Orthopedics,DR006,-500.0,AXA,False
+P0124,Sara Martens,36.0,FEMALE,2024-10-23,2024-10-26,Heart failure,Cardiology,DR006,,AG Insurance,True
+P0034,,29.0,Female,2025-06-06,2025-06-04,Appendicitis,Cardiology,DR011,-500.0,DKV,False
+P0229,Annemie Vaes,85.0,FEMALE,2025-09-19,2025-09-21,Hypertension,Pediatrics,DR010,10785.5,Allianz,False
+P0517,Stefaan Lievens,150.0,FEMALE,2024-10-02,2024-10-12,Pneumonia,Cardiology,DR006,3806.63,DKV,False
+P0020,Kristof Stevens,60.0,M,2026-02-06,2026-02-09,Sepsis,ICU,DR001,6758.34,Mutualiteit,False
+P0923,Yvonne De Wolf,,,2024-06-14,2024-06-28,Heart failure,Orthopedics,DR001,13913.43,AXA,False
+P0220,André Nuyts,150.0,f,2025-08-10,2025-08-09,Diabetes type 2,Cardiology,DR002,,Mutualiteit,True
+P0892,Albert De Bondt,,FEMALE,2026-04-07,2026-04-08,Lung cancer,Oncology,DR005,-500.0,AG Insurance,False
+P0679,Monique Fransen,,f,2025-07-24,2025-07-27,Lung cancer,Neurology,DR014,-500.0,AXA,True
+P0482,Lise Lambert,150.0,,2025-11-08,2025-11-18,Pneumonia,Emergency,DR006,13336.29,Allianz,False
+P0357,Dries Houben,150.0,X,2024-11-26,2024-12-03,Diabetes type 2,Emergency,DR012,-500.0,AXA,False
+P0662,Lise Gevaert Geens,150.0,,2025-10-01,2025-10-06,Hypertension,Pediatrics,DR002,-500.0,Allianz,True
+P0225,Olivier Rombouts,18.0,f,2025-10-25,2025-10-24,COVID-19,Oncology,DR007,,,False
+P0760,Jurgen De Maeyer,150.0,m,2025-03-17,2025-03-31,COVID-19,Oncology,DR012,7011.03,,True
+P0093,Pascal Verheyen Vandekerckhove,94.0,Male,2025-06-12,2025-07-03,Appendicitis,Neurology,DR013,,AXA,True
+P0152,Rosette Slegers,150.0,m,2025-11-07,2025-11-05,Hip fracture,Emergency,DR008,7862.63,DKV,False
+P0859,Ine Mertens,28.0,X,2024-07-20,2024-08-10,Sepsis,Oncology,DR005,,DKV,True
+P0318,Joanna Janssens,83.0,X,2024-11-12,2024-11-14,Heart failure,ICU,DR013,,,True
+P0449,Wim Schoofs,85.0,Female,2025-04-01,2025-04-15,Stroke,Pediatrics,DR004,12560.86,Mutualiteit,True
+P0804,Nathalie Van den Bossche,-5.0,Male,2024-11-11,2024-11-18,Sepsis,Emergency,DR012,10055.8,Allianz,True
+P0746,Ida Pauwels De Muynck,46.0,MALE,2024-12-07,2024-12-17,COVID-19,Pediatrics,DR007,-500.0,Allianz,True
+P0523,Maria Pattyn,15.0,f,2024-06-22,2024-06-27,Pneumonia,Pediatrics,DR007,,Allianz,False
+P0280,Francine Maes,-5.0,MALE,2025-06-07,2025-06-21,COVID-19,Orthopedics,DR012,4050.47,AXA,False
+P0584,Loïc De Vos,150.0,Male,2025-10-16,2025-10-15,Heart failure,Emergency,DR009,-500.0,AXA,True
+P0765,Regina Verhoeven,2.0,FEMALE,2024-12-27,2024-12-25,COVID-19,Cardiology,DR002,,AXA,False
+P0605,Betty Baert,46.0,X,2024-05-06,2024-05-27,Hypertension,Cardiology,DR002,11755.87,AXA,True
+P0350,Nina Van Campenhout,,FEMALE,2026-04-02,2026-03-31,Diabetes type 2,Oncology,DR014,13373.64,Mutualiteit,False
+P0928,Geert Leemans,,MALE,2024-10-13,2024-10-23,Heart failure,Cardiology,DR003,-500.0,AG Insurance,False
+P0375,Lena Verelst,29.0,Male,2025-08-07,2025-08-08,Hip fracture,Emergency,DR015,-500.0,,True
+P0401,Miranda Mahieu,62.0,m,2025-03-14,2025-03-28,Hypertension,Oncology,DR013,-500.0,,False
+P0705,Caroline Vanderlinden,-5.0,MALE,2026-02-27,2026-02-25,Hip fracture,Cardiology,DR002,-500.0,Mutualiteit,False
+P0258,Els David,45.0,,2025-05-08,2025-05-09,COVID-19,ICU,DR004,,Mutualiteit,True
+P0945,Christophe De Waele,28.0,M,2025-12-16,2025-12-21,COVID-19,Oncology,DR006,-500.0,Mutualiteit,True
+P0852,Irène Cools,150.0,M,2025-03-30,2025-04-06,Sepsis,ICU,DR014,5581.0,DKV,True
+P0073,Ivan Desmet,-5.0,FEMALE,2024-08-08,2024-08-29,Sepsis,Emergency,DR008,11494.01,AG Insurance,False
+P0196,Paulien Lemmens,93.0,Female,2024-09-03,2024-09-05,Appendicitis,Cardiology,DR002,12180.28,AXA,True
+P0484,Willy Poelmans,69.0,Female,2025-05-29,2025-06-12,Hip fracture,Pediatrics,DR007,8453.97,AG Insurance,True
+P0856,Samir De Cock,150.0,F,2025-04-20,2025-05-04,COVID-19,Pediatrics,DR009,,AXA,True
+P0138,Nele Yilmaz,-5.0,FEMALE,2024-10-27,2024-11-01,Lung cancer,ICU,DR012,-500.0,Allianz,False
+P0495,Alexander Peeters,150.0,Male,2024-05-28,2024-06-02,Stroke,Emergency,DR014,,AG Insurance,True
+P0773,Kris Claes,77.0,m,2026-02-05,2026-02-08,Stroke,Orthopedics,DR006,11910.64,,False
+P0551,Annelies Hendrickx,,,2025-03-08,2025-03-15,Appendicitis,Cardiology,DR001,10235.55,,False
+P0463,Maria De Coninck,-5.0,F,2026-02-15,2026-02-14,COVID-19,Orthopedics,DR012,-500.0,Mutualiteit,False
+P0202,Sofie Verlinden,,MALE,2024-04-21,2024-05-01,Hypertension,Orthopedics,DR001,-500.0,Mutualiteit,False
+P0313,Julie Maris,150.0,,2026-02-03,2026-02-05,Stroke,Neurology,DR008,,DKV,False
+P0291,Natalie Segers,78.0,,2025-05-10,2025-05-08,Appendicitis,ICU,DR003,-500.0,AG Insurance,False
+P0190,Angelo De Smet,69.0,F,2024-05-17,2024-05-19,Appendicitis,Emergency,DR010,,Allianz,True
+P0764,Evi Aerts,150.0,MALE,2026-02-11,2026-02-13,Diabetes type 2,Emergency,DR007,,DKV,False
+P0113,Alexandra David,1.0,F,2025-12-29,2026-01-03,Lung cancer,Emergency,DR011,,Mutualiteit,True
+P0950,Tine D'hondt,150.0,MALE,2024-07-09,2024-07-10,Diabetes type 2,Cardiology,DR003,,AG Insurance,True
+P0184,Marie De Jonghe,150.0,f,2025-09-19,2025-09-24,Hip fracture,Orthopedics,DR011,9794.62,DKV,False
+P0153,Marie-Claire De Bruycker,63.0,Male,2025-04-05,2025-04-08,COVID-19,Cardiology,DR013,,,True
+P0825,Paul De Ridder,,MALE,2025-12-29,2026-01-01,Lung cancer,Pediatrics,DR008,-500.0,Mutualiteit,True
+P0326,Gilbert Beckers,-5.0,FEMALE,2024-07-29,2024-08-05,Heart failure,ICU,DR011,8866.45,AXA,False
+P0704,Freya Wouters,27.0,F,2025-01-20,2025-01-18,Sepsis,Orthopedics,DR006,,Allianz,False
+P0045,Eline Jonckheere,-5.0,m,2024-11-20,2024-11-23,COVID-19,Cardiology,DR012,7915.24,AG Insurance,False
+P0445,Heidi Hermans,150.0,Female,2025-06-29,2025-06-30,Hypertension,Neurology,DR009,,AG Insurance,True
+P0788,Sofie Schepers Coppens,47.0,,2025-04-12,2025-04-10,COVID-19,Emergency,DR003,-500.0,AG Insurance,False
+P0007,José Beckers,-5.0,f,2025-02-23,2025-02-24,Heart failure,Neurology,DR014,9672.0,Mutualiteit,True
+P0251,Diane Van de Velde,,FEMALE,2026-02-16,2026-02-26,Diabetes type 2,ICU,DR002,236.6,AXA,False
+P0824,Peter Jacobs,5.0,Male,2025-12-05,2025-12-03,Hypertension,Orthopedics,DR004,12870.06,AXA,True
+P0076,Elif Buelens Martens,,,2025-05-12,2025-05-19,COVID-19,Emergency,DR008,-500.0,Mutualiteit,False
+P0513,Iris Bauwens Melis,73.0,F,2024-08-13,2024-08-12,COVID-19,Oncology,DR011,,,False
+P0941,Anthony Yilmaz,150.0,f,2025-03-04,2025-03-02,Appendicitis,ICU,DR010,12313.97,AXA,False
+P0392,Hilde Goris,74.0,X,2025-10-02,2025-10-16,Pneumonia,Orthopedics,DR010,4022.24,,True
+P0896,Gerard Van Poucke,-5.0,FEMALE,2025-11-18,2025-12-09,Diabetes type 2,Orthopedics,DR014,6133.9,AXA,True
+P0433,Frans Claeys,-5.0,MALE,2024-09-20,2024-09-22,Appendicitis,Neurology,DR012,,,False
+P0069,Steven De Schepper Willems,10.0,m,2025-01-20,2025-01-21,Heart failure,Neurology,DR005,,,True
+P0168,André De Wolf,,Male,2024-08-04,2024-08-07,Stroke,Pediatrics,DR006,6865.24,AG Insurance,False
+P0905,Samuel De Wit,77.0,f,2026-02-20,2026-03-06,Diabetes type 2,Cardiology,DR003,8761.64,Allianz,False
+P0731,Joris Vermeulen,,M,2025-03-20,2025-03-27,Lung cancer,Oncology,DR010,6780.44,Allianz,False
+P0555,Filip Verschueren De Clercq,,Male,2024-11-26,2024-12-01,Pneumonia,Neurology,DR012,-500.0,AG Insurance,False
+P0367,Johan De Smedt,29.0,Female,2026-02-12,2026-02-11,Hypertension,Orthopedics,DR008,-500.0,AXA,True
+P0346,Ismail Declercq,,MALE,2026-01-10,2026-01-12,Appendicitis,Pediatrics,DR006,7941.93,,False
+P0585,Carlos Baert,,f,2025-05-24,2025-05-27,Stroke,Emergency,DR008,,Mutualiteit,False
+P0536,Danny Lemmens,,MALE,2024-08-29,2024-09-08,Diabetes type 2,Orthopedics,DR011,,Mutualiteit,True
+P0399,Marie Devolder,,Female,2026-02-15,2026-02-13,Diabetes type 2,Pediatrics,DR006,,Mutualiteit,False
+P0186,Omer Adriaensen,150.0,,2025-03-09,2025-03-12,Hypertension,Cardiology,DR005,-500.0,,True
+P0349,Patricia De Clercq,150.0,F,2025-06-11,2025-06-21,Pneumonia,Pediatrics,DR001,4877.71,AXA,False
+P0616,Catharina Maes Heymans,-5.0,M,2026-03-12,2026-03-26,Pneumonia,Cardiology,DR007,12180.33,Allianz,True
+P0920,Inge De Bruyn,,Male,2024-12-21,2024-12-20,Stroke,Cardiology,DR008,-500.0,AG Insurance,False
+P0212,Heidi Van Loon,,f,2025-02-03,2025-02-04,Hip fracture,ICU,DR007,-500.0,Mutualiteit,True
+P0580,Anna Eeckhout,,,2025-08-24,2025-09-03,Lung cancer,ICU,DR005,-500.0,DKV,True
+P0503,Nina Knockaert,-5.0,f,2025-11-20,2025-12-11,Pneumonia,Emergency,DR009,1179.95,DKV,False
+P0538,Ingrid Moonen,60.0,X,2024-05-01,2024-05-22,Diabetes type 2,Emergency,DR012,8913.12,DKV,True
+P0197,Nick Maes,77.0,Female,2024-10-24,2024-11-03,Sepsis,Neurology,DR013,,Mutualiteit,False
+P0176,Jeroen Van Impe,25.0,m,2024-10-05,2024-10-26,Appendicitis,Emergency,DR012,-500.0,Allianz,True
