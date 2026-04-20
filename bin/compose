@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ -x "./bin/docker" ]]; then
+  exec ./bin/docker compose "$@"
+fi
+
+if command -v docker >/dev/null 2>&1; then
+  exec docker compose "$@"
+fi
+
+printf 'docker is not available. Run this inside a project folder with ./bin/docker.\n' >&2
+exit 127

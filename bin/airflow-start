@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ ! -f "./docker-compose.yaml" ]]; then
+  printf 'No docker-compose.yaml in this folder. Open Batch/airflow-docker or Live Data/airflow-docker first.\n' >&2
+  exit 1
+fi
+
+if [[ -x "./bin/docker" ]]; then
+  DOCKER_CMD=("./bin/docker")
+elif command -v docker >/dev/null 2>&1; then
+  DOCKER_CMD=("docker")
+else
+  printf 'docker command not found and no ./bin/docker wrapper in this folder.\n' >&2
+  exit 127
+fi
+
+CURRENT_APISERVER_ID="$(${DOCKER_CMD[@]} compose ps -q airflow-apiserver 2>/dev/null || true)"
+CONFLICTS=()
+
+while IFS=' ' read -r CONTAINER_ID CONTAINER_NAME; do
+  [[ -z "${CONTAINER_ID:-}" ]] && continue
+
+  if [[ -n "$CURRENT_APISERVER_ID" && "$CONTAINER_ID" == "$CURRENT_APISERVER_ID" ]]; then
+    continue
+  fi
+
+  CONFLICTS+=("$CONTAINER_NAME")
+done < <("${DOCKER_CMD[@]}" ps --filter publish=8080 --format '{{.ID}} {{.Names}}')
+
+if (( ${#CONFLICTS[@]} > 0 )); then
+  printf 'Port 8080 is already in use by running container(s): %s\n' "${CONFLICTS[*]}" >&2
+  printf 'Stop the conflicting stack first, then run airflow-start again.\n' >&2
+  exit 1
+fi
+
+"${DOCKER_CMD[@]}" compose up -d airflow-init airflow-apiserver airflow-scheduler airflow-dag-processor airflow-triggerer airflow-worker
+"${DOCKER_CMD[@]}" compose ps

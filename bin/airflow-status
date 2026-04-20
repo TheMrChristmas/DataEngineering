@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ ! -f "./docker-compose.yaml" ]]; then
+  printf 'No docker-compose.yaml in this folder. Open Batch/airflow-docker or Live Data/airflow-docker first.\n' >&2
+  exit 1
+fi
+
+if [[ -x "./bin/docker" ]]; then
+  exec ./bin/docker compose ps -a
+fi
+
+if command -v docker >/dev/null 2>&1; then
+  exec docker compose ps -a
+fi
+
+printf 'docker command not found and no ./bin/docker wrapper in this folder.\n' >&2
+exit 127
