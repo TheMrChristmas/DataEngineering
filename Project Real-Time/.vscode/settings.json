@@ -1,5 +1,0 @@
-{
-  "terminal.integrated.env.linux": {
-    "PATH": "${workspaceFolder}/airflow-docker/bin:${env:PATH}"
-  }
-}

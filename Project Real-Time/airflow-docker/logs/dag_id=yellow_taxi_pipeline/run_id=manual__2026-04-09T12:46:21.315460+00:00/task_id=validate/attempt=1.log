@@ -1,8 +1,0 @@
-{"timestamp":"2026-04-09T12:46:24.192448Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
-{"timestamp":"2026-04-09T12:46:24.193312Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/yellow_taxi_pipeline.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
-{"timestamp":"2026-04-09T12:46:24.231646Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
-{"timestamp":"2026-04-09T12:46:24.232229Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
-{"timestamp":"2026-04-09T12:46:24.232664Z","level":"info","event":"Current task name:validate","logger":"task.stdout"}
-{"timestamp":"2026-04-09T12:46:24.232913Z","level":"info","event":"Dag name:yellow_taxi_pipeline","logger":"task.stdout"}
-{"timestamp":"2026-04-09T12:46:24.243593Z","level":"info","event":"[Validator] Reading /opt/airflow/data/raw/yellow_tripdata_2026-01.parquet","logger":"task.stdout"}
-{"timestamp":"2026-04-09T12:46:25.084108Z","level":"critical","event":"Process terminated by signal. Likely out of memory error (OOM). For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#process-terminated-by-signal.","signal":-9,"signal_name":"SIGKILL","logger":"task"}
