@@ -1,0 +1,20 @@
+# Python cache/artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+
+# Airflow runtime logs
+Batch/airflow-docker/logs/
+
+# Generated pipeline data (local artifacts)
+Batch/airflow-docker/data/raw/
+Batch/airflow-docker/data/processed/
+Batch/airflow-docker/data/output/
+Batch/airflow-docker/data/error/
+
+# Local VS Code runtime data
+Batch/airflow-docker/.vscode/data/
+
+# Local environment file (may contain secrets)
+Batch/airflow-docker/.env
