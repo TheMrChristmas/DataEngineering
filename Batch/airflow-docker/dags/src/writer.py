@@ -8,7 +8,7 @@ import pyarrow.parquet as pq
 
 
 class Writer:
-    def __init__(self, output_path: str = "/opt/airflow/data/output"):
+    def __init__(self, output_path: str = "/opt/airflow/data/processed"):
         self.output_path = Path(output_path)
         self.output_path.mkdir(parents=True, exist_ok=True)
         self.azure_upload_enabled = os.getenv(
@@ -23,13 +23,26 @@ class Writer:
 
         local_file = self._write_local_copy(source_path)
         if self.azure_upload_enabled:
-            self._upload_to_azure(local_file)
+            self._upload_output_folder_to_azure()
         else:
             print("[Writer] Azure upload disabled; skipping cloud upload")
         return str(local_file)
 
     def _write_local_copy(self, source_path: Path) -> Path:
         output_file = self.output_path / source_path.name
+
+        # If transformer already wrote to this exact path, avoid rewriting the file in-place.
+        if source_path.resolve() == output_file.resolve():
+            source_file = pq.ParquetFile(source_path)
+            rows_written = source_file.metadata.num_rows
+            if rows_written == 0:
+                raise ValueError(
+                    f"[Writer] Input parquet contains 0 rows: {source_path}"
+                )
+            print(f"[Writer] Source already in output path: {output_file}")
+            print(f"[Writer] Local output rows: {rows_written}")
+            return output_file
+
         source_file = pq.ParquetFile(source_path)
 
         writer = None
@@ -56,7 +69,7 @@ class Writer:
         print(f"[Writer] Local output rows: {rows_written}")
         return output_file
 
-    def _upload_to_azure(self, local_file: Path) -> None:
+    def _upload_output_folder_to_azure(self) -> None:
         try:
             from azure.core.exceptions import ResourceExistsError
             from azure.storage.blob import BlobServiceClient
@@ -66,16 +79,20 @@ class Writer:
             ) from exc
 
         connection_string = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
-        container_name = os.getenv("AZURE_STORAGE_CONTAINER")
-        blob_prefix = os.getenv("AZURE_STORAGE_BLOB_PREFIX", "yellow-taxi")
+        container_name = (
+            os.getenv("AZURE_STORAGE_CONTAINER_BATCH")
+            or os.getenv("AZURE_STORAGE_CONTAINER")
+            or "batch"
+        )
+        blob_prefix = (
+            os.getenv("AZURE_STORAGE_BLOB_PREFIX_BATCH")
+            or os.getenv("AZURE_STORAGE_BLOB_PREFIX")
+            or "yellow-taxi"
+        )
 
         if not connection_string:
             raise ValueError(
                 "[Writer] Missing AZURE_STORAGE_CONNECTION_STRING environment variable"
-            )
-        if not container_name:
-            raise ValueError(
-                "[Writer] Missing AZURE_STORAGE_CONTAINER environment variable"
             )
 
         blob_service = BlobServiceClient.from_connection_string(
@@ -89,13 +106,26 @@ class Writer:
             # Container already exists; continue.
             pass
 
+        files_to_upload = sorted(
+            [p for p in self.output_path.rglob("*") if p.is_file()]
+        )
+        if not files_to_upload:
+            raise ValueError(
+                f"[Writer] No files found in output directory: {self.output_path}"
+            )
+
         timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-        blob_name = f"{blob_prefix}/{local_file.stem}_{timestamp}{local_file.suffix}"
+        uploaded_count = 0
+        for file_path in files_to_upload:
+            relative_path = file_path.relative_to(self.output_path).as_posix()
+            blob_name = f"{blob_prefix}/{timestamp}/{relative_path}"
+            with file_path.open("rb") as data:
+                container_client.upload_blob(
+                    name=blob_name, data=data, overwrite=True)
+            uploaded_count += 1
+            print(
+                f"[Writer] Uploaded to Azure Blob: {container_name}/{blob_name}")
 
-        with local_file.open("rb") as data:
-            container_client.upload_blob(
-                name=blob_name, data=data, overwrite=True)
-
-        schema_field_count = len(pq.ParquetFile(local_file).schema_arrow.names)
-        print(f"[Writer] Uploaded to Azure Blob: {container_name}/{blob_name}")
-        print(f"[Writer] Uploaded parquet schema fields: {schema_field_count}")
+        print(
+            f"[Writer] Uploaded {uploaded_count} file(s) from {self.output_path} to Azure"
+        )

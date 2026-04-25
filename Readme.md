@@ -33,35 +33,25 @@ The workspace also sets terminal `PATH` so those commands are available in new V
 
 If a command is not found, open a new terminal in VS Code.
 
-## 3. First-Time Setup (Per Project)
+## 3. First-Time Setup (Shared)
 
-Do these steps once for each project you want to run.
-
-### Batch
+Both projects now use one shared environment file at workspace root:
 
 ```bash
-cd "Batch/airflow-docker"
+cd "DataEngineering"
 cat .env
 ```
 
-Expected important defaults in `.env`:
+Important shared values in `.env`:
 
-- `COMPOSE_PROJECT_NAME=de_batch`
+- `BATCH_COMPOSE_PROJECT_NAME=de_batch`
+- `LIVE_COMPOSE_PROJECT_NAME=de_live`
 - `AIRFLOW_UID=50000`
+- `AZURE_STORAGE_CONNECTION_STRING=...`
+- `AZURE_STORAGE_CONTAINER_BATCH=batch`
+- `AZURE_STORAGE_CONTAINER_LIVE=live-data`
 
-### Live Data
-
-```bash
-cd "Live Data/airflow-docker"
-cat .env
-```
-
-Expected important defaults in `.env`:
-
-- `COMPOSE_PROJECT_NAME=de_live`
-- `AIRFLOW_UID=50000`
-
-If you change values in `.env`, restart the stack after changes.
+If you change values in `.env`, restart the running stack after changes.
 
 ## 4. Start Batch Project
 
