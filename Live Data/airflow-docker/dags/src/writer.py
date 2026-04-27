@@ -10,6 +10,22 @@ import pandas as pd
 logger = logging.getLogger(__name__)
 
 
+def _escape_csv_formula(value: object) -> object:
+    if isinstance(value, str):
+        stripped = value.lstrip()
+        if stripped.startswith(("=", "+", "-", "@")):
+            return "'" + value
+    return value
+
+
+def _sanitize_dataframe_for_csv(df: pd.DataFrame) -> pd.DataFrame:
+    sanitized = df.copy()
+    text_cols = sanitized.select_dtypes(include=["object", "string"]).columns
+    for col in text_cols:
+        sanitized[col] = sanitized[col].map(_escape_csv_formula)
+    return sanitized
+
+
 # ---------------------------------------------------------------------------
 # Azure upload helper
 # ---------------------------------------------------------------------------
@@ -79,9 +95,12 @@ def write_outputs(
     summary_path = output_base / f"{base_name}_summary.json"
     invalid_path = error_base / f"{base_name}_invalid.csv"
 
+    safe_processed_df = _sanitize_dataframe_for_csv(processed_df)
+    safe_invalid_df = _sanitize_dataframe_for_csv(invalid_df)
+
     # --- Local writes (unchanged) ---
-    processed_df.to_csv(processed_path, index=False)
-    invalid_df.to_csv(invalid_path, index=False)
+    safe_processed_df.to_csv(processed_path, index=False)
+    safe_invalid_df.to_csv(invalid_path, index=False)
 
     combined_metrics = dict(metrics)
     combined_metrics["output_rows"] = int(len(processed_df))

@@ -6,8 +6,9 @@ from src.processor import process_dataframe
 from src.backup_validator import run_backup_validation
 
 import json
+import shutil
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
@@ -23,6 +24,30 @@ INPUT_DIR = "/opt/airflow/data/raw"
 STAGING_DIR = "/opt/airflow/data/processed/_staging"
 OUTPUT_DIR = "/opt/airflow/data/output"
 ERROR_DIR = "/opt/airflow/data/error"
+ARCHIVE_DIR = "/opt/airflow/data/raw/archive"
+
+
+def _archive_source_file(source_file: Path, archive_dir: str) -> str:
+    if not source_file.exists():
+        raise FileNotFoundError(
+            f"Source file missing before archive: {source_file}")
+
+    archive_base = Path(archive_dir)
+    archive_base.mkdir(parents=True, exist_ok=True)
+
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    archived_name = f"{source_file.stem}_{timestamp}{source_file.suffix}"
+    archived_path = archive_base / archived_name
+
+    suffix = 1
+    while archived_path.exists():
+        archived_path = archive_base / (
+            f"{source_file.stem}_{timestamp}_{suffix}{source_file.suffix}"
+        )
+        suffix += 1
+
+    shutil.move(str(source_file), str(archived_path))
+    return str(archived_path)
 
 
 @dag(
@@ -42,14 +67,16 @@ def hospital_admissions_pipeline() -> None:
 
         Path(STAGING_DIR).mkdir(parents=True, exist_ok=True)
         source = Path(picked)
+        run_token = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
         raw_df = read_csv_to_dataframe(str(source))
 
-        read_path = Path(STAGING_DIR) / f"{source.stem}_read.csv"
+        read_path = Path(STAGING_DIR) / f"{source.stem}_{run_token}_read.csv"
         raw_df.to_csv(read_path, index=False)
 
         return {
             "source_file": str(source),
             "read_path": str(read_path),
+            "run_token": run_token,
         }
 
     @task(task_id="validator")
@@ -58,9 +85,12 @@ def hospital_admissions_pipeline() -> None:
         valid_df, invalid_df, metrics = validate_dataframe(df)
 
         source = Path(payload["source_file"])
-        valid_path = Path(STAGING_DIR) / f"{source.stem}_valid.csv"
-        invalid_path = Path(STAGING_DIR) / f"{source.stem}_invalid.csv"
-        metrics_path = Path(STAGING_DIR) / f"{source.stem}_metrics.json"
+        run_token = payload["run_token"]
+        valid_path = Path(STAGING_DIR) / f"{source.stem}_{run_token}_valid.csv"
+        invalid_path = Path(STAGING_DIR) / \
+            f"{source.stem}_{run_token}_invalid.csv"
+        metrics_path = Path(STAGING_DIR) / \
+            f"{source.stem}_{run_token}_metrics.json"
 
         valid_df.to_csv(valid_path, index=False)
         invalid_df.to_csv(invalid_path, index=False)
@@ -78,7 +108,9 @@ def hospital_admissions_pipeline() -> None:
         processed_df, process_metrics = process_dataframe(df_valid)
 
         source = Path(payload["source_file"])
-        processed_path = Path(STAGING_DIR) / f"{source.stem}_processed.csv"
+        run_token = payload["run_token"]
+        processed_path = Path(STAGING_DIR) / \
+            f"{source.stem}_{run_token}_processed.csv"
         processed_df.to_csv(processed_path, index=False)
 
         metrics = json.loads(
@@ -110,7 +142,7 @@ def hospital_admissions_pipeline() -> None:
         processed_df = pd.read_csv(payload["processed_path"])
         invalid_df = pd.read_csv(payload["invalid_path"])
 
-        return write_outputs(
+        write_result = write_outputs(
             processed_df=processed_df,
             invalid_df=invalid_df,
             metrics=metrics,
@@ -118,6 +150,12 @@ def hospital_admissions_pipeline() -> None:
             output_dir=OUTPUT_DIR,
             error_dir=ERROR_DIR,
         )
+
+        archived_source = _archive_source_file(
+            Path(payload["source_file"]), ARCHIVE_DIR
+        )
+        write_result["archived_source_file"] = archived_source
+        return write_result
 
     writer_task(backup_validator_task(
         processor_task(validator_task(reader_task()))))

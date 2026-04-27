@@ -29,6 +29,7 @@ def validate_dataframe(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, di
     work["patient_id"] = work["patient_id"].astype("string").str.strip()
     work["name"] = work["name"].astype("string").str.strip()
     work["gender"] = work["gender"].astype("string").str.strip().str.upper()
+    work["gender"] = work["gender"].replace({"MALE": "M", "FEMALE": "F"})
     work["admission_date"] = pd.to_datetime(
         work["admission_date"], errors="coerce")
     work["discharge_date"] = pd.to_datetime(
@@ -42,18 +43,24 @@ def validate_dataframe(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, di
     work["readmission"] = work["readmission"].astype(
         "string").str.strip().str.lower()
 
-    valid_gender = work["gender"].isin(["M", "F", "MALE", "FEMALE"])
+    valid_gender = work["gender"].isin(["M", "F"])
     valid_readmission = work["readmission"].isin(["true", "false"])
-    valid_patient = work["patient_id"].str.match(r"^P\d{4}$", na=False)
-    valid_doctor = work["doctor_id"].str.match(r"^DR\d{3}$", na=False)
+    valid_patient = work["patient_id"].notna(
+    ) & work["patient_id"].str.match(r"^P\d{4}$", na=False)
+    valid_doctor = work["doctor_id"].notna(
+    ) & work["doctor_id"].str.match(r"^DR\d{3}$", na=False)
     valid_age = work["age"].between(0, 120, inclusive="both")
     valid_cost = work["cost_eur"] >= 0
     valid_dates = work["admission_date"].notna() & work["discharge_date"].notna() & (
         work["discharge_date"] >= work["admission_date"])
     valid_required_text = (
-        work["name"].ne("")
+        work["name"].notna()
+        & work["name"].ne("")
+        & work["diagnosis"].notna()
         & work["diagnosis"].ne("")
+        & work["ward"].notna()
         & work["ward"].ne("")
+        & work["insurance"].notna()
         & work["insurance"].ne("")
     )
 
@@ -66,7 +73,7 @@ def validate_dataframe(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, di
         & valid_cost
         & valid_dates
         & valid_required_text
-    )
+    ).fillna(False)
 
     valid_df = work.loc[row_is_valid].copy()
     invalid_df = work.loc[~row_is_valid].copy()

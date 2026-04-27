@@ -13,8 +13,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 
 def ingest(**context):
-    ym = context["logical_date"].strftime("%Y-%m")
-    path = Reader().read(ym)
+    # Always read January data regardless of when the pipeline runs
+    path = Reader().read("2026-01")
     return path   # XCom automatically saves the return value
 
 

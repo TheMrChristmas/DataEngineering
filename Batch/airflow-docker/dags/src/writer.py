@@ -107,11 +107,14 @@ class Writer:
             pass
 
         files_to_upload = sorted(
-            [p for p in self.output_path.rglob("*") if p.is_file()]
+            [
+                p for p in self.output_path.rglob("*")
+                if p.is_file() and p.suffix.lower() == ".parquet"
+            ]
         )
         if not files_to_upload:
             raise ValueError(
-                f"[Writer] No files found in output directory: {self.output_path}"
+                f"[Writer] No parquet files found in output directory: {self.output_path}"
             )
 
         timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
