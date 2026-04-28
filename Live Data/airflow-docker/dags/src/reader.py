@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import hashlib
+import json
 from pathlib import Path
 import os
 import re
@@ -15,6 +17,17 @@ MAX_INPUT_FILE_BYTES = int(os.getenv("MAX_INPUT_FILE_BYTES", "52428800"))
 def _normalize_column_name(name: str) -> str:
     normalized = re.sub(r"[^a-z0-9]+", "_", name.strip().lower())
     return normalized.strip("_")
+
+
+def _hash_file(path: Path, chunk_size: int = 1024 * 1024) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as file_obj:
+        while True:
+            chunk = file_obj.read(chunk_size)
+            if not chunk:
+                break
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def _is_stable_file(path: Path, base_dir: Path, min_stable_seconds: int) -> bool:
@@ -63,6 +76,39 @@ def pick_next_input_file(
         return None
 
     return str(files[0])
+
+
+def describe_input_file(input_path: str) -> dict[str, object]:
+    path = Path(input_path).resolve()
+    if not path.exists():
+        raise FileNotFoundError(f"Input file not found: {path}")
+
+    stat = path.stat()
+    return {
+        "path": str(path),
+        "name": path.name,
+        "extension": path.suffix.lower(),
+        "size_bytes": int(stat.st_size),
+        "modified_at_ns": int(stat.st_mtime_ns),
+        "sha256": _hash_file(path),
+    }
+
+
+def load_processing_state(state_path: str) -> dict[str, object]:
+    path = Path(state_path)
+    if not path.exists():
+        return {}
+
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def save_processing_state(state_path: str, state: dict[str, object]) -> None:
+    path = Path(state_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(state, indent=2), encoding="utf-8")
 
 
 def read_csv_to_dataframe(input_path: str) -> pd.DataFrame:

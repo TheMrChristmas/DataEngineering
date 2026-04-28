@@ -97,6 +97,16 @@ Default login:
 - Username: `airflow`
 - Password: `airflow`
 
+The live project also starts a file watcher service. Drop a `.csv` file into
+`Live Data/airflow-docker/data/raw` and the watcher will trigger the
+`hospital_admissions_pipeline` DAG automatically. The DAG is externally
+triggered, so it does not run on a cron schedule.
+
+After a successful run, the original source file is moved to
+`Live Data/airflow-docker/data/archive/raw`, so the `data/raw` folder stays
+clean for the next demo. To re-test the pipeline, place the CSV in `data/raw`
+again and it will trigger a fresh run.
+
 ## 6. Stop a Running Project
 
 From the project folder that is currently running:

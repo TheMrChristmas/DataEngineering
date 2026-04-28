@@ -34,5 +34,5 @@ if (( ${#CONFLICTS[@]} > 0 )); then
   exit 1
 fi
 
-"${DOCKER_CMD[@]}" compose up -d airflow-init airflow-apiserver airflow-scheduler airflow-dag-processor airflow-triggerer airflow-worker
+"${DOCKER_CMD[@]}" compose up -d airflow-init airflow-apiserver airflow-scheduler airflow-dag-processor airflow-triggerer airflow-worker airflow-file-watcher
 "${DOCKER_CMD[@]}" compose ps

@@ -1,7 +1,11 @@
 from __future__ import annotations
 from src.writer import write_outputs
 from src.validator import validate_dataframe
-from src.reader import pick_next_input_file, read_csv_to_dataframe
+from src.reader import (
+    describe_input_file,
+    read_csv_to_dataframe,
+    save_processing_state,
+)
 from src.processor import process_dataframe
 from src.backup_validator import run_backup_validation
 
@@ -13,7 +17,7 @@ from pathlib import Path
 
 import pandas as pd
 from airflow.exceptions import AirflowSkipException
-from airflow.sdk import dag, task
+from airflow.sdk import dag, get_current_context, task
 
 DAGS_DIR = Path(__file__).resolve().parent
 if str(DAGS_DIR) not in sys.path:
@@ -24,13 +28,14 @@ INPUT_DIR = "/opt/airflow/data/raw"
 STAGING_DIR = "/opt/airflow/data/processed/_staging"
 OUTPUT_DIR = "/opt/airflow/data/output"
 ERROR_DIR = "/opt/airflow/data/error"
-ARCHIVE_DIR = "/opt/airflow/data/raw/archive"
+ARCHIVE_DIR = "/opt/airflow/data/archive/raw"
+STATE_FILE = "/opt/airflow/data/processed/_state/hospital_admissions_last_processed.json"
 
 
 def _archive_source_file(source_file: Path, archive_dir: str) -> str:
     if not source_file.exists():
-        raise FileNotFoundError(
-            f"Source file missing before archive: {source_file}")
+        print(f"[Archive] Source file already deleted or moved: {source_file}")
+        return str(source_file)
 
     archive_base = Path(archive_dir)
     archive_base.mkdir(parents=True, exist_ok=True)
@@ -53,34 +58,59 @@ def _archive_source_file(source_file: Path, archive_dir: str) -> str:
 @dag(
     dag_id="hospital_admissions_pipeline",
     start_date=datetime(2026, 4, 1),
-    schedule="*/1 * * * *",
+    schedule=None,
+    max_active_runs=1,
     catchup=False,
     tags=["hospital", "csv", "etl", "monitoring"],
 )
 def hospital_admissions_pipeline() -> None:
     @task(task_id="reader")
-    def reader_task() -> dict[str, str]:
-        picked = pick_next_input_file(INPUT_DIR, extension=".csv")
-        if picked is None:
+    def reader_task() -> dict[str, object]:
+        context = get_current_context()
+        dag_run = context["dag_run"]
+        conf = dict(dag_run.conf or {})
+        source_file = str(conf.get("source_file", "")).strip()
+        if not source_file:
             raise AirflowSkipException(
-                "No input CSV file detected in input folder")
+                "No source_file provided. This DAG is meant to be started by the file watcher."
+            )
 
         Path(STAGING_DIR).mkdir(parents=True, exist_ok=True)
-        source = Path(picked)
+        source = Path(source_file)
+        if not source.exists():
+            raise FileNotFoundError(f"Triggered source file no longer exists: {source}")
+
+        source_snapshot = conf.get("source_snapshot")
+        if not isinstance(source_snapshot, dict):
+            source_snapshot = describe_input_file(str(source))
+
+        archived_source = _archive_source_file(source, ARCHIVE_DIR)
+        save_processing_state(
+            STATE_FILE,
+            {
+                "status": "picked",
+                "last_seen_at_utc": datetime.now(timezone.utc).isoformat(),
+                "source_snapshot": source_snapshot,
+                "archived_source_file": archived_source,
+            },
+        )
+
         run_token = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
-        raw_df = read_csv_to_dataframe(str(source))
+        raw_df = read_csv_to_dataframe(archived_source)
 
         read_path = Path(STAGING_DIR) / f"{source.stem}_{run_token}_read.csv"
         raw_df.to_csv(read_path, index=False)
 
         return {
             "source_file": str(source),
+            "archived_source_file": archived_source,
             "read_path": str(read_path),
             "run_token": run_token,
+            "source_snapshot": source_snapshot,
         }
 
     @task(task_id="validator")
-    def validator_task(payload: dict[str, str]) -> dict[str, str]:
+    def validator_task(payload: dict[str, object]) -> dict[str, object]:
         df = pd.read_csv(payload["read_path"])
         valid_df, invalid_df, metrics = validate_dataframe(df)
 
@@ -102,7 +132,7 @@ def hospital_admissions_pipeline() -> None:
         return payload
 
     @task(task_id="processor")
-    def processor_task(payload: dict[str, str]) -> dict[str, str]:
+    def processor_task(payload: dict[str, object]) -> dict[str, object]:
         df_valid = pd.read_csv(payload["valid_path"], parse_dates=[
                                "admission_date", "discharge_date"])
         processed_df, process_metrics = process_dataframe(df_valid)
@@ -123,7 +153,7 @@ def hospital_admissions_pipeline() -> None:
         return payload
 
     @task(task_id="backup_validator")
-    def backup_validator_task(payload: dict[str, str]) -> dict[str, str]:
+    def backup_validator_task(payload: dict[str, object]) -> dict[str, object]:
         df_processed = pd.read_csv(payload["processed_path"])
         backup_metrics = run_backup_validation(df_processed)
 
@@ -136,7 +166,7 @@ def hospital_admissions_pipeline() -> None:
         return payload
 
     @task(task_id="writer")
-    def writer_task(payload: dict[str, str]) -> dict[str, str]:
+    def writer_task(payload: dict[str, object]) -> dict[str, str]:
         metrics = json.loads(
             Path(payload["metrics_path"]).read_text(encoding="utf-8"))
         processed_df = pd.read_csv(payload["processed_path"])
@@ -151,10 +181,23 @@ def hospital_admissions_pipeline() -> None:
             error_dir=ERROR_DIR,
         )
 
-        archived_source = _archive_source_file(
-            Path(payload["source_file"]), ARCHIVE_DIR
+        archived_source = str(payload["archived_source_file"])
+        save_processing_state(
+            STATE_FILE,
+            {
+                "status": "succeeded",
+                "last_seen_at_utc": datetime.now(timezone.utc).isoformat(),
+                "processed_at_utc": datetime.now(timezone.utc).isoformat(),
+                "source_snapshot": payload["source_snapshot"],
+                "archived_source_file": archived_source,
+                "processed_csv_path": write_result["processed_csv_path"],
+                "summary_json_path": write_result["summary_json_path"],
+                "invalid_csv_path": write_result["invalid_csv_path"],
+            },
         )
+
         write_result["archived_source_file"] = archived_source
+        write_result["state_file"] = STATE_FILE
         return write_result
 
     writer_task(backup_validator_task(

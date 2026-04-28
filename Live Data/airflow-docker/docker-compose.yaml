@@ -73,7 +73,7 @@ x-airflow-common:
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
     # WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks
     # for other purpose (development, test and especially production usage) build/extend Airflow image.
-    _PIP_ADDITIONAL_REQUIREMENTS: ${LIVE_PIP_ADDITIONAL_REQUIREMENTS:-redis==5.2.1 azure-storage-blob==12.28.0 pandas==2.2.3}
+    _PIP_ADDITIONAL_REQUIREMENTS: ${LIVE_PIP_ADDITIONAL_REQUIREMENTS:-redis==5.2.1 azure-storage-blob==12.28.0 pandas==2.2.3 watchdog==6.0.0}
     # The following line can be used to set a custom config file, stored in the local config folder
     AIRFLOW_CONFIG: '/opt/airflow/config/airflow.cfg'
   volumes:
@@ -204,6 +204,22 @@ services:
     restart: always
     depends_on:
       <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  airflow-file-watcher:
+    <<: *airflow-common
+    command:
+      - bash
+      - -lc
+      - python /opt/airflow/dags/src/watch_input_folder.py
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-apiserver:
+        condition: service_healthy
+      airflow-scheduler:
+        condition: service_healthy
       airflow-init:
         condition: service_completed_successfully
 
