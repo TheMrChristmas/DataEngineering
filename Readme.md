@@ -102,10 +102,15 @@ The live project also starts a file watcher service. Drop a `.csv` file into
 `hospital_admissions_pipeline` DAG automatically. The DAG is externally
 triggered, so it does not run on a cron schedule.
 
-After a successful run, the original source file is moved to
-`Live Data/airflow-docker/data/archive/raw`, so the `data/raw` folder stays
-clean for the next demo. To re-test the pipeline, place the CSV in `data/raw`
-again and it will trigger a fresh run.
+Reusable demo input files are kept in:
+
+- `Live Data/airflow-docker/sample_data/hospital_admissions_dirty.csv`
+- `Live Data/airflow-docker/sample_data/hospital_admissions_large_batch.csv`
+
+To test the live pipeline again, copy one of those files into
+`Live Data/airflow-docker/data/raw`. After a successful run, the original
+source file is moved to `Live Data/airflow-docker/data/archive/raw`, so the
+`data/raw` folder stays clean for the next demo.
 
 ## 6. Stop a Running Project
 

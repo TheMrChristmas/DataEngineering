@@ -27,10 +27,10 @@ Live Data/airflow-docker/logs/
 
 # Generated pipeline data (Live Data local artifacts)
 Live Data/airflow-docker/data/raw/
+Live Data/airflow-docker/data/archive/
 Live Data/airflow-docker/data/processed/
 Live Data/airflow-docker/data/output/
 Live Data/airflow-docker/data/error/
 
 # Local VS Code runtime data (Live Data)
 Live Data/airflow-docker/.vscode/data/
-
