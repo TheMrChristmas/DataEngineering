@@ -38,7 +38,7 @@ def load(**context):
 with DAG(
     dag_id="yellow_taxi_pipeline",
     start_date=datetime(2026, 1, 1),
-    schedule="@monthly",
+    schedule="0 0 1,4 * *",
     catchup=False,
 ) as dag:
 
