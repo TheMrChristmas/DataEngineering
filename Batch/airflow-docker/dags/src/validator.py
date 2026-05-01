@@ -63,8 +63,10 @@ class Validator:
             )
 
         try:
-            self._expected_year = int(input_path.stem.split("_")[-1].split("-")[0])
-            print(f"[Validator] Expected year from filename: {self._expected_year}")
+            self._expected_year = int(
+                input_path.stem.split("_")[-1].split("-")[0])
+            print(
+                f"[Validator] Expected year from filename: {self._expected_year}")
         except (ValueError, IndexError):
             self._expected_year = None
             print(
@@ -75,7 +77,8 @@ class Validator:
         parquet_file = pq.ParquetFile(input_path)
         all_columns = parquet_file.schema.names
 
-        missing_mandatory = [c for c in MANDATORY_COLUMNS if c not in all_columns]
+        missing_mandatory = [
+            c for c in MANDATORY_COLUMNS if c not in all_columns]
         if missing_mandatory:
             self._add_error(
                 check="mandatory_columns_exist",
@@ -90,7 +93,8 @@ class Validator:
                 f"Cannot continue validation."
             )
 
-        missing_optional = [c for c in NON_MANDATORY_COLUMNS if c not in all_columns]
+        missing_optional = [
+            c for c in NON_MANDATORY_COLUMNS if c not in all_columns]
         for col in missing_optional:
             print(f"[Validator] Optional column '{col}' not present; skipping")
 
@@ -118,7 +122,8 @@ class Validator:
         if self.warning_counts:
             print("[Validator] Warning summary:")
             for warning, count in sorted(self.warning_counts.items()):
-                print(f"[Validator] WARNING: {warning} (affected rows: {count})")
+                print(
+                    f"[Validator] WARNING: {warning} (affected rows: {count})")
 
         if self.errors:
             self._write_error_log(str(input_path))
@@ -215,7 +220,6 @@ class Validator:
 
     def _check_ranges(self, df: pd.DataFrame):
         range_rules = [
-            # Common TLC refunds/adjustments can create negatives in fare/total.
             ("passenger_count", 0, 9, "warning"),
             ("trip_distance", 0, None, "error"),
             ("fare_amount", 0, None, "warning"),
@@ -229,7 +233,8 @@ class Validator:
                 continue
 
             numeric_series = pd.to_numeric(df[col], errors="coerce")
-            invalid_numeric = int(numeric_series.isna().sum() - df[col].isna().sum())
+            invalid_numeric = int(
+                numeric_series.isna().sum() - df[col].isna().sum())
             if invalid_numeric > 0:
                 if severity == "error":
                     self._add_error(
@@ -239,7 +244,8 @@ class Validator:
                         affected_rows=invalid_numeric,
                     )
                 else:
-                    self._add_warning(f"non-numeric values in '{col}'", invalid_numeric)
+                    self._add_warning(
+                        f"non-numeric values in '{col}'", invalid_numeric)
 
             series = numeric_series.dropna()
             below = int((series < min_val).sum()) if min_val is not None else 0
@@ -254,7 +260,8 @@ class Validator:
                         affected_rows=below,
                     )
                 else:
-                    self._add_warning(f"'{col}' values below minimum ({min_val})", below)
+                    self._add_warning(
+                        f"'{col}' values below minimum ({min_val})", below)
 
             if above > 0:
                 if severity == "error":
@@ -265,11 +272,13 @@ class Validator:
                         affected_rows=above,
                     )
                 else:
-                    self._add_warning(f"'{col}' values above maximum ({max_val})", above)
+                    self._add_warning(
+                        f"'{col}' values above maximum ({max_val})", above)
 
         if "payment_type" in df.columns:
             payment_series = pd.to_numeric(df["payment_type"], errors="coerce")
-            invalid_numeric = int(payment_series.isna().sum() - df["payment_type"].isna().sum())
+            invalid_numeric = int(payment_series.isna(
+            ).sum() - df["payment_type"].isna().sum())
             if invalid_numeric > 0:
                 self._add_error(
                     check="range_check",
@@ -279,7 +288,8 @@ class Validator:
                 )
 
             invalid_codes = int(
-                (~payment_series.isin(VALID_PAYMENT_TYPES) & payment_series.notna()).sum()
+                (~payment_series.isin(VALID_PAYMENT_TYPES)
+                 & payment_series.notna()).sum()
             )
             if invalid_codes > 0:
                 self._add_warning(
@@ -289,12 +299,15 @@ class Validator:
 
     def _check_semantic_rules(self, df: pd.DataFrame):
         if "tpep_pickup_datetime" in df.columns and "tpep_dropoff_datetime" in df.columns:
-            pickup_dt = pd.to_datetime(df["tpep_pickup_datetime"], errors="coerce")
-            dropoff_dt = pd.to_datetime(df["tpep_dropoff_datetime"], errors="coerce")
+            pickup_dt = pd.to_datetime(
+                df["tpep_pickup_datetime"], errors="coerce")
+            dropoff_dt = pd.to_datetime(
+                df["tpep_dropoff_datetime"], errors="coerce")
 
             invalid_datetimes = int(
                 (pickup_dt.isna() & df["tpep_pickup_datetime"].notna()).sum()
-                + (dropoff_dt.isna() & df["tpep_dropoff_datetime"].notna()).sum()
+                + (dropoff_dt.isna() &
+                   df["tpep_dropoff_datetime"].notna()).sum()
             )
             if invalid_datetimes > 0:
                 self._add_error(
@@ -320,7 +333,8 @@ class Validator:
 
             if self._expected_year is not None:
                 valid_pickup = pickup_dt.dropna()
-                wrong_year = int((valid_pickup.dt.year != self._expected_year).sum())
+                wrong_year = int(
+                    (valid_pickup.dt.year != self._expected_year).sum())
                 if wrong_year > 0:
                     self._add_warning(
                         f"pickup year outside expected year {self._expected_year}",
@@ -336,7 +350,8 @@ class Validator:
                 & (total_amount >= 0)
                 & (fare_amount >= 0)
             )
-            lower_total = int((total_amount[comparable] < fare_amount[comparable]).sum())
+            lower_total = int(
+                (total_amount[comparable] < fare_amount[comparable]).sum())
             if lower_total > 0:
                 self._add_warning(
                     "rows where total_amount < fare_amount",
@@ -356,25 +371,31 @@ class Validator:
         for col in non_mandatory_numeric:
             if col not in df.columns:
                 if warn_missing:
-                    print(f"[Validator] Optional column '{col}' not present; skipping")
+                    print(
+                        f"[Validator] Optional column '{col}' not present; skipping")
                 continue
 
             numeric_series = pd.to_numeric(df[col], errors="coerce")
             null_count = int(numeric_series.isnull().sum())
             if null_count > 0:
-                self._add_warning(f"'{col}' has nulls (non-mandatory)", null_count)
+                self._add_warning(
+                    f"'{col}' has nulls (non-mandatory)", null_count)
 
-            invalid_numeric = int(numeric_series.isna().sum() - df[col].isna().sum())
+            invalid_numeric = int(
+                numeric_series.isna().sum() - df[col].isna().sum())
             if invalid_numeric > 0:
-                self._add_warning(f"non-numeric values in '{col}'", invalid_numeric)
+                self._add_warning(
+                    f"non-numeric values in '{col}'", invalid_numeric)
 
             negative = int((numeric_series.dropna() < 0).sum())
             if negative > 0:
                 self._add_warning(f"negative values in '{col}'", negative)
 
         if "store_and_fwd_flag" in df.columns:
-            store_fwd = df["store_and_fwd_flag"].astype("string").str.strip().str.upper()
-            invalid_store_fwd = int((~store_fwd.isin(VALID_STORE_FWD) & store_fwd.notna()).sum())
+            store_fwd = df["store_and_fwd_flag"].astype(
+                "string").str.strip().str.upper()
+            invalid_store_fwd = int(
+                (~store_fwd.isin(VALID_STORE_FWD) & store_fwd.notna()).sum())
             if invalid_store_fwd > 0:
                 self._add_warning(
                     f"store_and_fwd_flag not in {VALID_STORE_FWD}",
@@ -383,7 +404,8 @@ class Validator:
 
         if "RatecodeID" in df.columns:
             rate_code = pd.to_numeric(df["RatecodeID"], errors="coerce")
-            invalid_rate_code = int((~rate_code.isin(VALID_RATE_CODES) & rate_code.notna()).sum())
+            invalid_rate_code = int(
+                (~rate_code.isin(VALID_RATE_CODES) & rate_code.notna()).sum())
             if invalid_rate_code > 0:
                 self._add_warning(
                     f"RatecodeID outside valid range {VALID_RATE_CODES}",

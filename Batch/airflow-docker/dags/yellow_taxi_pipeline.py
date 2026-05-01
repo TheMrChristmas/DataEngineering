@@ -13,9 +13,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 
 def ingest(**context):
-    # Always read January data regardless of when the pipeline runs
     path = Reader().read("2026-01")
-    return path   # XCom automatically saves the return value
+    return path
 
 
 def validate(**context):
@@ -26,12 +25,12 @@ def validate(**context):
 def transform(**context):
     path = context["ti"].xcom_pull(task_ids="ingest")
     output_path = Transformer().process(path)
-    return output_path   # XCom passes processed path to load task
+    return output_path
 
 
 def load(**context):
     path = context["ti"].xcom_pull(
-        task_ids="transform")  # pulls from transform now
+        task_ids="transform")
     Writer().write(path)
 
 

@@ -20,10 +20,6 @@ class Transformer:
         self.output_path = Path(output_path)
         self.output_path.mkdir(parents=True, exist_ok=True)
 
-    # ------------------------------------------------------------------ #
-    #  Public entry point                                                  #
-    # ------------------------------------------------------------------ #
-
     def process(self, parquet_path: str) -> str:
         input_path = Path(parquet_path).resolve()
         if not input_path.exists():
@@ -123,9 +119,7 @@ class Transformer:
 
         return df
 
-    # ------------------------------------------------------------------ #
     #  Step 1 — Remove columns                                            #
-    # ------------------------------------------------------------------ #
 
     def _remove_columns(self, df: pd.DataFrame) -> pd.DataFrame:
         cols_to_drop = ["VendorID", "store_and_fwd_flag", "RatecodeID"]
@@ -140,9 +134,7 @@ class Transformer:
         print(f"[Transformer] Dropped columns: {existing}")
         return df
 
-    # ------------------------------------------------------------------ #
     #  Step 2 — trip_duration_minutes                                     #
-    # ------------------------------------------------------------------ #
 
     def _add_trip_duration(self, df: pd.DataFrame) -> pd.DataFrame:
         df["trip_duration_minutes"] = (
@@ -153,9 +145,7 @@ class Transformer:
         print("[Transformer] Added column: trip_duration_minutes")
         return df
 
-    # ------------------------------------------------------------------ #
     #  Step 3 — average_speed_mph                                         #
-    # ------------------------------------------------------------------ #
 
     def _add_average_speed(self, df: pd.DataFrame) -> pd.DataFrame:
         mask = df["trip_duration_minutes"] > 0
@@ -168,9 +158,7 @@ class Transformer:
         print("[Transformer] Added column: average_speed_mph")
         return df
 
-    # ------------------------------------------------------------------ #
     #  Step 4 — pickup_year and pickup_month                              #
-    # ------------------------------------------------------------------ #
 
     def _add_pickup_date_parts(self, df: pd.DataFrame) -> pd.DataFrame:
         df["pickup_year"] = df["tpep_pickup_datetime"].dt.year
@@ -178,9 +166,7 @@ class Transformer:
         print("[Transformer] Added columns: pickup_year, pickup_month")
         return df
 
-    # ------------------------------------------------------------------ #
     #  Step 5 — revenue_per_mile                                          #
-    # ------------------------------------------------------------------ #
 
     def _add_revenue_per_mile(self, df: pd.DataFrame) -> pd.DataFrame:
         mask = df["trip_distance"] > 0
@@ -192,9 +178,7 @@ class Transformer:
         print("[Transformer] Added column: revenue_per_mile")
         return df
 
-    # ------------------------------------------------------------------ #
     #  Step 6 — trip_distance_category                                    #
-    # ------------------------------------------------------------------ #
 
     def _add_trip_distance_category(self, df: pd.DataFrame) -> pd.DataFrame:
         """
@@ -222,9 +206,7 @@ class Transformer:
         print("[Transformer] Added column: trip_distance_category")
         return df
 
-    # ------------------------------------------------------------------ #
     #  Step 7 — fare_category                                             #
-    # ------------------------------------------------------------------ #
 
     def _add_fare_category(self, df: pd.DataFrame) -> pd.DataFrame:
         """
@@ -233,7 +215,6 @@ class Transformer:
         High   > 50
         Handles all-NaN batches safely.
         """
-        # FIX: guard against all-NaN batch which crashes pd.cut
         if df["fare_amount"].isna().all():
             df["fare_category"] = pd.Categorical(
                 [None] * len(df),
@@ -252,9 +233,7 @@ class Transformer:
         print("[Transformer] Added column: fare_category")
         return df
 
-    # ------------------------------------------------------------------ #
-    #  Step 8 — trip_time_of_day                                          #
-    # ------------------------------------------------------------------ #
+    # Step 8 — trip_time_of_day
 
     def _add_time_of_day(self, df: pd.DataFrame) -> pd.DataFrame:
         """
@@ -265,8 +244,6 @@ class Transformer:
         """
         hour = df["tpep_pickup_datetime"].dt.hour
 
-        # FIX: was bins=[-1, 5, 11, 17, 23] which left hour 23 as NaN
-        # Changed last bin edge to 24 so Evening covers [18, 24)
         if hour.isna().all():
             df["trip_time_of_day"] = pd.Categorical(
                 [None] * len(df),
@@ -278,7 +255,7 @@ class Transformer:
 
         df["trip_time_of_day"] = pd.cut(
             hour,
-            bins=[-1, 5, 11, 17, 24],   # FIX: 24 instead of 23
+            bins=[-1, 5, 11, 17, 24],
             labels=["Night", "Morning", "Afternoon", "Evening"]
         )
         print("[Transformer] Added column: trip_time_of_day")

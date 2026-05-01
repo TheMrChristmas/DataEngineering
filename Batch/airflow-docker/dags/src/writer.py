@@ -31,7 +31,6 @@ class Writer:
     def _write_local_copy(self, source_path: Path) -> Path:
         output_file = self.output_path / source_path.name
 
-        # If transformer already wrote to this exact path, avoid rewriting the file in-place.
         if source_path.resolve() == output_file.resolve():
             source_file = pq.ParquetFile(source_path)
             rows_written = source_file.metadata.num_rows
@@ -103,7 +102,6 @@ class Writer:
             container_client.create_container()
             print(f"[Writer] Created Azure container: {container_name}")
         except ResourceExistsError:
-            # Container already exists; continue.
             pass
 
         files_to_upload = sorted(

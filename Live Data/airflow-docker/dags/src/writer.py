@@ -26,10 +26,6 @@ def _sanitize_dataframe_for_csv(df: pd.DataFrame) -> pd.DataFrame:
     return sanitized
 
 
-# ---------------------------------------------------------------------------
-# Azure upload helper
-# ---------------------------------------------------------------------------
-
 def _upload_to_azure(local_path: Path) -> None:
     """Upload a single file to Azure Blob Storage."""
     from azure.storage.blob import BlobServiceClient
@@ -66,13 +62,10 @@ def _maybe_upload(path: Path) -> None:
     try:
         _upload_to_azure(path)
     except Exception as e:
-        # Log but don't crash the pipeline — local output is already written
         logger.error(f"Azure upload failed for {path.name}: {e}")
 
 
-# ---------------------------------------------------------------------------
 # Main writer function
-# ---------------------------------------------------------------------------
 
 def write_outputs(
     processed_df: pd.DataFrame,
@@ -98,7 +91,6 @@ def write_outputs(
     safe_processed_df = _sanitize_dataframe_for_csv(processed_df)
     safe_invalid_df = _sanitize_dataframe_for_csv(invalid_df)
 
-    # --- Local writes (unchanged) ---
     safe_processed_df.to_csv(processed_path, index=False)
     safe_invalid_df.to_csv(invalid_path, index=False)
 
@@ -112,7 +104,6 @@ def write_outputs(
     logger.info(
         f"Written locally: {processed_path.name}, {summary_path.name}, {invalid_path.name}")
 
-    # --- Azure uploads (only when enabled) ---
     _maybe_upload(processed_path)
     _maybe_upload(summary_path)
     _maybe_upload(invalid_path)

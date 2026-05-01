@@ -45,4 +45,4 @@ class Reader:
 
         print(f"Found {row_count} rows in {parquet_path}")
 
-        return str(parquet_path)   # pass path to next task via XCom
+        return str(parquet_path)
