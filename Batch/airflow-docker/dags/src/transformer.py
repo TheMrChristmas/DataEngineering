@@ -1,5 +1,6 @@
 from pathlib import Path
 import gc
+import os
 import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
@@ -13,6 +14,8 @@ REQUIRED_INPUT_COLUMNS = [
     "fare_amount",
     "total_amount",
 ]
+
+TRANSFORM_BATCH_SIZE = int(os.getenv("TRANSFORM_BATCH_SIZE", "5000"))
 
 
 class Transformer:
@@ -50,19 +53,23 @@ class Transformer:
             temp_output_path.unlink()
 
         writer = None
+        writer_schema = None
         rows_written = 0
         failed = False
 
         try:
             for batch_index, batch in enumerate(
-                input_file.iter_batches(batch_size=50_000), start=1
+                input_file.iter_batches(batch_size=TRANSFORM_BATCH_SIZE), start=1
             ):
-                df = batch.to_pandas()
+                df = self._to_pandas(batch)
                 df = self._transform_batch(df)
 
                 table = pa.Table.from_pandas(df, preserve_index=False)
                 if writer is None:
                     writer = pq.ParquetWriter(temp_output_path, table.schema)
+                    writer_schema = table.schema
+                else:
+                    table = table.cast(writer_schema)
 
                 writer.write_table(table)
                 rows_written += len(df)
@@ -115,7 +122,36 @@ class Transformer:
         if "passenger_count" in df.columns:
             df["passenger_count"] = pd.to_numeric(
                 df["passenger_count"], errors="coerce"
-            ).astype("float64")
+            )
+
+        df = self._optimize_numeric_types(df)
+
+        return df
+
+    def _to_pandas(self, batch) -> pd.DataFrame:
+        try:
+            return batch.to_pandas(split_blocks=True, self_destruct=True)
+        except TypeError:
+            return batch.to_pandas(split_blocks=True)
+
+    def _optimize_numeric_types(self, df: pd.DataFrame) -> pd.DataFrame:
+        float_cols = [
+            "trip_distance",
+            "fare_amount",
+            "total_amount",
+            "passenger_count",
+            "trip_duration_minutes",
+            "average_speed_mph",
+            "revenue_per_mile",
+        ]
+        for col in float_cols:
+            if col in df.columns:
+                df[col] = pd.to_numeric(df[col], errors="coerce").astype("float32")
+
+        if "pickup_year" in df.columns:
+            df["pickup_year"] = df["pickup_year"].astype("Int16")
+        if "pickup_month" in df.columns:
+            df["pickup_month"] = df["pickup_month"].astype("Int8")
 
         return df
 
@@ -130,7 +166,7 @@ class Transformer:
             print(
                 f"[Transformer] WARNING: columns not found, skipping drop: {dropped}")
 
-        df = df.drop(columns=existing)
+        df.drop(columns=existing, inplace=True)
         print(f"[Transformer] Dropped columns: {existing}")
         return df
 
@@ -148,13 +184,11 @@ class Transformer:
     #  Step 3 — average_speed_mph                                         #
 
     def _add_average_speed(self, df: pd.DataFrame) -> pd.DataFrame:
-        mask = df["trip_duration_minutes"] > 0
-        df["average_speed_mph"] = np.nan
-        df.loc[mask, "average_speed_mph"] = (
-            df.loc[mask, "trip_distance"]
-            / (df.loc[mask, "trip_duration_minutes"] / 60)
-        )
-        df["average_speed_mph"] = df["average_speed_mph"].astype("float64")
+        distance = pd.to_numeric(df["trip_distance"], errors="coerce")
+        duration_minutes = pd.to_numeric(df["trip_duration_minutes"], errors="coerce")
+        duration_hours = duration_minutes / 60.0
+        speed = np.where(duration_hours > 0, distance / duration_hours, np.nan)
+        df["average_speed_mph"] = pd.Series(speed, index=df.index, dtype="float32")
         print("[Transformer] Added column: average_speed_mph")
         return df
 
@@ -169,12 +203,10 @@ class Transformer:
     #  Step 5 — revenue_per_mile                                          #
 
     def _add_revenue_per_mile(self, df: pd.DataFrame) -> pd.DataFrame:
-        mask = df["trip_distance"] > 0
-        df["revenue_per_mile"] = np.nan
-        df.loc[mask, "revenue_per_mile"] = (
-            df.loc[mask, "total_amount"] / df.loc[mask, "trip_distance"]
-        )
-        df["revenue_per_mile"] = df["revenue_per_mile"].astype("float64")
+        distance = pd.to_numeric(df["trip_distance"], errors="coerce")
+        total = pd.to_numeric(df["total_amount"], errors="coerce")
+        rpm = np.where(distance > 0, total / distance, np.nan)
+        df["revenue_per_mile"] = pd.Series(rpm, index=df.index, dtype="float32")
         print("[Transformer] Added column: revenue_per_mile")
         return df
 

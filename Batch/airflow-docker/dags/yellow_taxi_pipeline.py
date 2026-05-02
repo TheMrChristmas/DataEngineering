@@ -39,6 +39,8 @@ with DAG(
     start_date=datetime(2026, 1, 1),
     schedule="0 0 1,4 * *",
     catchup=False,
+    max_active_runs=1,
+    max_active_tasks=1,
 ) as dag:
 
     t1 = PythonOperator(task_id="ingest",    python_callable=ingest)
