@@ -155,10 +155,10 @@ def hospital_admissions_pipeline() -> None:
     @task(task_id="backup_validator")
     def backup_validator_task(payload: dict[str, object]) -> dict[str, object]:
         df_processed = pd.read_csv(payload["processed_path"])
-        backup_metrics = run_backup_validation(df_processed)
-
         metrics = json.loads(
             Path(payload["metrics_path"]).read_text(encoding="utf-8"))
+        backup_metrics = run_backup_validation(df_processed, metrics)
+
         metrics.update(backup_metrics)
         Path(payload["metrics_path"]).write_text(
             json.dumps(metrics), encoding="utf-8")
