@@ -35,23 +35,52 @@ If a command is not found, open a new terminal in VS Code.
 
 ## 3. First-Time Setup (Shared)
 
-Both projects now use one shared environment file at workspace root:
+### 3a. Environment file
 
-```bash
-cd "DataEngineering"
-cat .env
+The `.env` file at the workspace root is **not included in this repository** (it contains credentials).
+Create it manually at `DataEngineering/.env` with the following values (the Azure connection string is provided separately in Toledo submission zone):
+
+```
+BATCH_COMPOSE_PROJECT_NAME=de_batch
+BATCH_PIP_ADDITIONAL_REQUIREMENTS=redis==5.2.1 azure-storage-blob==12.25.1
+
+LIVE_COMPOSE_PROJECT_NAME=de_live
+LIVE_PIP_ADDITIONAL_REQUIREMENTS=redis==5.2.1 azure-storage-blob==12.28.0 pandas==2.2.3
+
+AIRFLOW_UID=50000
+
+AZURE_STORAGE_UPLOAD_ENABLED=true
+AZURE_STORAGE_CONNECTION_STRING=<provided separately>
+
+AZURE_STORAGE_CONTAINER_BATCH=batch
+AZURE_STORAGE_CONTAINER_LIVE=live-data
+
+AZURE_STORAGE_BLOB_PREFIX_BATCH=yellow-taxi
+AZURE_STORAGE_BLOB_PREFIX_LIVE=live-data
 ```
 
-Important shared values in `.env`:
-
-- `BATCH_COMPOSE_PROJECT_NAME=de_batch`
-- `LIVE_COMPOSE_PROJECT_NAME=de_live`
-- `AIRFLOW_UID=50000`
-- `AZURE_STORAGE_CONNECTION_STRING=...`
-- `AZURE_STORAGE_CONTAINER_BATCH=batch`
-- `AZURE_STORAGE_CONTAINER_LIVE=live-data`
-
 If you change values in `.env`, restart the running stack after changes.
+
+### 3b. Batch dataset
+
+The Batch pipeline requires the January 2026 NYC Yellow Taxi dataset. Download it and place it at:
+
+```
+Batch/airflow-docker/data/raw/yellow_tripdata_2026-01.parquet
+```
+
+Direct download link:
+
+```
+https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-01.parquet
+```
+
+Or via curl:
+
+```bash
+curl -L -o "Batch/airflow-docker/data/raw/yellow_tripdata_2026-01.parquet" \
+  "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-01.parquet"
+```
 
 ## 4. Start Batch Project
 
