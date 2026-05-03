@@ -6,7 +6,6 @@ import pandas as pd
 def process_dataframe(df: pd.DataFrame) -> tuple[pd.DataFrame, dict[str, int]]:
     work = df.copy()
 
-    work["gender"] = work["gender"].replace({"MALE": "M", "FEMALE": "F"})
     work["readmission"] = work["readmission"].eq("true")
 
     work["length_of_stay_days"] = (

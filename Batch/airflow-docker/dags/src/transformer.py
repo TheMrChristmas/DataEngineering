@@ -1,5 +1,4 @@
 from pathlib import Path
-import gc
 import os
 import pandas as pd
 import pyarrow as pa
@@ -15,7 +14,7 @@ REQUIRED_INPUT_COLUMNS = [
     "total_amount",
 ]
 
-TRANSFORM_BATCH_SIZE = int(os.getenv("TRANSFORM_BATCH_SIZE", "5000"))
+TRANSFORM_BATCH_SIZE = int(os.getenv("TRANSFORM_BATCH_SIZE", "50000"))
 
 
 class Transformer:
@@ -46,6 +45,14 @@ class Transformer:
                 f"[Transformer] Missing required columns in input parquet: {missing}"
             )
 
+        _drop_candidates = ["VendorID", "store_and_fwd_flag", "RatecodeID"]
+        _to_drop = [c for c in _drop_candidates if c in input_file.schema.names]
+        _to_skip = [c for c in _drop_candidates if c not in input_file.schema.names]
+        if _to_skip:
+            print(f"[Transformer] WARNING: columns not in schema, will skip drop: {_to_skip}")
+        print(f"[Transformer] Will drop: {_to_drop}")
+        print("[Transformer] Will add: trip_duration_minutes, average_speed_mph, pickup_year, pickup_month, revenue_per_mile, trip_distance_category, fare_category, trip_time_of_day")
+
         filename = input_path.name
         output_path = self.output_path / filename
         temp_output_path = output_path.with_name(f".{output_path.name}.tmp")
@@ -66,7 +73,7 @@ class Transformer:
 
                 table = pa.Table.from_pandas(df, preserve_index=False)
                 if writer is None:
-                    writer = pq.ParquetWriter(temp_output_path, table.schema)
+                    writer = pq.ParquetWriter(temp_output_path, table.schema, compression="snappy")
                     writer_schema = table.schema
                 else:
                     table = table.cast(writer_schema)
@@ -79,7 +86,6 @@ class Transformer:
                         f"[Transformer] Processed {rows_written} rows so far")
 
                 del table, df, batch
-                gc.collect()
 
         except Exception:
             failed = True
@@ -160,14 +166,7 @@ class Transformer:
     def _remove_columns(self, df: pd.DataFrame) -> pd.DataFrame:
         cols_to_drop = ["VendorID", "store_and_fwd_flag", "RatecodeID"]
         existing = [c for c in cols_to_drop if c in df.columns]
-        dropped = [c for c in cols_to_drop if c not in df.columns]
-
-        if dropped:
-            print(
-                f"[Transformer] WARNING: columns not found, skipping drop: {dropped}")
-
         df.drop(columns=existing, inplace=True)
-        print(f"[Transformer] Dropped columns: {existing}")
         return df
 
     #  Step 2 — trip_duration_minutes                                     #
@@ -178,7 +177,6 @@ class Transformer:
             .dt.total_seconds()
             / 60
         )
-        print("[Transformer] Added column: trip_duration_minutes")
         return df
 
     #  Step 3 — average_speed_mph                                         #
@@ -189,7 +187,6 @@ class Transformer:
         duration_hours = duration_minutes / 60.0
         speed = np.where(duration_hours > 0, distance / duration_hours, np.nan)
         df["average_speed_mph"] = pd.Series(speed, index=df.index, dtype="float32")
-        print("[Transformer] Added column: average_speed_mph")
         return df
 
     #  Step 4 — pickup_year and pickup_month                              #
@@ -197,7 +194,6 @@ class Transformer:
     def _add_pickup_date_parts(self, df: pd.DataFrame) -> pd.DataFrame:
         df["pickup_year"] = df["tpep_pickup_datetime"].dt.year
         df["pickup_month"] = df["tpep_pickup_datetime"].dt.month
-        print("[Transformer] Added columns: pickup_year, pickup_month")
         return df
 
     #  Step 5 — revenue_per_mile                                          #
@@ -207,7 +203,6 @@ class Transformer:
         total = pd.to_numeric(df["total_amount"], errors="coerce")
         rpm = np.where(distance > 0, total / distance, np.nan)
         df["revenue_per_mile"] = pd.Series(rpm, index=df.index, dtype="float32")
-        print("[Transformer] Added column: revenue_per_mile")
         return df
 
     #  Step 6 — trip_distance_category                                    #
@@ -235,7 +230,6 @@ class Transformer:
             labels=["Short", "Medium", "Long"],
             right=False
         )
-        print("[Transformer] Added column: trip_distance_category")
         return df
 
     #  Step 7 — fare_category                                             #
@@ -262,7 +256,6 @@ class Transformer:
             labels=["Low", "Medium", "High"],
             right=False
         )
-        print("[Transformer] Added column: fare_category")
         return df
 
     # Step 8 — trip_time_of_day
@@ -290,5 +283,4 @@ class Transformer:
             bins=[-1, 5, 11, 17, 24],
             labels=["Night", "Morning", "Afternoon", "Evening"]
         )
-        print("[Transformer] Added column: trip_time_of_day")
         return df

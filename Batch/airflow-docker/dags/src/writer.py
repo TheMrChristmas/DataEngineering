@@ -52,7 +52,7 @@ class Writer:
                 table = pa.Table.from_pandas(df, preserve_index=False)
 
                 if writer is None:
-                    writer = pq.ParquetWriter(output_file, table.schema)
+                    writer = pq.ParquetWriter(output_file, table.schema, compression="snappy")
 
                 writer.write_table(table)
                 rows_written += len(df)

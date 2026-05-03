@@ -26,8 +26,10 @@ def _sanitize_dataframe_for_csv(df: pd.DataFrame) -> pd.DataFrame:
     return sanitized
 
 
-def _upload_to_azure(local_path: Path) -> None:
-    """Upload a single file to Azure Blob Storage."""
+def _upload_files_to_azure(paths: list[Path]) -> None:
+    """Upload multiple files to Azure Blob Storage in parallel using a single client."""
+    from concurrent.futures import ThreadPoolExecutor
+
     from azure.storage.blob import BlobServiceClient
 
     conn_str = os.getenv("AZURE_STORAGE_CONNECTION_STRING", "")
@@ -43,26 +45,15 @@ def _upload_to_azure(local_path: Path) -> None:
         )
 
     client = BlobServiceClient.from_connection_string(conn_str)
-    blob_client = client.get_blob_client(
-        container=container, blob=local_path.name)
 
-    with local_path.open("rb") as f:
-        blob_client.upload_blob(f, overwrite=True)
+    def _upload_one(path: Path) -> None:
+        blob_client = client.get_blob_client(container=container, blob=path.name)
+        with path.open("rb") as f:
+            blob_client.upload_blob(f, overwrite=True)
+        logger.info("Uploaded to Azure Blob [%s]: %s", container, path.name)
 
-    logger.info(f"Uploaded to Azure Blob [{container}]: {local_path.name}")
-
-
-def _maybe_upload(path: Path) -> None:
-    """Upload file to Azure only when AZURE_STORAGE_UPLOAD_ENABLED=true."""
-    enabled = os.getenv("AZURE_STORAGE_UPLOAD_ENABLED",
-                        "false").strip().lower()
-    if enabled != "true":
-        return
-
-    try:
-        _upload_to_azure(path)
-    except Exception as e:
-        logger.error(f"Azure upload failed for {path.name}: {e}")
+    with ThreadPoolExecutor(max_workers=len(paths)) as executor:
+        executor.map(_upload_one, paths)
 
 
 # Main writer function
@@ -102,11 +93,18 @@ def write_outputs(
         json.dump(combined_metrics, summary_file, indent=2)
 
     logger.info(
-        f"Written locally: {processed_path.name}, {summary_path.name}, {invalid_path.name}")
+        "Written locally: %s, %s, %s",
+        processed_path.name, summary_path.name, invalid_path.name,
+    )
 
-    _maybe_upload(processed_path)
-    _maybe_upload(summary_path)
-    _maybe_upload(invalid_path)
+    enabled = os.getenv("AZURE_STORAGE_UPLOAD_ENABLED", "false").strip().lower()
+    if enabled == "true":
+        try:
+            _upload_files_to_azure([processed_path, summary_path, invalid_path])
+        except Exception as e:
+            logger.error("Azure upload failed: %s", e)
+    else:
+        logger.info("Azure upload disabled; skipping cloud upload")
 
     return {
         "processed_csv_path": str(processed_path),
